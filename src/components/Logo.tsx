@@ -7,7 +7,10 @@ type LogoProps = {
 const Logo = ({ className }: LogoProps) => {
   return (
     <div
-      className={cn("relative size-36 overflow-hidden rounded-full", className)}
+      className={cn(
+        "relative aspect-square size-36 overflow-hidden rounded-full",
+        className,
+      )}
     >
       <img
         src="/logo.png"

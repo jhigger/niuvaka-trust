@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Mission = () => {
   return (
-    <section className="container mx-auto grid grid-cols-1 place-items-center gap-8 p-8 md:grid-cols-2">
+    <section className="container mx-auto grid grid-cols-1 place-items-center gap-8 p-8 lg:grid-cols-2">
       <div className="col-span-1 flex h-full w-full flex-col items-center justify-between gap-8">
         <h2 className="text-center text-6xl font-semibold uppercase text-coffee-400">
           Our Mission

@@ -86,14 +86,14 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
     setY(y);
   });
 
-  const crossed = y > 200;
+  const crossed = y > 300;
 
   return (
     <header className="fixed top-0 z-50 w-full bg-coffee-50">
       <div
         className={cn(
           "container mx-auto flex items-center justify-between gap-32 transition-all duration-200 ease-in-out",
-          size === "lg" && "pb-40",
+          size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
       >

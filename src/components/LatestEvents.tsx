@@ -21,7 +21,7 @@ const LatestEvents = () => {
       <h2 className="p-8 text-center text-6xl font-bold text-coffee-400">
         Latest Events and Opportunities
       </h2>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         {items.map((item, i) => (
           <div key={i} className="relative overflow-hidden rounded-2xl">
             <img

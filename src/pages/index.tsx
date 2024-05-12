@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "~/components/Footer";
 import LatestEvents from "~/components/LatestEvents";
 import Mission from "~/components/Mission";
 import Navbar from "~/components/Navbar";
@@ -15,7 +16,7 @@ export default function Home() {
           name="description"
           content="Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability."
         />
-        <link rel="icon" type="image/png" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.ico?" />
       </Head>
       <div className="relative min-h-screen bg-background">
         <Navbar />
@@ -27,7 +28,7 @@ export default function Home() {
         </section>
 
         <div className="relative">
-          <div className="absolute left-0 right-0 top-0 h-[3400px] bg-[url('/bg.png')] bg-[size:auto_100%] bg-repeat-x opacity-5"></div>
+          <div className="absolute left-0 right-0 top-0 h-[3400px] bg-[url('/bg1.png')] bg-[size:auto_100%] bg-center bg-repeat-x opacity-5"></div>
           <div className="absolute left-0 right-0 top-0 z-10">
             <div className="flex flex-col gap-8">
               <Services />
@@ -36,7 +37,7 @@ export default function Home() {
               <Testimonials />
               <LatestEvents />
             </div>
-            <footer className="mt-36 h-96 bg-coffee-50 p-16"></footer>
+            <Footer />
           </div>
         </div>
       </div>

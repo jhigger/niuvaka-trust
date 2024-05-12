@@ -102,7 +102,7 @@ const items = [
 
 const Services = () => {
   return (
-    <section className="container mx-auto grid grid-cols-1 gap-8 p-8 md:grid-cols-3">
+    <section className="container mx-auto grid grid-cols-1 gap-8 p-8 lg:grid-cols-3">
       <h2 className="col-span-full py-8 text-center text-6xl font-semibold">
         Our Services and Programmes
       </h2>

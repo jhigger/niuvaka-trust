@@ -32,6 +32,9 @@ const config = {
         neutral: {
           foreground: "#595959",
         },
+        mint: {
+          500: "#3390B3",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
