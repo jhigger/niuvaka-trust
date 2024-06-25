@@ -18,20 +18,20 @@ export default function About() {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-52 bg-gradient-to-b from-coffee-50 via-coffee-50 to-[#E7E4DE]">
+        <section className="mt-52 bg-gradient-to-b from-coffee-50 via-coffee-50 to-background">
           <div className="container relative mx-auto h-[600px] max-w-screen-2xl p-0">
             <img
               src="/hero2.png"
               alt="hero"
               className="size-full object-cover"
             />
-            <span className="absolute bottom-20 left-14 text-8xl font-bold text-white">
+            <span className="absolute right-28 top-28 text-8xl font-bold text-white">
               About Us
             </span>
           </div>
         </section>
 
-        <div className="relative bg-[#E7E4DE]">
+        <div className="relative bg-background">
           <div className="flex flex-col gap-8">
             <section className="container mx-auto p-8">
               <h2
@@ -146,14 +146,111 @@ export default function About() {
             />
           </div>
 
-          <section className="container mx-auto space-y-8 p-8">
-            <h2
+          <div className="bg-coffee-50">
+            <section className="container mx-auto grid grid-cols-1 gap-8 p-8 pb-16 lg:grid-cols-3">
+              <h2 className="col-span-full py-8 text-7xl font-semibold text-coffee-400">
+                OUR VALUES
+              </h2>
+              {[
+                {
+                  name: "FAMILY",
+                  image: "https://placehold.co/200x200/?text=Image",
+                },
+                {
+                  name: "FAITHFULNESS",
+                  image: "https://placehold.co/200x200/?text=Image",
+                },
+                {
+                  name: "SERVICE",
+                  image: "https://placehold.co/200x200/?text=Image",
+                },
+                {
+                  name: "RELATIONSHIPS",
+                  image: "https://placehold.co/200x200/?text=Image",
+                },
+                {
+                  name: "RESPECT",
+                  image: "https://placehold.co/200x200/?text=Image",
+                },
+              ].map(({ name, image }) => {
+                return (
+                  <div
+                    key={name}
+                    className="col-span-1 flex flex-col items-center justify-center gap-4"
+                  >
+                    <img
+                      src={image}
+                      alt="service"
+                      className="size-80 rounded-full"
+                    />
+                    <span className="relative text-4xl font-semibold uppercase">
+                      {name}
+                      <span className="absolute -bottom-1 left-0 h-1 w-[25%] bg-coffee-400"></span>
+                    </span>
+                  </div>
+                );
+              })}
+            </section>
+          </div>
+
+          <section className="container mx-auto space-y-16 p-8">
+            <div
               id="our-team"
-              className="mb-8 text-7xl font-semibold text-coffee-400"
+              className="col-span-full space-y-8 py-8 font-semibold uppercase text-coffee-400"
             >
-              Meet Our Team
-            </h2>
+              <h2 className="text-[80px] leading-none">Meet Our Team</h2>
+              <h3 className="text-center text-7xl">Board Of Trustees</h3>
+            </div>
+
+            <div className="grid grid-cols-1 gap-32 md:grid-cols-5">
+              <img
+                src="https://placehold.co/200x200/?text=Image"
+                alt="chairman"
+                className="col-span-2 w-full rounded-full object-cover"
+              />
+
+              <div className="col-span-3 flex flex-col items-center gap-8">
+                <h3 className="flex flex-col gap-4 text-center font-semibold text-coffee-400">
+                  <span className="text-6xl">Daniel Iose</span>
+                  <span className="text-4xl">Chairman</span>
+                </h3>
+                <p className="text-xl">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque elit sem, pharetra ut semper sit amet,
+                  consectetur vel lectus. Pellentesque maximus sed nunc eget
+                  dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc
+                  ultrices at.
+                  <br />
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque elit sem, pharetra ut semper sit amet,
+                  consectetur vel lectus. Pellentesque maximus sed nunc eget
+                  dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc
+                  ultrices at.  
+                </p>
+              </div>
+
+              <div className="col-span-full grid grid-cols-4 gap-8">
+                {Array(4)
+                  .fill("https://placehold.co/200x200/?text=Image")
+                  .map((_, i) => {
+                    return (
+                      <img
+                        key={i}
+                        src="https://placehold.co/200x200/?text=Image"
+                        alt="chairman"
+                        className="col-span-1 w-full rounded-full object-cover"
+                      />
+                    );
+                  })}
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+              <h3 className="col-span-full text-center text-7xl font-semibold text-coffee-400">
+                Our Staff
+              </h3>
+
               {[
                 {
                   src: "/Mutsuo_Hatakeyama.png",
@@ -173,7 +270,7 @@ export default function About() {
                 },
               ].map((member) => (
                 <div key={member.name} className="group space-y-8 text-center">
-                  <div className="group-even:bg-mint-500 col-span-1 flex aspect-square items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50">
+                  <div className="col-span-1 flex aspect-square items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
                     <img
                       src={member.src}
                       alt={member.name}
@@ -185,6 +282,7 @@ export default function About() {
               ))}
             </div>
           </section>
+
           <Footer />
         </div>
       </div>
