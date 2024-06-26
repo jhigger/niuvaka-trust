@@ -29,11 +29,9 @@ export default function Home() {
 
         <div className="flex flex-col gap-4 bg-coffee-400 pb-16">
           <section className="container mx-auto grid grid-cols-1 gap-8 p-8 lg:grid-cols-12">
-            <h2 className="col-span-full grid grid-cols-8 gap-8 py-8 text-[80px] font-semibold leading-none text-coffee-50">
-              <span className="col-span-full">Nau mai, haere mai.</span>
-              <span className="col-span-full md:col-start-2">
-                Welcome to Niuvaka Trust!
-              </span>
+            <h2 className="col-span-full flex flex-col gap-8 py-8 text-[80px] font-semibold leading-none text-coffee-50">
+              <span>Nau mai, haere mai.</span>
+              <span className="text-center">Welcome to Niuvaka Trust!</span>
             </h2>
 
             <p className="col-span-10 text-3xl font-medium leading-[45px]">

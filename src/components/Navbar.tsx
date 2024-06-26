@@ -38,16 +38,12 @@ const links = [
     href: "/services",
     subLinks: [
       {
-        name: "Service 1",
-        href: "/services#service-1",
+        name: "Our Services",
+        href: "/services#our-services",
       },
       {
-        name: "Service 2",
-        href: "/services#service-2",
-      },
-      {
-        name: "Service 3",
-        href: "/services#service-3",
+        name: "Our Programmes",
+        href: "/services#our-programmes",
       },
     ],
   },
