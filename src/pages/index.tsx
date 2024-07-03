@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "~/components/Footer";
 import LatestEvents from "~/components/LatestEvents";
 import Mission from "~/components/Mission";
@@ -6,6 +7,7 @@ import Navbar from "~/components/Navbar";
 import Partners from "~/components/Partners";
 import Testimonials from "~/components/Testimonials";
 import { Button } from "~/components/ui/button";
+import { services } from "~/lib/constants";
 
 export default function Home() {
   return (
@@ -47,10 +49,11 @@ export default function Home() {
 
             <div className="col-span-3 flex items-center justify-center">
               <Button
+                asChild
                 size="lg"
                 className="size-48 rounded-full text-3xl font-semibold text-coffee-400"
               >
-                Read More
+                <Link href="/about">Read More</Link>
               </Button>
             </div>
           </section>
@@ -62,31 +65,24 @@ export default function Home() {
           <h2 className="col-span-full py-8 text-7xl font-semibold">
             Our Services
           </h2>
-          {[
-            {
-              name: "Service 1",
-              image: "https://placehold.co/200x200/?text=Image",
-            },
-            {
-              name: "Service 2",
-              image: "https://placehold.co/200x200/?text=Image",
-            },
-            {
-              name: "Service 3",
-              image: "https://placehold.co/200x200/?text=Image",
-            },
-          ].map(({ name, image }) => {
+          {services.map(({ name, image, description, id }) => {
             return (
               <div
                 key={name}
-                className="col-span-1 flex flex-col items-center justify-center gap-4"
+                className="group col-span-1 flex flex-col items-center justify-center gap-4 overflow-hidden"
               >
                 <img
                   src={image}
                   alt="service"
-                  className="size-80 rounded-full"
+                  className="size-80 rounded-full transition-all duration-500 ease-in-out group-hover:size-40"
                 />
                 <span className="text-3xl font-semibold">{name}</span>
+                <div className="h-0 space-y-8 pb-8 text-center opacity-0 transition-all delay-200 group-hover:block group-hover:h-max group-hover:opacity-100">
+                  <p className="line-clamp-3">{description}</p>
+                  <Button asChild className="w-max rounded-full px-8 py-6">
+                    <Link href={`/services#${id}`}>Read More</Link>
+                  </Button>
+                </div>
               </div>
             );
           })}

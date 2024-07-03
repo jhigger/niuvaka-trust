@@ -3,6 +3,7 @@ import Footer from "~/components/Footer";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
 import { StickyScroll } from "~/components/ui/sticky-scroll-reveal";
+import { staff, values } from "~/lib/constants";
 
 export default function About() {
   return (
@@ -151,42 +152,24 @@ export default function About() {
               <h2 className="col-span-full py-8 text-7xl font-semibold text-coffee-400">
                 OUR VALUES
               </h2>
-              {[
-                {
-                  name: "FAMILY",
-                  image: "https://placehold.co/200x200/?text=Image",
-                },
-                {
-                  name: "FAITHFULNESS",
-                  image: "https://placehold.co/200x200/?text=Image",
-                },
-                {
-                  name: "SERVICE",
-                  image: "https://placehold.co/200x200/?text=Image",
-                },
-                {
-                  name: "RELATIONSHIPS",
-                  image: "https://placehold.co/200x200/?text=Image",
-                },
-                {
-                  name: "RESPECT",
-                  image: "https://placehold.co/200x200/?text=Image",
-                },
-              ].map(({ name, image }) => {
+              {values.map(({ name, image, description }) => {
                 return (
                   <div
                     key={name}
-                    className="col-span-1 flex flex-col items-center justify-center gap-4"
+                    className="group col-span-1 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[30px] px-8 hover:bg-background"
                   >
                     <img
                       src={image}
                       alt="service"
-                      className="size-80 rounded-full"
+                      className="size-80 rounded-full transition-all duration-200 ease-in-out group-hover:size-0"
                     />
-                    <span className="relative text-4xl font-semibold uppercase">
+                    <span className="relative mb-1 text-4xl font-semibold uppercase transition-all duration-200 ease-in-out group-hover:-translate-y-full">
                       {name}
                       <span className="absolute -bottom-1 left-0 h-1 w-[25%] bg-coffee-400"></span>
                     </span>
+                    <p className="hidden text-2xl font-medium transition-all duration-200 ease-in-out group-hover:block">
+                      {description}
+                    </p>
                   </div>
                 );
               })}
@@ -251,33 +234,20 @@ export default function About() {
                 Our Staff
               </h3>
 
-              {[
-                {
-                  src: "/Mutsuo_Hatakeyama.png",
-                  name: "Mutsuo Hatakeyama",
-                },
-                {
-                  src: "/Aumetua_Lackey.png",
-                  name: "Aumetua Lackey",
-                },
-                {
-                  src: "/Andrew_Mulitalo.png",
-                  name: "Andrew Mulitalo",
-                },
-                {
-                  src: "/Waimarama_Albert.png",
-                  name: "Waimarama Albert",
-                },
-              ].map((member) => (
-                <div key={member.name} className="group space-y-8 text-center">
+              {staff.map(({ image, name, role, description }) => (
+                <div key={name} className="group space-y-2 text-center">
                   <div className="col-span-1 flex aspect-square items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
                     <img
-                      src={member.src}
-                      alt={member.name}
+                      src={image}
+                      alt={name}
                       className="size-full object-cover object-center"
                     />
                   </div>
-                  <span>{member.name}</span>
+                  <div className="h-0 overflow-hidden transition-all duration-200 ease-in-out group-hover:h-full">
+                    <div className="text-2xl font-bold">{name}</div>
+                    <div className="text-2xl font-medium">{role}</div>
+                    <div className="text-2xl font-normal">{description}</div>
+                  </div>
                 </div>
               ))}
             </div>

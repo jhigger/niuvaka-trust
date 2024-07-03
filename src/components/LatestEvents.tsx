@@ -21,16 +21,19 @@ const LatestEvents = () => {
       <h2 className="p-8 text-center text-6xl font-bold text-coffee-400">
         Latest Events and Opportunities
       </h2>
-      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 transition-all duration-500 ease-in-out lg:grid-cols-3">
         {items.map((item, i) => (
-          <div key={i} className="relative overflow-hidden rounded-2xl">
+          <div
+            key={i}
+            className="group relative h-full overflow-hidden rounded-2xl transition-all duration-500 ease-in-out hover:h-[150%]"
+          >
             <img
               src={item.image}
               alt="partner"
               className="size-full object-cover object-center"
             />
 
-            <div className="absolute bottom-0 flex w-full items-center justify-center bg-gradient-to-t from-coffee-700/25 to-transparent p-8">
+            <div className="absolute bottom-0 flex w-full items-center justify-center bg-gradient-to-t from-coffee-700/25 to-transparent p-8 transition-all delay-150 duration-100 ease-linear group-hover:bottom-1/3 group-hover:bg-none">
               <Button size="lg">Read More</Button>
             </div>
           </div>

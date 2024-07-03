@@ -1,7 +1,9 @@
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
+import { services as serviceItems } from "~/lib/constants";
 
 const services = () => {
   return (
@@ -41,29 +43,11 @@ const services = () => {
               </h2>
 
               <div className="flex flex-col gap-8">
-                {[
-                  {
-                    image: "https://placehold.co/200x200/?text=Image",
-                    name: "NAVIGATION SERVICES",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
-                  },
-                  {
-                    image: "https://placehold.co/200x200/?text=Image",
-                    name: "OUTREACH SERVICES",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
-                  },
-                  {
-                    image: "https://placehold.co/200x200/?text=Image",
-                    name: "SOCIAL SERVICES",
-                    description:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
-                  },
-                ].map(({ image, name, description }) => {
+                {serviceItems.map(({ image, name, description, id }) => {
                   return (
                     <div
-                      key={name}
+                      key={id}
+                      id={id}
                       className="grid grid-cols-1 gap-24 p-12 lg:grid-cols-5"
                     >
                       <img
@@ -78,8 +62,11 @@ const services = () => {
                         <p className="whitespace-pre-wrap text-xl">
                           {description}
                         </p>
-                        <Button className="w-max self-end rounded-full px-8 py-6">
-                          Contact Us
+                        <Button
+                          asChild
+                          className="w-max self-end rounded-full px-8 py-6"
+                        >
+                          <Link href="/contact">Contact Us</Link>
                         </Button>
                       </div>
                     </div>
@@ -93,7 +80,7 @@ const services = () => {
                 id="our-programmes"
                 className="mb-8 text-7xl font-bold text-black"
               >
-                Our Services
+                Our Programmes
               </h2>
 
               <div className="flex flex-col gap-8">

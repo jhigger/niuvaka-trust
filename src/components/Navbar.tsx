@@ -13,6 +13,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import { services } from "~/lib/constants";
 
 const links = [
   {
@@ -37,10 +38,10 @@ const links = [
     name: "Services",
     href: "/services",
     subLinks: [
-      {
-        name: "Our Services",
-        href: "/services#our-services",
-      },
+      ...services.map(({ name, id: href }) => ({
+        name,
+        href: `/services#${href}`,
+      })),
       {
         name: "Our Programmes",
         href: "/services#our-programmes",

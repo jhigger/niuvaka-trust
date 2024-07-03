@@ -88,12 +88,20 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        "scrolling-header": {
+          "0%": { top: "0em" },
+          "20%": { top: "0em" },
+          "50%": { top: "-1.3em" },
+          "80%": { top: "-2.5em" },
+          "100%": { top: "0em" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "scrolling-header": "scrolling-header 6s forwards infinite",
       },
     },
   },
