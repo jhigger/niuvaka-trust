@@ -2,6 +2,7 @@ import { useScroll } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { links } from "~/lib/constants";
 import { cn } from "~/lib/utils";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
@@ -13,60 +14,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
-import { services } from "~/lib/constants";
-
-const links = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-    subLinks: [
-      {
-        name: "Who are we?",
-        href: "/about#who-are-we",
-      },
-      {
-        name: "Our Team",
-        href: "/about#our-team",
-      },
-    ],
-  },
-  {
-    name: "Services",
-    href: "/services",
-    subLinks: [
-      ...services.map(({ name, id: href }) => ({
-        name,
-        href: `/services#${href}`,
-      })),
-      {
-        name: "Our Programmes",
-        href: "/services#our-programmes",
-      },
-    ],
-  },
-  {
-    name: "News",
-    href: "/news",
-    subLinks: [
-      {
-        name: "Latest News",
-        href: "/news#latest-news",
-      },
-      {
-        name: "Events",
-        href: "/news#events",
-      },
-    ],
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
-];
 
 type NavbarProps = {
   size?: "default" | "lg";

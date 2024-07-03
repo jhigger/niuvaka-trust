@@ -118,3 +118,67 @@ export const staff = [
       "Rarotonga me Aitutaki i te Kuki Airani, Ngāti Kahungunu, Rongomaiwāhine",
   },
 ];
+
+export const links = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+    subLinks: [
+      {
+        name: "Who are we?",
+        href: "/about#who-are-we",
+      },
+      {
+        name: "Our Team",
+        href: "/about#our-team",
+      },
+    ],
+  },
+  {
+    name: "Services",
+    href: "/services",
+    subLinks: [
+      ...services.map(({ name, id: href }) => ({
+        name,
+        href: `/services#${href}`,
+      })),
+      {
+        name: "Our Programmes",
+        href: "/services#our-programmes",
+      },
+    ],
+  },
+  {
+    name: "News",
+    href: "/news",
+    subLinks: [
+      {
+        name: "Latest News",
+        href: "/news#latest-news",
+      },
+      {
+        name: "Events",
+        href: "/news#events",
+      },
+    ],
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
+
+export const socials = [
+  {
+    name: "Facebook",
+    href: "https://web.facebook.com/NiuvakaTrust",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/trustniuvaka",
+  },
+];
