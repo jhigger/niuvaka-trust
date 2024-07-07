@@ -9,7 +9,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Niuvaka Trust - Contact</title>
+        <title>Contact - Niuvaka Trust</title>
         <meta
           name="description"
           content="Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability."
@@ -38,7 +38,7 @@ const contact = () => {
           <div className="relative flex flex-col gap-8">
             <section className="container mx-auto space-y-8 p-8">
               <h2 className="relative h-24 overflow-hidden text-8xl font-bold text-black ">
-                <div className="animate-scrolling-header absolute flex flex-col gap-4">
+                <div className="absolute flex animate-scrolling-header flex-col gap-4">
                   <span>Contact</span>
                   <span className="text-coffee-400">Faafesootai matou</span>
                   <span className="text-[#3390B3]">Fetu&#699;utaki ki ai</span>

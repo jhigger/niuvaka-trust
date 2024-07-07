@@ -11,7 +11,7 @@ export const StickyScroll = ({
   content: {
     title: string;
     description: React.ReactNode;
-    src: string;
+    image: string;
   }[];
   contentClassName?: string;
 }) => {
@@ -79,14 +79,14 @@ export const StickyScroll = ({
       >
         {(
           <motion.img
-            key={content[activeCard]!.src}
+            key={content[activeCard]!.image}
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
             }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeIn" }}
-            src={content[activeCard]!.src}
+            src={content[activeCard]!.image}
             alt={content[activeCard]!.title}
             className="size-full object-cover object-center"
           />

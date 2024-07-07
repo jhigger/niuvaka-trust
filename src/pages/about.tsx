@@ -3,13 +3,13 @@ import Footer from "~/components/Footer";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
 import { StickyScroll } from "~/components/ui/sticky-scroll-reveal";
-import { staff, values } from "~/lib/constants";
+import { abouts, staff, values } from "~/lib/constants";
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>Niuvaka Trust - About</title>
+        <title>About - Niuvaka Trust</title>
         <meta
           name="description"
           content="Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability."
@@ -124,26 +124,7 @@ export default function About() {
             </section>
 
             <StickyScroll
-              content={[
-                {
-                  title: "OUR MISSION",
-                  description:
-                    "Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability",
-                  src: "/mission.jpg",
-                },
-                {
-                  title: "OUR VISION",
-                  description:
-                    "Tagata Pasifika: Thriving, Flourishing, Resilient",
-                  src: "/vision.jpeg",
-                },
-                {
-                  title: "OUR PURPOSE",
-                  description:
-                    "To work with Tagata Pasifika, Pasifika communities, and Pasifika families for the realisation of their aspirations",
-                  src: "/purpose.jpeg",
-                },
-              ]}
+              content={abouts}
             />
           </div>
 

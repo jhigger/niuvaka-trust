@@ -9,7 +9,7 @@ const services = () => {
   return (
     <>
       <Head>
-        <title>Niuvaka Trust - Services</title>
+        <title>Services - Niuvaka Trust</title>
         <meta
           name="description"
           content="Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability."
@@ -124,9 +124,9 @@ const services = () => {
                 })}
               </div>
             </section>
-
-            <Footer />
           </div>
+
+          <Footer />
         </div>
       </div>
     </>

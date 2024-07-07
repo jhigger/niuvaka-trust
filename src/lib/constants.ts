@@ -182,3 +182,38 @@ export const socials = [
     href: "https://www.instagram.com/trustniuvaka",
   },
 ];
+
+export const events = [
+  {
+    image: "https://placehold.co/200x200/?text=Image",
+    href: "#",
+  },
+  {
+    image: "https://placehold.co/200x200/?text=Image",
+    href: "#",
+  },
+  {
+    image: "https://placehold.co/200x200/?text=Image",
+    href: "#",
+  },
+];
+
+export const abouts = [
+  {
+    title: "OUR MISSION",
+    description:
+      "Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability",
+    image: "/mission.jpg",
+  },
+  {
+    title: "OUR VISION",
+    description: "Tagata Pasifika: Thriving, Flourishing, Resilient",
+    image: "/vision.jpeg",
+  },
+  {
+    title: "OUR PURPOSE",
+    description:
+      "To work with Tagata Pasifika, Pasifika communities, and Pasifika families for the realisation of their aspirations",
+    image: "/purpose.jpeg",
+  },
+];

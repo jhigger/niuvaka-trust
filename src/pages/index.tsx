@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Footer from "~/components/Footer";
 import LatestEvents from "~/components/LatestEvents";
-import Mission from "~/components/Mission";
+import MissionVisionPurpose from "~/components/MissionVisionPurpose";
 import Navbar from "~/components/Navbar";
 import Partners from "~/components/Partners";
 import Testimonials from "~/components/Testimonials";
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Niuvaka Trust</title>
+        <title>Home - Niuvaka Trust</title>
         <meta
           name="description"
           content="Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability."
@@ -51,14 +51,14 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="size-48 rounded-full text-3xl font-semibold text-coffee-400"
+                className="size-48 rounded-full text-3xl font-semibold text-coffee-400 hover:bg-[#3390B3]"
               >
                 <Link href="/about">Read More</Link>
               </Button>
             </div>
           </section>
 
-          <Mission />
+          <MissionVisionPurpose />
         </div>
 
         <section className="container mx-auto grid grid-cols-1 gap-8 p-8 lg:grid-cols-3">

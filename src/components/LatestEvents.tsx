@@ -1,28 +1,18 @@
+import { events } from "~/lib/constants";
 import { Button } from "./ui/button";
 
-const items = [
-  {
-    image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
-  },
-  {
-    image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
-  },
-  {
-    image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
-  },
-];
+type LatestEventsProps = { title?: string };
 
-const LatestEvents = () => {
+const LatestEvents = ({
+  title = "Latest Events and Opportunities",
+}: LatestEventsProps) => {
   return (
     <section className="container mx-auto space-y-8 p-8">
       <h2 className="p-8 text-center text-6xl font-bold text-coffee-400">
-        Latest Events and Opportunities
+        {title}
       </h2>
       <div className="grid grid-cols-1 gap-8 transition-all duration-500 ease-in-out lg:grid-cols-3">
-        {items.map((item, i) => (
+        {events.map((item, i) => (
           <div
             key={i}
             className="group relative h-full overflow-hidden rounded-2xl transition-all duration-500 ease-in-out hover:h-[150%]"
