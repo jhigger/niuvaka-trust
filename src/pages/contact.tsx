@@ -49,8 +49,10 @@ const contact = () => {
                 <div className="col-span-3">
                   <h3 className="mb-4 text-5xl font-bold">Our Location</h3>
                   <p className="text-2xl font-medium">
-                    Level 1, 59 Queen Street, Palmerston North Central,
-                    <br /> Palmerston North 4410, New Zealand
+                    Level 1, 59 Queen Street, <br className="block lg:hidden" />{" "}
+                    Palmerston North Central,
+                    <br /> Palmerston North 4410,{" "}
+                    <br className="block lg:hidden" /> New Zealand
                   </p>
                   <iframe
                     className="my-4 h-[500px] w-full rounded-3xl border-2 border-black"

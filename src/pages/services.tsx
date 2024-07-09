@@ -26,7 +26,7 @@ const services = () => {
               alt="hero"
               className="size-full object-cover"
             />
-            <span className="absolute bottom-28 left-16 text-8xl font-bold text-black">
+            <span className="absolute bottom-28 left-8 text-6xl font-bold text-black md:left-16 md:text-8xl">
               Our Services And Programmes
             </span>
           </div>
@@ -37,7 +37,7 @@ const services = () => {
             <section className="container mx-auto p-8">
               <h2
                 id="our-services"
-                className="mb-8 text-7xl font-bold text-black"
+                className="mb-8 text-5xl font-bold text-black md:text-7xl"
               >
                 Our Services
               </h2>
@@ -56,7 +56,7 @@ const services = () => {
                         className="col-span-2 w-full rounded-full object-cover"
                       />
                       <div className="col-span-3 flex flex-col gap-12">
-                        <h3 className="text-6xl font-semibold uppercase text-black">
+                        <h3 className="text-4xl font-semibold uppercase text-black md:text-6xl">
                           {name}
                         </h3>
                         <p className="whitespace-pre-wrap text-xl">
@@ -78,7 +78,7 @@ const services = () => {
             <section className="container mx-auto p-8">
               <h2
                 id="our-programmes"
-                className="mb-8 text-7xl font-bold text-black"
+                className="mb-8 text-5xl font-bold text-black md:text-7xl"
               >
                 Our Programmes
               </h2>
@@ -109,7 +109,7 @@ const services = () => {
                         className="col-span-2 w-full rounded-full object-cover"
                       />
                       <div className="col-span-3 flex flex-col gap-12">
-                        <h3 className="text-6xl font-semibold uppercase text-black">
+                        <h3 className="text-4xl font-semibold uppercase text-black md:text-6xl">
                           {name}
                         </h3>
                         <p className="whitespace-pre-wrap text-xl">

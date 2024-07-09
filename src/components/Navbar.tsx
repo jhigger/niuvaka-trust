@@ -14,6 +14,15 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "./ui/navigation-menu";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 type NavbarProps = {
   size?: "default" | "lg";
@@ -36,7 +45,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
     <header className="fixed top-0 z-50 w-full bg-coffee-50">
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between gap-32 transition-all duration-200 ease-in-out",
+          "container mx-auto flex items-center justify-between gap-16 transition-all duration-200 ease-in-out md:gap-32",
           size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
@@ -48,12 +57,48 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
               crossed && "my-4 size-16",
             )}
           />
-          <h1 className="max-w-64 font-serif text-lg font-bold italic leading-tight">
+          <h1 className="hidden max-w-64 font-serif text-lg font-bold italic leading-tight lg:block">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </h1>
         </div>
 
-        <NavigationMenu>
+        <Sheet>
+          <SheetTrigger>
+            <Menu className="lg:hidden" size={40} />
+          </SheetTrigger>
+          <SheetContent className="bg-coffee-50">
+            <SheetHeader className="space-y-4 text-left">
+              {links.map((link) => {
+                return (
+                  <SheetTitle key={link.name} className="space-y-4 text-3xl">
+                    <Button
+                      asChild
+                      variant="ghost"
+                      className={cn(path === link.href && "bg-[#f5f5f5]")}
+                    >
+                      <Link href={link.href}>{link.name}</Link>
+                    </Button>
+                    <SheetDescription className="flex flex-col gap-4 indent-12 text-xl">
+                      {Array.isArray(link.subLinks) &&
+                        link.subLinks.length > 0 &&
+                        link.subLinks.map((subLink) => (
+                          <Link
+                            key={subLink.name}
+                            href={subLink.href}
+                            className="text-neutral-foreground"
+                          >
+                            {subLink.name}
+                          </Link>
+                        ))}
+                    </SheetDescription>
+                  </SheetTitle>
+                );
+              })}
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+
+        <NavigationMenu className="hidden lg:block">
           <NavigationMenuList className="flex w-full items-center justify-between gap-8">
             {links.map((link) => {
               if (link.subLinks) {

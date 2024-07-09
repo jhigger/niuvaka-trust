@@ -37,18 +37,18 @@ export default function About() {
             <section className="container mx-auto p-8">
               <h2
                 id="who-are-we"
-                className="mb-8 text-7xl font-semibold text-coffee-400"
+                className="mb-8 text-6xl font-semibold text-coffee-400 lg:text-7xl"
               >
                 Who is Niuvaka Trust?
               </h2>
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                <p className="col-span-1 text-3xl md:col-span-2">
+                <p className="col-span-1 text-2xl md:col-span-2 lg:text-3xl">
                   The Niuvaka journey started in August 2020, and is the coming
                   together of prominent Pasifika innovators, both locally and
                   from across Aotearoa, to cultivate a culture of positive
                   change and transformation for <b>Pasifika Communities</b>.
                 </p>
-                <div className="col-span-1 row-span-2">
+                <div className="col-span-1 row-span-2 hidden lg:block">
                   <Logo className="h-max w-full" />
                 </div>
 
@@ -89,10 +89,10 @@ export default function About() {
             </section>
 
             <section className="container mx-auto space-y-8 p-8 text-center">
-              <h3 className="text-6xl font-semibold text-coffee-400">
+              <h3 className="text-5xl font-semibold text-coffee-400 lg:text-6xl">
                 TAGATA PASIFIKA, TANGATA WHENUA & TE TIRITI O WAITANGI
               </h3>
-              <p className="text-2xl">
+              <p className="text-xl lg:text-2xl">
                 Iwi-Māori and Pacific Peoples have many historical bonds and
                 connections including genealogy, kinship, traditions, and
                 beliefs, as well as navigating and traversing Te Moana nui o
@@ -108,10 +108,10 @@ export default function About() {
                 young people being of Tangata Whenua descent.
               </p>
 
-              <h3 className="text-6xl font-semibold text-coffee-400">
+              <h3 className="text-5xl font-semibold text-coffee-400 lg:text-6xl">
                 PASIFIKA DIVERSITY
               </h3>
-              <p className="text-2xl">
+              <p className="text-xl lg:text-2xl">
                 Pacific Peoples or Tagata Pasifika are umbrella terms, among
                 others, used to describe the multitude of island territories and
                 nations across the South Pacific Ocean, yet each nation has its
@@ -123,32 +123,30 @@ export default function About() {
               </p>
             </section>
 
-            <StickyScroll
-              content={abouts}
-            />
+            <StickyScroll content={abouts} />
           </div>
 
           <div className="bg-coffee-50">
             <section className="container mx-auto grid grid-cols-1 gap-8 p-8 pb-16 lg:grid-cols-3">
-              <h2 className="col-span-full py-8 text-7xl font-semibold text-coffee-400">
+              <h2 className="col-span-full py-8 text-center text-6xl font-semibold text-coffee-400 lg:text-left lg:text-7xl">
                 OUR VALUES
               </h2>
               {values.map(({ name, image, description }) => {
                 return (
                   <div
                     key={name}
-                    className="group col-span-1 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[30px] px-8 hover:bg-background"
+                    className="group col-span-1 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[30px] px-8 lg:hover:bg-background"
                   >
                     <img
                       src={image}
                       alt="service"
-                      className="size-80 rounded-full transition-all duration-200 ease-in-out group-hover:size-0"
+                      className="rounded-full transition-all duration-200 ease-in-out lg:size-80 lg:group-hover:size-0"
                     />
-                    <span className="relative mb-1 text-4xl font-semibold uppercase transition-all duration-200 ease-in-out group-hover:-translate-y-full">
+                    <span className="relative mb-1 text-4xl font-semibold uppercase transition-all duration-200 ease-in-out lg:group-hover:-translate-y-full">
                       {name}
                       <span className="absolute -bottom-1 left-0 h-1 w-[25%] bg-coffee-400"></span>
                     </span>
-                    <p className="hidden text-2xl font-medium transition-all duration-200 ease-in-out group-hover:block">
+                    <p className="text-center text-2xl font-medium transition-all duration-200 ease-in-out lg:hidden lg:text-left lg:group-hover:block">
                       {description}
                     </p>
                   </div>
@@ -162,18 +160,22 @@ export default function About() {
               id="our-team"
               className="col-span-full space-y-8 py-8 font-semibold uppercase text-coffee-400"
             >
-              <h2 className="text-[80px] leading-none">Meet Our Team</h2>
-              <h3 className="text-center text-7xl">Board Of Trustees</h3>
+              <h2 className="text-6xl leading-none lg:text-[80px]">
+                Meet Our Team
+              </h2>
+              <h3 className="text-center text-6xl lg:text-7xl">
+                Board Of Trustees
+              </h3>
             </div>
 
-            <div className="grid grid-cols-1 gap-32 md:grid-cols-5">
+            <div className="grid grid-cols-1 gap-16 md:grid-cols-5 md:gap-32">
               <img
                 src="https://placehold.co/200x200/?text=Image"
                 alt="chairman"
-                className="col-span-2 w-full rounded-full object-cover"
+                className="col-span-full w-full rounded-full object-cover md:col-span-2"
               />
 
-              <div className="col-span-3 flex flex-col items-center gap-8">
+              <div className="col-span-full flex flex-col items-center gap-8 md:col-span-3">
                 <h3 className="flex flex-col gap-4 text-center font-semibold text-coffee-400">
                   <span className="text-6xl">Daniel Iose</span>
                   <span className="text-4xl">Chairman</span>
@@ -194,7 +196,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="col-span-full grid grid-cols-4 gap-8">
+              <div className="col-span-full grid grid-cols-1 gap-8 md:grid-cols-4">
                 {Array(4)
                   .fill("https://placehold.co/200x200/?text=Image")
                   .map((_, i) => {
@@ -203,7 +205,7 @@ export default function About() {
                         key={i}
                         src="https://placehold.co/200x200/?text=Image"
                         alt="chairman"
-                        className="col-span-1 w-full rounded-full object-cover"
+                        className="col-span-1 h-full w-full rounded-full object-cover"
                       />
                     );
                   })}

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "~/components/Footer";
-import LatestEvents from "~/components/LatestEvents";
+import Events from "~/components/Events";
 import Navbar from "~/components/Navbar";
 
 const news = () => {
@@ -18,16 +18,16 @@ const news = () => {
         <Navbar />
 
         <div className="container mx-auto mt-52 py-20">
-          <h1 className="text-8xl font-bold text-black">
+          <h1 className="text-6xl font-bold text-black md:text-8xl">
             Events and Opportunities
           </h1>
         </div>
 
         <div className="relative bg-background">
-          <section className="container mx-auto p-16">
+          <section className="container mx-auto p-8 md:p-16">
             <h2
-              id="our-services"
-              className="mb-8 text-7xl font-bold text-coffee-400"
+              id="latest-news"
+              className="mb-8 text-center text-5xl font-bold text-coffee-400 md:text-7xl lg:text-left"
             >
               Our Latest Events
             </h2>
@@ -36,13 +36,14 @@ const news = () => {
               <img
                 src="https://via.placeholder.com/500x700?text=Image"
                 alt="event"
+                className="rounded-xl object-cover object-center"
               />
               <div className="flex flex-col gap-8 self-start">
-                <h3 className="text-5xl font-semibold">
+                <h3 className="text-center text-3xl font-semibold md:text-5xl lg:text-left">
                   What our vuvale are signing up for when registering for Poly
                   Paddles.
                 </h3>
-                <div className="flex flex-col gap-4 whitespace-nowrap text-2xl">
+                <div className="flex flex-col gap-4 text-2xl md:whitespace-nowrap">
                   <div>
                     <strong className="text-3xl font-medium">
                       Register Now{" "}
@@ -83,7 +84,7 @@ const news = () => {
           </section>
         </div>
 
-        <LatestEvents title="Upcoming Events" />
+        <Events title="Upcoming Events" />
 
         <Footer />
       </div>

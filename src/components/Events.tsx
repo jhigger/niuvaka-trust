@@ -1,14 +1,15 @@
 import { events } from "~/lib/constants";
 import { Button } from "./ui/button";
 
-type LatestEventsProps = { title?: string };
+type EventsProps = { title?: string };
 
-const LatestEvents = ({
-  title = "Latest Events and Opportunities",
-}: LatestEventsProps) => {
+const Events = ({ title = "Latest Events and Opportunities" }: EventsProps) => {
   return (
     <section className="container mx-auto space-y-8 p-8">
-      <h2 className="p-8 text-center text-6xl font-bold text-coffee-400">
+      <h2
+        id="events"
+        className="p-8 text-center text-4xl font-bold text-coffee-400 md:text-6xl"
+      >
         {title}
       </h2>
       <div className="grid grid-cols-1 gap-8 transition-all duration-500 ease-in-out lg:grid-cols-3">
@@ -33,4 +34,4 @@ const LatestEvents = ({
   );
 };
 
-export default LatestEvents;
+export default Events;
