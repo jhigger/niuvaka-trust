@@ -48,7 +48,7 @@ const services = () => {
                     <div
                       key={id}
                       id={id}
-                      className="grid grid-cols-1 gap-24 p-12 lg:grid-cols-5"
+                      className="grid grid-cols-1 gap-16 p-12 lg:grid-cols-5"
                     >
                       <img
                         src={image}

@@ -12,11 +12,11 @@ const Events = ({ title = "Latest Events and Opportunities" }: EventsProps) => {
       >
         {title}
       </h2>
-      <div className="grid grid-cols-1 gap-8 transition-all duration-500 ease-in-out lg:grid-cols-3">
+      <div className="relative grid h-full grid-cols-1 gap-8 lg:grid-cols-3">
         {events.map((item, i) => (
           <div
             key={i}
-            className="group relative h-full overflow-hidden rounded-2xl transition-all duration-500 ease-in-out hover:h-[150%]"
+            className="group relative h-max overflow-hidden rounded-2xl transition-all duration-300 ease-in-out hover:h-[615px]"
           >
             <img
               src={item.image}
@@ -24,7 +24,7 @@ const Events = ({ title = "Latest Events and Opportunities" }: EventsProps) => {
               className="size-full object-cover object-center"
             />
 
-            <div className="absolute bottom-0 flex w-full items-center justify-center bg-gradient-to-t from-coffee-700/25 to-transparent p-8 transition-all delay-150 duration-100 ease-linear group-hover:bottom-1/3 group-hover:bg-none">
+            <div className="absolute bottom-0 flex w-full items-center justify-center bg-gradient-to-t from-coffee-700/25 to-transparent p-8 group-hover:bottom-1/3 group-hover:bg-none">
               <Button size="lg">Read More</Button>
             </div>
           </div>

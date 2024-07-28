@@ -19,7 +19,7 @@ export default function About() {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-52 bg-gradient-to-b from-coffee-50 via-coffee-50 to-background">
+        <section className="mt-52 bg-background">
           <div className="container relative mx-auto h-[600px] max-w-screen-2xl p-0">
             <img
               src="/hero2.png"
@@ -126,32 +126,34 @@ export default function About() {
             <StickyScroll content={abouts} />
           </div>
 
-          <div className="bg-coffee-50">
-            <section className="container mx-auto grid grid-cols-1 gap-8 p-8 pb-16 lg:grid-cols-3">
+          <div className="bg-background">
+            <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-8 p-8 pb-16 lg:grid-cols-3">
               <h2 className="col-span-full py-8 text-center text-6xl font-semibold text-coffee-400 lg:text-left lg:text-7xl">
                 OUR VALUES
               </h2>
-              {values.map(({ name, image, description }) => {
-                return (
-                  <div
-                    key={name}
-                    className="group col-span-1 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[30px] px-8 lg:hover:bg-background"
-                  >
-                    <img
-                      src={image}
-                      alt="service"
-                      className="rounded-full transition-all duration-200 ease-in-out lg:size-80 lg:group-hover:size-0"
-                    />
-                    <span className="relative mb-1 text-4xl font-semibold uppercase transition-all duration-200 ease-in-out lg:group-hover:-translate-y-full">
-                      {name}
-                      <span className="absolute -bottom-1 left-0 h-1 w-[25%] bg-coffee-400"></span>
-                    </span>
-                    <p className="text-center text-2xl font-medium transition-all duration-200 ease-in-out lg:hidden lg:text-left lg:group-hover:block">
-                      {description}
-                    </p>
-                  </div>
-                );
-              })}
+              <div className="col-span-full flex flex-wrap items-center justify-center gap-8">
+                {values.map(({ name, image, description }) => {
+                  return (
+                    <div
+                      key={name}
+                      className="flex-2 group relative col-span-1 flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-[30px] p-8 md:min-w-96 lg:min-h-96 lg:hover:scale-105 lg:hover:bg-coffee-50"
+                    >
+                      <img
+                        src={image}
+                        alt="service"
+                        className="rounded-full transition-all duration-300 ease-in-out lg:w-80 lg:group-hover:w-0"
+                      />
+                      <span className="relative mb-1 text-4xl font-semibold uppercase text-coffee-700 transition-all duration-200 ease-in-out lg:group-hover:-translate-y-full">
+                        {name}
+                        <span className="absolute -bottom-1 left-0 h-1 w-10 bg-coffee-400"></span>
+                      </span>
+                      <p className="-bottom-40 p-6 text-center text-2xl font-medium transition-all delay-150 duration-150 ease-in-out lg:absolute lg:text-left lg:group-hover:bottom-0">
+                        {description}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
             </section>
           </div>
 
@@ -212,7 +214,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               <h3 className="col-span-full text-center text-7xl font-semibold text-coffee-400">
                 Our Staff
               </h3>
@@ -226,7 +228,7 @@ export default function About() {
                       className="size-full object-cover object-center"
                     />
                   </div>
-                  <div className="h-0 overflow-hidden transition-all duration-200 ease-in-out group-hover:h-full">
+                  <div className="h-full max-h-full overflow-hidden transition-all duration-200 ease-in-out group-hover:max-h-full lg:max-h-0">
                     <div className="text-2xl font-bold">{name}</div>
                     <div className="text-2xl font-medium">{role}</div>
                     <div className="text-2xl font-normal">{description}</div>

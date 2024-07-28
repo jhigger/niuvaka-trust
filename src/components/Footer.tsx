@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className="mt-36 bg-coffee-50 py-8 md:p-16">
       <div className="container mx-auto grid grid-cols-1 gap-16 md:grid-cols-6">
-        <div className="col-span-full grid grid-cols-1 gap-8 md:gap-16 lg:mb-16 lg:grid-cols-6">
-          <div className="relative col-span-full md:col-span-4">
+        <div className="col-span-full grid grid-cols-1 gap-8 md:grid-cols-4 lg:mb-16 lg:grid-cols-7">
+          <div className="relative col-span-full lg:col-span-4">
             <div className="text-4xl font-bold uppercase md:text-6xl lg:text-8xl">
               Get in touch
             </div>
             <div className="absolute -bottom-2 left-0 h-px w-3/4 bg-black md:left-24"></div>
           </div>
 
-          <div className="col-span-full flex flex-col justify-center gap-4 md:col-span-1">
+          <div className="col-span-full flex flex-col justify-center gap-4 md:col-span-3 lg:col-span-3 lg:whitespace-nowrap">
             <div className="mt-2 text-3xl font-bold uppercase lg:text-5xl">
               Emergency?
             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-span-3 hidden md:block lg:hidden">
+          <div className="hidden md:col-span-1 md:block lg:col-span-3 lg:hidden">
             <Logo className="h-max w-full" />
           </div>
         </div>

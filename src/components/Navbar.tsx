@@ -1,11 +1,12 @@
 import { useScroll } from "framer-motion";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { links } from "~/lib/constants";
 import { cn } from "~/lib/utils";
 import Logo from "./Logo";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,7 +23,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
-import { Menu } from "lucide-react";
 
 type NavbarProps = {
   size?: "default" | "lg";
@@ -42,15 +42,15 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
   const crossed = y > 300;
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-coffee-50">
+    <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between gap-16 transition-all duration-200 ease-in-out md:gap-32",
+          "container mx-auto flex items-center justify-between gap-4 transition-all duration-200 ease-in-out",
           size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
       >
-        <div className="flex shrink-0 items-center justify-center gap-8">
+        <div className="flex shrink-0 items-center justify-center gap-4">
           <Logo
             className={cn(
               "my-8 transition-all duration-200 ease-in-out",
@@ -66,7 +66,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           <SheetTrigger>
             <Menu className="lg:hidden" size={40} />
           </SheetTrigger>
-          <SheetContent className="bg-coffee-50">
+          <SheetContent className="bg-background">
             <SheetHeader className="space-y-4 text-left">
               {links.map((link) => {
                 return (
@@ -74,7 +74,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                     <Button
                       asChild
                       variant="ghost"
-                      className={cn(path === link.href && "bg-[#f5f5f5]")}
+                      className={cn(path === link.href && "bg-coffee-50")}
                     >
                       <Link href={link.href}>{link.name}</Link>
                     </Button>
@@ -99,26 +99,29 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex w-full items-center justify-between gap-8">
+          <NavigationMenuList className="flex w-full flex-wrap items-center gap-8">
             {links.map((link) => {
               if (link.subLinks) {
                 return (
                   <NavigationMenuItem key={link.name}>
                     <Link href={link.href} legacyBehavior passHref>
                       <NavigationMenuTrigger
-                        className={cn(path === link.href && "bg-[#f5f5f5]")}
+                        className={cn(
+                          cn(buttonVariants({ variant: "ghost" })),
+                          path === link.href && "bg-coffee-50",
+                        )}
                       >
                         {link.name}
                       </NavigationMenuTrigger>
                     </Link>
-                    <NavigationMenuContent className="">
+                    <NavigationMenuContent>
                       <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                         {link.subLinks.map((subLink) => (
                           <ListItem
                             key={subLink.name}
                             href={subLink.href}
                             title={subLink.name}
-                            className="text-neutral-foreground"
+                            className="text-foreground"
                           />
                         ))}
                       </ul>
@@ -133,7 +136,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                     variant="ghost"
                     className={cn(
                       "text-xl text-neutral-foreground",
-                      path === link.href && "bg-[#f5f5f5]",
+                      path === link.href && "bg-coffee-50",
                     )}
                     asChild
                   >
