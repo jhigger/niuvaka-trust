@@ -2,8 +2,7 @@ import Head from "next/head";
 import Footer from "~/components/Footer";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
-import { StickyScroll } from "~/components/ui/sticky-scroll-reveal";
-import { abouts, staff, values } from "~/lib/constants";
+import { staff, values } from "~/lib/constants";
 
 export default function About() {
   return (
@@ -122,8 +121,6 @@ export default function About() {
                 Pasifika.
               </p>
             </section>
-
-            <StickyScroll content={abouts} />
           </div>
 
           <div className="bg-background">
