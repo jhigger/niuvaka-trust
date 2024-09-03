@@ -50,14 +50,14 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           crossed && "pb-0",
         )}
       >
-        <div className="flex shrink-0 items-center justify-center gap-4">
+        <div className="flex shrink-0 items-center justify-center gap-8">
           <Logo
             className={cn(
               "my-8 transition-all duration-200 ease-in-out",
               crossed && "my-4 size-16",
             )}
           />
-          <h1 className="hidden max-w-64 font-serif text-lg font-bold italic leading-tight lg:block">
+          <h1 className="hidden max-w-64 text-lg font-black leading-tight lg:block lg:max-w-full">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </h1>
         </div>
@@ -99,7 +99,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex w-full flex-wrap items-center gap-8">
+          <NavigationMenuList className="flex w-full flex-wrap items-center gap-4">
             {links.map((link) => {
               if (link.subLinks) {
                 return (
@@ -109,6 +109,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                         className={cn(
                           cn(buttonVariants({ variant: "ghost" })),
                           path === link.href && "bg-coffee-50",
+                          "pr-2 text-neutral-foreground",
                         )}
                       >
                         {link.name}

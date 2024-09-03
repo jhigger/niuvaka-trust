@@ -1,22 +1,28 @@
 export const services = [
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/services/navigation.png",
     name: "Navigation Services",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+      "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
     id: "navigation-services",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/services/ola.png",
     name: "Ola Lelei & Kai Services",
-    shortName: "Ola Lelei",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+    id: "ola-lelei-and-kai-services",
+  },
+  {
+    image: "/services/outreach.png",
+    name: "Outreach Services",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
     id: "outreach-services",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
-    name: "Outreach Services",
+    image: "/services/social.png",
+    name: "Social Services",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
     id: "social-services",
@@ -25,33 +31,72 @@ export const services = [
 
 export const values = [
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/values/family.png",
     name: "Family",
     description:
       "Cherishing family as the centre and foundation for belonging and identity",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/values/faithfulness.png",
     name: "Faithfulness",
     description: "Being principled, devoted, dependable, and reliable",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/values/service.png",
     name: "Service",
     description:
       "Service for the benefit and good of all enacting kindness and thoughtfulness",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/values/relationships.png",
     name: "Relationships",
     description:
       "Relationships are nurtured, cared for, and honoured for shared mutual gain and success",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/values/respect.png",
     name: "Respect",
     description:
       "Paying regard and respect valuing everyone and every situation",
+  },
+];
+
+export const focusAreas = [
+  {
+    image: "/focus_areas/cultural_identity.png",
+    name: "Cultural Identity",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+  {
+    image: "/focus_areas/prosperity.png",
+    name: "Prosperity",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+  {
+    image: "/focus_areas/wellbeing.png",
+    name: "Wellbeing",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+  {
+    image: "/focus_areas/connectivity.png",
+    name: "Connectivity",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+  {
+    image: "/focus_areas/leadership.png",
+    name: "Leadership",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+  {
+    image: "/focus_areas/young_people.png",
+    name: "Young People",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
 ];
 
@@ -175,12 +220,19 @@ export const links = [
 
 export const socials = [
   {
-    name: "Facebook",
+    name: "facebook",
     href: "https://web.facebook.com/NiuvakaTrust",
+    image: "/socials/facebook.png",
   },
   {
-    name: "Instagram",
+    name: "tiktok",
+    href: "https://www.tiktok.com/@niuvaka_trust",
+    image: "/socials/tiktok.png",
+  },
+  {
+    name: "instagram",
     href: "https://www.instagram.com/trustniuvaka",
+    image: "/socials/instagram.png",
   },
 ];
 
@@ -199,22 +251,11 @@ export const events = [
   },
 ];
 
-export const abouts = [
-  {
-    title: "OUR MISSION",
-    description:
-      "Working cooperatively with Tagata Pasifika, Pasifika communities and Pasifika families to build their capacity and capability",
-    image: "/mission.jpg",
-  },
-  {
-    title: "OUR VISION",
-    description: "Tagata Pasifika: Thriving, Flourishing, Resilient",
-    image: "/vision.jpeg",
-  },
-  {
-    title: "OUR PURPOSE",
-    description:
-      "To work with Tagata Pasifika, Pasifika communities, and Pasifika families for the realisation of their aspirations",
-    image: "/purpose.jpeg",
-  },
+export const partners = [
+  "/partners/1.png",
+  "/partners/2.png",
+  "/partners/3.webp",
+  "/partners/4.png",
+  "/partners/5.png",
+  "/partners/6.png",
 ];

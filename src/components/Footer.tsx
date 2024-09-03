@@ -1,81 +1,36 @@
-import Link from "next/link";
-import { links, services, socials } from "~/lib/constants";
+import { socials } from "~/lib/constants";
 import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="mt-36 bg-coffee-50 py-8 md:p-16">
-      <div className="container mx-auto grid grid-cols-1 gap-16 md:grid-cols-6">
-        <div className="col-span-full grid grid-cols-1 gap-8 md:grid-cols-4 lg:mb-16 lg:grid-cols-7">
-          <div className="relative col-span-full lg:col-span-4">
-            <div className="text-4xl font-bold uppercase md:text-6xl lg:text-8xl">
-              Get in touch
-            </div>
-            <div className="absolute -bottom-2 left-0 h-px w-3/4 bg-black md:left-24"></div>
+    <footer className="mt-16 bg-coffee-200 py-8 md:p-16">
+      <div className="container mx-auto flex flex-col items-center justify-center">
+        <div className="space-y-4">
+          <div className="flex items-end gap-4">
+            <div className="text-3xl font-black uppercase">NIUVAKA TRUST</div>
+            <Logo className="-mb-2 h-max w-20" />
           </div>
 
-          <div className="col-span-full flex flex-col justify-center gap-4 md:col-span-3 lg:col-span-3 lg:whitespace-nowrap">
-            <div className="mt-2 text-3xl font-bold uppercase lg:text-5xl">
-              Emergency?
-            </div>
-            <div className="flex flex-col gap-4 md:flex-row">
-              <span className="text-2xl">Dial Now</span>
-              <span className="text-2xl font-bold md:text-3xl lg:text-4xl">
-                1234-23456-23
-              </span>
-            </div>
+          <div className="text-xl font-bold underline underline-offset-4">
+            Tagata Pasifika: Thriving, Flourishing, Resilient
           </div>
 
-          <div className="hidden md:col-span-1 md:block lg:col-span-3 lg:hidden">
-            <Logo className="h-max w-full" />
+          <div className="flex w-full items-end gap-2">
+            <div className="w-full border border-foreground bg-background p-4 text-xl font-bold">
+              Contact Us
+            </div>
+            <a href="mailto:info@niuvaka.org.nz">
+              <img src="/mail.svg" alt="mail icon" />
+            </a>
           </div>
-        </div>
 
-        <div className="col-span-1 hidden lg:block">
-          <Logo className="h-max w-full" />
-        </div>
-
-        <div className="col-span-full md:col-span-2 lg:col-span-1 lg:col-start-3">
-          <ul className="space-y-2 text-2xl font-medium uppercase">
-            {services.map(({ name, id }) => {
-              return (
-                <li key={id} className="hover:underline">
-                  <Link href={`services/#${id}`}>{name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="col-span-full md:col-span-2 lg:col-span-1">
-          <ul className="space-y-2 text-2xl font-medium uppercase">
-            {links.map(({ name, href }) => {
-              return (
-                <li key={href} className="hover:underline">
-                  <Link href={href}>{name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="col-span-full md:col-span-2 lg:col-span-1">
-          <ul className="space-y-2 text-2xl font-medium uppercase">
-            {socials.map(({ name, href }) => {
-              return (
-                <li key={href} className="hover:underline">
-                  <a href={href} target="_blank" rel="noopener noreferrer">
-                    {name}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
-        <div className="col-span-full flex items-center justify-center gap-4 text-lg font-medium uppercase">
-          <span>Web design by:</span>
-          <img src="/sg.png " alt="sg logo" className="h-12" />
+          <div className="flex gap-4">
+            {socials.map(({ href, image, name }) => (
+              <a href={href} key={name} target="_blank">
+                <img src={image} alt={name} className="w-16" />
+              </a>
+            ))}{" "}
+          </div>
         </div>
       </div>
     </footer>
