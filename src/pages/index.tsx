@@ -33,7 +33,7 @@ export default function Home() {
 
         <section>
           <div className="container mx-auto max-w-screen-2xl p-0">
-            <img src="/texts.png" alt="texts" />
+            <img src="/texts.webp" alt="texts" />
           </div>
         </section>
 
