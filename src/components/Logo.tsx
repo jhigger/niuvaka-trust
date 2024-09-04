@@ -13,9 +13,10 @@ const Logo = ({ className }: LogoProps) => {
       )}
     >
       <img
-        src="/logo.png"
+        src="/logo.webp"
         alt="logo"
         className="absolute left-[48.44%] size-full -translate-x-1/2 scale-110 bg-cover bg-center"
+        loading="eager"
       />
     </div>
   );

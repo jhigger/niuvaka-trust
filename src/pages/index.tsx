@@ -34,7 +34,12 @@ export default function Home() {
 
         <section>
           <div className="container mx-auto p-0">
-            <img src="/texts.webp" alt="texts" className="w-full" />
+            <img
+              src="/texts.webp"
+              alt="texts"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
         </section>
 
@@ -44,6 +49,7 @@ export default function Home() {
               src="/sitting.webp"
               alt="sitting woman"
               className="w-1/2 object-cover"
+              loading="lazy"
             />
             <div className="w-1/2 divide-y-[1px] divide-white">
               <div className="bg-mint-500 text-center">
@@ -86,7 +92,12 @@ export default function Home() {
                 key={name}
                 className="col-span-1 flex h-full flex-col items-center justify-start gap-4 overflow-hidden"
               >
-                <img src={image} alt="service" className="w-80" />
+                <img
+                  src={image}
+                  alt="service"
+                  className="w-80"
+                  loading="lazy"
+                />
                 <h3 className="sr-only">{name}</h3>
               </div>
             );
@@ -103,7 +114,12 @@ export default function Home() {
                 key={name}
                 className="col-span-1 flex h-full flex-col items-center justify-start gap-4 overflow-hidden"
               >
-                <img src={image} alt="service" className="w-80" />
+                <img
+                  src={image}
+                  alt="service"
+                  className="w-80"
+                  loading="lazy"
+                />
                 <h3 className="sr-only">{name}</h3>
                 <p className="line-clamp-3 text-center">{description}</p>
                 <Button asChild className="w-max rounded-full px-8 py-6">
@@ -124,7 +140,12 @@ export default function Home() {
                 key={name}
                 className="col-span-1 flex h-full flex-col items-center justify-start gap-4 overflow-hidden"
               >
-                <img src={image} alt="service" className="w-80" />
+                <img
+                  src={image}
+                  alt="service"
+                  className="w-80"
+                  loading="lazy"
+                />
                 <h3 className="sr-only">{name}</h3>
               </div>
             );

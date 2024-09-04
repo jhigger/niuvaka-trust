@@ -15,6 +15,7 @@ const Partners = () => {
             src={image}
             alt="partner"
             className="aspect-video h-full max-h-32 w-full object-contain object-center"
+            loading="lazy"
           />
         ))}
       />
