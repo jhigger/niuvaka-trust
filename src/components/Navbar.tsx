@@ -64,7 +64,10 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
 
         <Sheet>
           <SheetTrigger>
-            <Menu className="lg:hidden" size={40} />
+            <Menu
+              className="rounded-full bg-mint-500 stroke-white p-2 lg:hidden"
+              size={40}
+            />
           </SheetTrigger>
           <SheetContent className="bg-background">
             <SheetHeader className="space-y-4 text-left">
