@@ -29,7 +29,10 @@ export default function About() {
           </div>
         </section>
 
-        <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
+        <section
+          id="who-are-we"
+          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+        >
           <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
             About Us
           </h2>
@@ -192,7 +195,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="to-mint-400 bg-gradient-to-b from-mint-500">
+        <section className="bg-gradient-to-b from-mint-500 to-mint-400">
           <div className="container mx-auto space-y-8 py-8">
             <div
               id="our-team"
@@ -305,7 +308,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="to-mint-400 bg-gradient-to-b from-mint-500">
+        <section className="bg-gradient-to-b from-mint-500 to-mint-400">
           <div className="container mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
             <h2 className="py-8 text-center text-5xl font-bold text-white">
               Work With Us
