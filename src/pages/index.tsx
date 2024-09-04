@@ -22,7 +22,7 @@ export default function Home() {
         <Navbar />
 
         <section className="mt-36">
-          <div className="container mx-auto max-w-screen-2xl p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/Ocean Rarotonga.jpg"
               alt="hero"
@@ -32,7 +32,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container mx-auto max-w-screen-2xl p-0">
+          <div className="container mx-auto p-0">
             <img src="/texts.webp" alt="texts" />
           </div>
         </section>
@@ -46,27 +46,27 @@ export default function Home() {
             />
             <div className="w-1/2 divide-y-[1px] divide-white">
               <div className="bg-mint-500 text-center">
-                <h2 className="p-8 text-5xl font-bold text-white">
+                <h2 className="p-12 text-5xl font-bold text-white">
                   Our Vision
                 </h2>
-                <p className="p-8 text-3xl font-bold leading-[45px] text-black">
+                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
               <div className="bg-mint-500 text-center">
-                <h2 className="p-8 text-5xl font-bold text-white">
+                <h2 className="p-12 text-5xl font-bold text-white">
                   Our Purpose
                 </h2>
-                <p className="p-8 text-3xl font-bold leading-[45px] text-black">
+                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
                   To work with Tagata Pasifika, Pasifika communities & Pasifika
                   families for the realisation of their aspirations
                 </p>
               </div>
               <div className="bg-mint-500 text-center">
-                <h2 className="p-8 text-5xl font-bold text-white">
+                <h2 className="p-12 text-5xl font-bold text-white">
                   Our Mision
                 </h2>
-                <p className="p-8 text-3xl font-bold leading-[45px] text-black">
+                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
                   Partnering to build capacity & capability of Pasifika
                   communities
                 </p>
@@ -130,7 +130,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 flex max-w-screen-2xl flex-col items-center justify-center gap-8 p-8">
+        <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
           <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
             Our Programmes and Initiatives
           </h2>
