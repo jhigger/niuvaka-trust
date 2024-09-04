@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="mt-16 bg-coffee-200 py-8 md:p-16">
+    <footer className="bg-coffee-200 py-8 md:p-16">
       <div className="container mx-auto flex flex-col items-center justify-center">
         <div className="space-y-4">
           <div className="flex items-end gap-4">
@@ -29,7 +29,7 @@ const Footer = () => {
               <a href={href} key={name} target="_blank">
                 <img src={image} alt={name} className="w-16" />
               </a>
-            ))}{" "}
+            ))}
           </div>
         </div>
       </div>

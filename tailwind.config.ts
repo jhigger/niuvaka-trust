@@ -34,6 +34,7 @@ const config = {
           foreground: "#595959",
         },
         mint: {
+          400: "#94DFFB",
           500: "#3390B3",
         },
         border: "hsl(var(--border))",
