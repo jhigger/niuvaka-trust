@@ -51,7 +51,7 @@ export default function Home() {
               className="w-1/2 object-cover"
               loading="lazy"
             />
-            <div className="w-1/2 divide-y-[1px] divide-white">
+            <div className="w-1/2 divide-y divide-white">
               <div className="bg-mint-500 text-center">
                 <h2 className="p-12 text-5xl font-bold text-white">
                   Our Vision
