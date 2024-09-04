@@ -102,62 +102,62 @@ export const focusAreas = [
 
 export const staff = [
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Dana Kunaiti.webp",
     name: "Dana Kunaiti",
     role: "‘Aka’aere | General Manager",
     description:
       "Mangaia i te Kuki Airani, Tahiti, Te Āti Haunui a Pāpārangi, Zierikzee i Horana",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Metaio Malama.webp",
     name: "Metaio Malama",
     role: "Business Development Manager",
     description: "Fasito’outa me Nofoali’i i Samoa",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Waimarama Albert.webp",
     name: "Waimarama Albert",
     role: "Business Administrator",
     description: "Ngāti Raukawa, Ngāti Kahungunu, Ngāti Maniapoto",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Analena Siu.webp",
     name: "Analena Talikimuli Siu",
     role: "Pasifika Community Connector",
     description: "‘Oku ou hai mei Tonga",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Stephanie Haami.webp",
     name: "Stephanie Haami",
     role: "Pasifika Immunisation Coordinator",
     description: "Aitutaki i te Kuki Airani, Rangitikei",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Andrew Mulitalo.webp",
     name: "Andrew Mose Gu Mulitalo",
     role: "Pasifika Health Navigator",
     description: "Letogo Apia, Iv’a Sava’i",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Mutsuo Hatakeyama.webp",
     name: "Mutsuo Hatakeyama",
     role: "Pasifika Navigator",
     description: "Ou te Sau mai nu’u Tanugamanono",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/William Damudamu.webp",
     name: "William Damudamu",
     role: "Project Coordinator",
     description: "Vanuatu, Fiji",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Aumetua Lackey.webp",
     name: "Aumetua Lackey",
     role: "Pasifika Coordinator",
     description: "Mangaia i te Kuki Airani, Tahiti",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/team/Leana Hamlin.webp",
     name: "Leana Hamlin",
     role: "Community Kai Support",
     description:

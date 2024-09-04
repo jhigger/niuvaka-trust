@@ -208,6 +208,7 @@ export default function About() {
                   src="https://placehold.co/200x200/?text=Image"
                   alt="chairman"
                   className="col-span-full w-full max-w-72 rounded-full object-cover md:col-span-1"
+                  loading="lazy"
                 />
 
                 <div className="col-span-full flex flex-col items-center gap-8 text-center md:col-span-1">
@@ -238,6 +239,7 @@ export default function About() {
                         src={image}
                         alt={name}
                         className="size-full object-cover object-center"
+                        loading="lazy"
                       />
                     </div>
                     <div className="transition-all duration-200 ease-in-out group-hover:opacity-100 lg:opacity-0">
@@ -265,6 +267,7 @@ export default function About() {
                       src={image}
                       alt={name}
                       className="size-full object-cover object-center"
+                      loading="lazy"
                     />
                   </div>
                   <div className="transition-all duration-200 ease-in-out group-hover:opacity-100 lg:opacity-0">
