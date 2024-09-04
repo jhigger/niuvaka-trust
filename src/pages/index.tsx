@@ -21,10 +21,10 @@ export default function Home() {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-36">
+        <section className="mt-20">
           <div className="container mx-auto p-0">
             <img
-              src="/Ocean Rarotonga.webp"
+              src="/hero_images/home.webp"
               alt="hero"
               className="aspect-[2/1] object-cover"
               loading="eager"
