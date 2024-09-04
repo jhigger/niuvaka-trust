@@ -258,4 +258,7 @@ export const partners = [
   "/partners/4.webp",
   "/partners/5.webp",
   "/partners/6.webp",
+  "/partners/7.webp",
+  "/partners/8.webp",
+  "/partners/9.webp",
 ];
