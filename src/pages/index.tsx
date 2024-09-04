@@ -24,16 +24,17 @@ export default function Home() {
         <section className="mt-36">
           <div className="container mx-auto p-0">
             <img
-              src="/Ocean Rarotonga.jpg"
+              src="/Ocean Rarotonga.webp"
               alt="hero"
               className="aspect-[2/1] object-cover"
+              loading="eager"
             />
           </div>
         </section>
 
         <section>
           <div className="container mx-auto p-0">
-            <img src="/texts.webp" alt="texts" />
+            <img src="/texts.webp" alt="texts" className="w-full" />
           </div>
         </section>
 

@@ -1,27 +1,27 @@
 export const services = [
   {
-    image: "/services/navigation.png",
+    image: "/services/navigation.webp",
     name: "Navigation Services",
     description:
       "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
     id: "navigation-services",
   },
   {
-    image: "/services/ola.png",
+    image: "/services/ola.webp",
     name: "Ola Lelei & Kai Services",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
     id: "ola-lelei-and-kai-services",
   },
   {
-    image: "/services/outreach.png",
+    image: "/services/outreach.webp",
     name: "Outreach Services",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
     id: "outreach-services",
   },
   {
-    image: "/services/social.png",
+    image: "/services/social.webp",
     name: "Social Services",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
@@ -31,30 +31,30 @@ export const services = [
 
 export const values = [
   {
-    image: "/values/family.png",
+    image: "/values/family.webp",
     name: "Family",
     description:
       "Cherishing family as the centre and foundation for belonging and identity",
   },
   {
-    image: "/values/faithfulness.png",
+    image: "/values/faithfulness.webp",
     name: "Faithfulness",
     description: "Being principled, devoted, dependable, and reliable",
   },
   {
-    image: "/values/service.png",
+    image: "/values/service.webp",
     name: "Service",
     description:
       "Service for the benefit and good of all enacting kindness and thoughtfulness",
   },
   {
-    image: "/values/relationships.png",
+    image: "/values/relationships.webp",
     name: "Relationships",
     description:
       "Relationships are nurtured, cared for, and honoured for shared mutual gain and success",
   },
   {
-    image: "/values/respect.png",
+    image: "/values/respect.webp",
     name: "Respect",
     description:
       "Paying regard and respect valuing everyone and every situation",
@@ -63,37 +63,37 @@ export const values = [
 
 export const focusAreas = [
   {
-    image: "/focus_areas/cultural_identity.png",
+    image: "/focus_areas/cultural_identity.webp",
     name: "Cultural Identity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/prosperity.png",
+    image: "/focus_areas/prosperity.webp",
     name: "Prosperity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/wellbeing.png",
+    image: "/focus_areas/wellbeing.webp",
     name: "Wellbeing",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/connectivity.png",
+    image: "/focus_areas/connectivity.webp",
     name: "Connectivity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/leadership.png",
+    image: "/focus_areas/leadership.webp",
     name: "Leadership",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/young_people.png",
+    image: "/focus_areas/young_people.webp",
     name: "Young People",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
@@ -252,10 +252,10 @@ export const events = [
 ];
 
 export const partners = [
-  "/partners/1.png",
-  "/partners/2.png",
+  "/partners/1.webp",
+  "/partners/2.webp",
   "/partners/3.webp",
-  "/partners/4.png",
-  "/partners/5.png",
-  "/partners/6.png",
+  "/partners/4.webp",
+  "/partners/5.webp",
+  "/partners/6.webp",
 ];
