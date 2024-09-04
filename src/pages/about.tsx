@@ -287,7 +287,7 @@ export default function About() {
             services who support Pasifika communities to achieve better
             outcomes.
           </p>
-          <div className="grid grid-cols-1 items-center justify-center gap-8 p-8 md:grid-cols-3">
+          <div className="grid w-full grid-cols-1 items-center justify-center gap-8 p-8 md:grid-cols-3">
             {partners.map((image, i) => {
               return (
                 <img
