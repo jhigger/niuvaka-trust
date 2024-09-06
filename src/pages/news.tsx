@@ -3,7 +3,7 @@ import Footer from "~/components/Footer";
 import Events from "~/components/Events";
 import Navbar from "~/components/Navbar";
 
-const news = () => {
+const News = () => {
   return (
     <>
       <Head>
@@ -92,4 +92,4 @@ const news = () => {
   );
 };
 
-export default news;
+export default News;
