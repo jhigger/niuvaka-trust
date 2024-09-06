@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
@@ -42,9 +43,14 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 justify-items-center gap-8 md:p-8 lg:grid-cols-2">
             <div className="col-span-1 space-y-8 md:p-8">
-              <Button className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white">
-                <img src="/donate.png" alt="donate" />
-                Make a Donation
+              <Button
+                className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white"
+                asChild
+              >
+                <Link href="/donate">
+                  <img src="/donate.png" alt="donate" />
+                  Make a Donation
+                </Link>
               </Button>
 
               <div className="flex flex-col items-center gap-8 md:flex-row">
