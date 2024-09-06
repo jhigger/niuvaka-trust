@@ -45,29 +45,29 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
     <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between gap-4 transition-all duration-200 ease-in-out",
+          "container mx-auto flex items-center justify-between gap-2 transition-all duration-200 ease-in-out",
           size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
       >
-        <div className="flex shrink-0 items-center justify-center gap-8">
+        <div className="flex shrink-0 items-center justify-center gap-2 xl:gap-4">
           <Logo
             className={cn(
               "my-8 transition-all duration-200 ease-in-out",
               crossed && "my-4 size-16",
             )}
           />
-          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block lg:max-w-full">
+          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block xl:max-w-full">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </span>
         </div>
 
         <Sheet>
-          <SheetTrigger>
-            <Menu
-              className="rounded-full bg-mint-500 stroke-white p-2 lg:hidden"
-              size={40}
-            />
+          <SheetTrigger
+            className="rounded-full bg-mint-500 stroke-white p-2 lg:hidden"
+            asChild
+          >
+            <Menu size={40} />
           </SheetTrigger>
           <SheetContent className="bg-background">
             <SheetHeader className="space-y-4 text-left">
@@ -102,7 +102,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex w-full flex-wrap items-center gap-4">
+          <NavigationMenuList className="flex w-full flex-wrap items-center gap-2 xl:gap-4">
             {links.map((link) => {
               if (link.subLinks) {
                 return (
@@ -112,7 +112,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                         className={cn(
                           cn(buttonVariants({ variant: "ghost" })),
                           path === link.href && "bg-coffee-50",
-                          "pr-2 text-neutral-foreground",
+                          "px-2 py-1 pr-2 text-lg text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
                         )}
                       >
                         {link.name}
@@ -139,7 +139,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                   <Button
                     variant="ghost"
                     className={cn(
-                      "text-xl text-neutral-foreground",
+                      "px-2 py-1 text-lg text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
                       path === link.href && "bg-coffee-50",
                     )}
                     asChild
