@@ -57,9 +57,9 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
               crossed && "my-4 size-16",
             )}
           />
-          <h1 className="hidden max-w-64 text-lg font-black leading-tight lg:block lg:max-w-full">
+          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block lg:max-w-full">
             Tagata Pasifika: Thriving, Flourishing, Resilient
-          </h1>
+          </span>
         </div>
 
         <Sheet>
