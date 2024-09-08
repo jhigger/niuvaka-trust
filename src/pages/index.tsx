@@ -82,23 +82,29 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-16 gap-y-8 p-8 lg:grid-cols-5">
+        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-8 p-8 lg:grid-cols-5">
           <h2 className="col-span-full py-4 text-center text-5xl font-bold text-mint-500">
             Our Values
           </h2>
-          {values.map(({ name, image }) => {
+          {values.map(({ name, image, description }) => {
             return (
               <div
                 key={name}
-                className="col-span-1 flex h-full flex-col items-center justify-start gap-4 overflow-hidden"
+                className="group relative col-span-1 flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-xl p-4 lg:hover:scale-105 lg:hover:bg-coffee-50 xl:p-8"
               >
                 <img
                   src={image}
                   alt="service"
-                  className="w-80"
+                  className="transition-all duration-300 ease-in-out lg:group-hover:w-0"
                   loading="lazy"
                 />
-                <h3 className="sr-only">{name}</h3>
+                <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
+                  <h3 className="sr-only !relative mb-1 text-[100%] font-bold uppercase text-coffee-700 lg:not-sr-only xl:text-2xl">
+                    {name}
+                    <span className="absolute -bottom-1 left-0 h-1 w-10 bg-coffee-400"></span>
+                  </h3>
+                  <p className="text-[75%] xl:text-base">{description}</p>
+                </div>
               </div>
             );
           })}
