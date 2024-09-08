@@ -1,7 +1,67 @@
 import Head from "next/head";
 import Footer from "~/components/Footer";
-import Events from "~/components/Events";
 import Navbar from "~/components/Navbar";
+import { Button } from "~/components/ui/button";
+import { formatDate } from "~/lib/utils";
+import { events, news } from "~/lib/constants";
+import Carousel from "~/components/Carousel";
+
+export type ArticleProps = {
+  type: "news" | "event";
+  image?: string;
+  title: string;
+  date: Date;
+  excerpt?: string;
+  video?: string;
+};
+
+const Article = ({
+  type,
+  image,
+  title,
+  date,
+  excerpt,
+  video,
+}: ArticleProps) => {
+  return (
+    <article className="flex flex-col gap-4">
+      {type === "news" && image && (
+        <img
+          src={image}
+          alt="thumbnail"
+          className="aspect-video w-full rounded-xl object-cover"
+        />
+      )}
+      <h3 className="text-xl font-black">{title}</h3>
+      <span className="text-sm">Published: {formatDate(date)}</span>
+      {type === "news" && excerpt && (
+        <p className="line-clamp-5 whitespace-pre-wrap">{excerpt}</p>
+      )}
+      {type === "news" && !video && (
+        <Button className="mt-auto self-end rounded-full bg-mint-500 p-6 text-2xl text-white">
+          Read More
+        </Button>
+      )}
+      {type === "event" && video && (
+        <iframe
+          src={video}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="mx-auto aspect-video w-full max-w-screen-2xl rounded-xl"
+        ></iframe>
+      )}
+      {type === "event" && !video && image && (
+        <img
+          src={image}
+          alt="thumbnail"
+          className="mx-auto aspect-video w-full max-w-screen-2xl rounded-xl object-cover"
+        />
+      )}
+    </article>
+  );
+};
 
 const News = () => {
   return (
@@ -17,74 +77,53 @@ const News = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <div className="container mx-auto mt-52 py-20">
-          <h1 className="text-6xl font-bold text-black md:text-8xl">
-            Events and Opportunities
+        <div className="container mx-auto mt-52 p-8 md:p-16">
+          <h1 className="text-3xl font-black text-mint-500 md:text-6xl">
+            News
           </h1>
         </div>
 
-        <div className="relative bg-background">
-          <section className="container mx-auto p-8 md:p-16">
-            <h2
-              id="latest-news"
-              className="mb-8 text-center text-5xl font-bold text-coffee-400 md:text-7xl lg:text-left"
-            >
-              Our Latest Events
-            </h2>
+        <section className="container mx-auto p-0">
+          <img
+            src="https://via.placeholder.com/1500x500?text=Image"
+            alt="hero"
+            className="aspect-[3/1] w-full object-cover"
+            loading="eager"
+          />
+        </section>
 
-            <div className="grid grid-cols-1 place-items-center gap-4 lg:grid-cols-2">
-              <img
-                src="https://via.placeholder.com/500x700?text=Image"
-                alt="event"
-                className="rounded-xl object-cover object-center"
-              />
-              <div className="flex flex-col gap-8 self-start">
-                <h3 className="text-center text-3xl font-semibold md:text-5xl lg:text-left">
-                  What our vuvale are signing up for when registering for Poly
-                  Paddles.
-                </h3>
-                <div className="flex flex-col gap-4 text-2xl md:whitespace-nowrap">
-                  <div>
-                    <strong className="text-3xl font-medium">
-                      Register Now{" "}
-                    </strong>
-                    as there are still available spaces:
-                  </div>
-                  <div className="flex flex-col">
-                    <div>
-                      Levin Registration Link:{" "}
-                      <a
-                        href="https://forms.office.com/r/YZvAXpG8fq"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline"
-                      >
-                        https://forms.office.com/r/YZvAXpG8fq
-                      </a>
-                    </div>
-                    <div className="font-medium">
-                      (registration closes tomorrow - Friday 12th April at
-                      10.00pm)
-                    </div>
-                  </div>
-                  <div>
-                    Palmy Registration Link:{" "}
-                    <a
-                      href="https://forms.office.com/r/k23LZ4fw6Z"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline"
-                    >
-                      https://forms.office.com/r/k23LZ4fw6Z
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
+        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 md:p-16">
+          <h2
+            id="latest-news"
+            className="mb-8 text-center text-xl font-bold text-coffee-400 md:text-3xl lg:text-left"
+          >
+            Check out our news and events for the latest about what&apos;s
+            happening in your community!
+          </h2>
 
-        <Events title="Upcoming Events" />
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+            {news.map((article, i) => (
+              <Article key={i} {...article} />
+            ))}
+          </div>
+
+          <h2 id="events" className="sr-only">
+            Events
+          </h2>
+
+          {events.map((article, i) => (
+            <Article key={i} {...article} />
+          ))}
+        </section>
+
+        <section className="container mx-auto my-16 space-y-16 md:p-16">
+          <h2 className="py-8 text-3xl font-bold text-mint-500 md:text-6xl">
+            Gallery
+          </h2>
+          <div className="w-full">
+            <Carousel />
+          </div>
+        </section>
 
         <Footer />
       </div>

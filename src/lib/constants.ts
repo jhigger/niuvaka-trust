@@ -1,3 +1,5 @@
+import { type ArticleProps } from "~/pages/news";
+
 export const services = [
   {
     image: "/services/navigation.webp",
@@ -236,18 +238,24 @@ export const socials = [
   },
 ];
 
-export const events = [
+export const events: ArticleProps[] = [
   {
-    image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
+    type: "event",
+    title: "Pasifika Fusion 2024 Immunisation",
+    date: new Date(2024, 7, 2),
+    video: "https://www.youtube.com/embed/9Qrb0V3Hxdg?si=i7w5kh5yHepVAiRh",
   },
   {
-    image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
+    type: "event",
+    title: "Manawatū Rugby Immunisation campaign",
+    date: new Date(2023, 1, 24),
+    video: "https://www.youtube.com/embed/9Qrb0V3Hxdg?si=i7w5kh5yHepVAiRh",
   },
   {
+    type: "event",
+    title: "Pasifika Health Checks",
+    date: new Date(2024, 8, 8),
     image: "https://placehold.co/200x200/?text=Image",
-    href: "#",
   },
 ];
 
@@ -305,5 +313,25 @@ export const projects = [
     name: "Pacific Health Clinics",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
+  },
+];
+
+export const news: ArticleProps[] = [
+  {
+    type: "news",
+    image: "https://placehold.co/200x200/?text=Image",
+    title: "Pasifika families learn to grow their own kai",
+    date: new Date(2024, 6, 1),
+    excerpt:
+      "Palmerston North family man Tui Saumalu has discovered the gift of gardening.\n\nThe father-of-four is among the 18 families who have learnt the joy of growing their own food through the Niuvaka Trust’s Pasifika Home Garden Initiative.",
+  },
+  {
+    type: "news",
+    image: "https://placehold.co/200x200/?text=Image",
+    title:
+      "Niuvaka Trust – Thriving, Flourishing and Resilient Tagata Pasifika",
+    date: new Date(2024, 5, 22),
+    excerpt:
+      "Based in Palmerston North, Niuvaka Trust’s purpose is to work cooperatively with Tagata Pasifika, Pasifika communities, and Pasifika families in the MidCentral region, to build their capacity and capability, and realise their aspirations. It has a vision is for Tagata Pasifika to be ‘Thriving, Flourishing and Resilient’.",
   },
 ];
