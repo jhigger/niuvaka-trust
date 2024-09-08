@@ -24,7 +24,7 @@ const Article = ({
   video,
 }: ArticleProps) => {
   return (
-    <article className="flex flex-col gap-4">
+    <article className="flex flex-col gap-4 py-8">
       {type === "news" && image && (
         <img
           src={image}
