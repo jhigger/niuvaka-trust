@@ -48,10 +48,10 @@ export default function Home() {
             <img
               src="/sitting.webp"
               alt="sitting woman"
-              className="w-1/2 object-cover"
+              className="object-cover lg:w-1/2"
               loading="lazy"
             />
-            <div className="w-1/2 divide-y divide-white">
+            <div className="divide-y divide-white lg:w-1/2">
               <div className="bg-mint-500 text-center">
                 <h2 className="p-12 text-5xl font-bold text-white">
                   Our Vision
