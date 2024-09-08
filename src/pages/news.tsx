@@ -116,7 +116,7 @@ const News = () => {
           ))}
         </section>
 
-        <section className="container mx-auto my-16 space-y-16 md:p-16">
+        <section className="container mx-auto mb-16 space-y-16 md:p-16">
           <h2 className="py-8 text-3xl font-bold text-mint-500 md:text-6xl">
             Gallery
           </h2>
