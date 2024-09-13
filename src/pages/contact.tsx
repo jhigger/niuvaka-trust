@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "~/components/Footer";
+import ContactForm from "~/components/Forms/ContactForm";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
-import { Input } from "~/components/ui/input";
-import { Textarea } from "~/components/ui/textarea";
 import { socials } from "~/lib/constants";
 
 const Contact = () => {
@@ -129,44 +128,7 @@ const Contact = () => {
                 about us, use the form below. We&apos;re here to help.
               </p>
 
-              <form className="grid w-full grid-cols-1 items-center justify-center gap-8 md:grid-cols-2">
-                <Input
-                  placeholder="Enter your first name"
-                  name="first_name"
-                  className="h-14 bg-[#D9D9D9] text-xl"
-                />
-                <Input
-                  placeholder="Enter your last name"
-                  name="last_name"
-                  className="h-14 bg-[#D9D9D9] text-xl"
-                />
-                <Input
-                  placeholder="Enter your email"
-                  name="email"
-                  className="col-span-full h-14 bg-[#D9D9D9] text-xl"
-                />
-                <Input
-                  placeholder="Enter your phone number"
-                  name="phone"
-                  className="col-span-full h-14 bg-[#D9D9D9] text-xl"
-                />
-                <Input
-                  placeholder="Subject"
-                  name="subject"
-                  className="col-span-full h-14 bg-[#D9D9D9] text-xl"
-                />
-                <Textarea
-                  placeholder="Message"
-                  name="message"
-                  className="col-span-full h-60 bg-[#D9D9D9] text-xl"
-                />
-                <Button
-                  type="submit"
-                  className="col-span-full mx-auto w-max rounded-full bg-mint-500 px-8 py-6 text-white"
-                >
-                  Submit
-                </Button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </section>
