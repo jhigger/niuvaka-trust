@@ -52,7 +52,7 @@ const Contact = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button
-                      className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white"
+                      className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white hover:bg-coffee-400"
                       asChild
                     >
                       <Link href="/donate">
