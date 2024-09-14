@@ -21,6 +21,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Textarea } from "../ui/textarea";
+import FormFooter from "./FormFooter";
 
 const SUBJECTS = [
   "to book an appointment",
@@ -175,6 +176,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
+        <FormFooter className="col-span-full text-sm" />
         <Button
           type="submit"
           className="col-span-full mx-auto w-max rounded-full bg-mint-500 px-8 py-6 text-white"

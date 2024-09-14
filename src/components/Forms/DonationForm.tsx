@@ -14,6 +14,7 @@ import { email } from "~/lib/constants";
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import { Input } from "../ui/input";
+import FormFooter from "./FormFooter";
 
 const OPTIONS = [
   "niuvaka",
@@ -175,9 +176,10 @@ const DonationForm = () => {
         <input
           type="text"
           name="donation_for"
-          value={JSON.stringify(form.getValues("donation_for"))}
+          value={JSON.stringify(form.watch("donation_for"))}
           hidden
         />
+        <FormFooter className="col-span-full text-sm" />
         <Button
           type="submit"
           className="col-span-full mx-auto w-max rounded-full bg-mint-500 px-8 py-6 text-white"
