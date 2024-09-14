@@ -4,6 +4,12 @@ import Footer from "~/components/Footer";
 import ContactForm from "~/components/Forms/ContactForm";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "~/components/ui/tooltip";
 import { socials } from "~/lib/constants";
 
 const Contact = () => {
@@ -42,15 +48,31 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 justify-items-center gap-8 md:p-8 lg:grid-cols-2">
             <div className="col-span-1 space-y-8 md:p-8">
-              <Button
-                className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white"
-                asChild
-              >
-                <Link href="/donate">
-                  <img src="/donate.png" alt="donate" />
-                  Make a Donation
-                </Link>
-              </Button>
+              <TooltipProvider delayDuration={0}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      className="h-max w-full rounded-full bg-mint-500 px-6 py-4 text-xl font-black text-white"
+                      asChild
+                    >
+                      <Link href="/donate">
+                        <img src="/donate.png" alt="donate" />
+                        Make a Donation
+                      </Link>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent
+                    side="bottom"
+                    sideOffset={-8}
+                    className="flex max-w-xs items-center justify-center rounded-xl bg-coffee-200 p-8 text-xl font-bold md:max-w-lg md:p-16"
+                  >
+                    <p>
+                      Your donation will make a difference in supporting Pacific
+                      peoples in achieving their aspirations.
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
 
               <div className="flex flex-col items-center gap-8 md:flex-row">
                 <img src="/mail.svg" alt="mail" />
