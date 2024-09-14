@@ -167,9 +167,8 @@ export default function Home() {
           <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
             Our Programmes and Initiatives
           </h2>
-          <div className="w-full">
-            <Carousel />
-          </div>
+
+          <Carousel />
         </section>
 
         <Partners />

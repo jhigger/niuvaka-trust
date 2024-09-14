@@ -127,9 +127,8 @@ const News = () => {
           <h2 className="py-8 text-3xl font-bold text-mint-500 md:text-6xl">
             Gallery
           </h2>
-          <div className="w-full">
-            <Carousel />
-          </div>
+
+          <Carousel />
         </section>
 
         <Footer />
