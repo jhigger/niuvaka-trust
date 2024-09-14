@@ -5,6 +5,13 @@ import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
 import { projects, services as serviceItems } from "~/lib/constants";
 
+const images = [
+  "/services/service1.webp",
+  "/services/service2.webp",
+  "/services/service3.webp",
+  "/services/service4.webp",
+];
+
 const serviceDescriptions = [
   {
     id: "navigation-services",
@@ -155,9 +162,9 @@ const serviceDescriptions = [
   },
 ];
 
-const items = serviceItems.map(({ image, name, id }) => {
+const items = serviceItems.map(({ name, id }, i) => {
   return {
-    image,
+    image: images[i],
     name,
     id,
     description: serviceDescriptions.find((d) => d.id === id)?.description,
@@ -211,7 +218,7 @@ const Services = () => {
                   <img
                     src={image}
                     alt="service"
-                    className="col-span-full w-full max-w-96 object-cover lg:col-span-2"
+                    className="col-span-full aspect-[4/3] w-full rounded object-cover lg:col-span-2"
                   />
                   <div className="col-span-full flex flex-col gap-12 p-8 lg:col-span-3">
                     <h2 className="text-bold text-4xl font-semibold capitalize">
