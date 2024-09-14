@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "~/components/Footer";
+import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
 import { partners, staff } from "~/lib/constants";
@@ -350,39 +351,7 @@ export default function About() {
               communities.
             </p>
 
-            <div className="my-16 grid max-w-screen-lg grid-cols-1 gap-12 p-8 md:grid-cols-3">
-              <div className="space-y-8 text-center">
-                <h3 className="text-2xl font-black text-white">Vacancy One</h3>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque elit sem, pharetra ut semper sit amet,
-                  consectetur vel lectus. Pellentesque maximus sed nunc eget
-                  dapibus.
-                </p>
-              </div>
-
-              <div className="space-y-8 text-center">
-                <h3 className="text-2xl font-black text-white">Vacancy Two</h3>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque elit sem, pharetra ut semper sit amet,
-                  consectetur vel lectus. Pellentesque maximus sed nunc eget
-                  dapibus.
-                </p>
-              </div>
-
-              <div className="space-y-8 text-center">
-                <h3 className="text-2xl font-black text-white">
-                  Vacancy Three
-                </h3>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque elit sem, pharetra ut semper sit amet,
-                  consectetur vel lectus. Pellentesque maximus sed nunc eget
-                  dapibus.
-                </p>
-              </div>
-            </div>
+            <CareerForm />
           </div>
         </section>
 
