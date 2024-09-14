@@ -127,8 +127,11 @@ export default function Home() {
                   loading="lazy"
                 />
                 <h3 className="sr-only">{name}</h3>
-                <p className="line-clamp-3 text-center">{description}</p>
-                <Button asChild className="w-max rounded-full px-8 py-6">
+                <p className="line-clamp-4 text-center">{description}</p>
+                <Button
+                  asChild
+                  className="mt-auto w-max rounded-full px-8 py-6"
+                >
                   <Link href={`/services#${id}`}>Read More</Link>
                 </Button>
               </div>
