@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -9,9 +10,9 @@ import {
   FormLabel,
   FormMessage,
 } from "~/components/ui/form";
+import { email } from "~/lib/constants";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
 import {
   Select,
   SelectContent,
@@ -19,6 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../ui/select";
+import { Textarea } from "../ui/textarea";
 
 const SUBJECTS = [
   "to book an appointment",
@@ -28,10 +30,10 @@ const SUBJECTS = [
 ] as const;
 
 const formSchema = z.object({
-  firstName: z.string().min(2, {
+  first_name: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  lastName: z.string().min(2, {
+  last_name: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
   email: z.string().email({
@@ -47,11 +49,12 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
+      first_name: "",
+      last_name: "",
       email: "",
       phone: "",
       message: "",
@@ -60,17 +63,21 @@ const ContactForm = () => {
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     console.log(values);
+    formRef.current?.submit();
   };
 
   return (
     <Form {...form}>
       <form
+        action={`https://airform.io/${email}`}
+        method="post"
+        ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}
         className="grid w-full grid-cols-1 gap-8 md:grid-cols-2"
       >
         <FormField
           control={form.control}
-          name="firstName"
+          name="first_name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>First Name</FormLabel>
@@ -83,7 +90,7 @@ const ContactForm = () => {
         />
         <FormField
           control={form.control}
-          name="lastName"
+          name="last_name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Last Name</FormLabel>

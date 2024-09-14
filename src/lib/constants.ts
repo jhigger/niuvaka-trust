@@ -1,5 +1,7 @@
 import { type ArticleProps } from "~/pages/news";
 
+export const email = "njohnjhigger@gmail.com";
+
 export const services = [
   {
     image: "/services/navigation.webp",

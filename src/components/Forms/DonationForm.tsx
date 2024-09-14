@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -9,6 +10,7 @@ import {
   FormLabel,
   FormMessage,
 } from "~/components/ui/form";
+import { email } from "~/lib/constants";
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
 import { Input } from "../ui/input";
@@ -20,10 +22,10 @@ const OPTIONS = [
 ] as const;
 
 const formSchema = z.object({
-  firstName: z.string().min(2, {
+  first_name: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  lastName: z.string().min(2, {
+  last_name: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
   email: z.string().email({
@@ -32,7 +34,7 @@ const formSchema = z.object({
   phone: z.string().min(8, {
     message: "Phone number must be at least 8 digits.",
   }),
-  donationFor: z
+  donation_for: z
     .array(z.string())
     .refine((value) => value.some((item) => item), {
       message: "You have to select at least one item.",
@@ -40,30 +42,35 @@ const formSchema = z.object({
 });
 
 const DonationForm = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      firstName: "",
-      lastName: "",
+      first_name: "",
+      last_name: "",
       email: "",
       phone: "",
-      donationFor: [],
+      donation_for: [],
     },
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
     console.log(values);
+    formRef.current?.submit();
   };
 
   return (
     <Form {...form}>
       <form
+        action={`https://airform.io/${email}`}
+        method="post"
+        ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}
         className="grid w-full grid-cols-1 gap-8 md:grid-cols-2"
       >
         <FormField
           control={form.control}
-          name="firstName"
+          name="first_name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>First Name</FormLabel>
@@ -76,7 +83,7 @@ const DonationForm = () => {
         />
         <FormField
           control={form.control}
-          name="lastName"
+          name="last_name"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Last Name</FormLabel>
@@ -119,7 +126,7 @@ const DonationForm = () => {
         />
         <FormField
           control={form.control}
-          name="donationFor"
+          name="donation_for"
           render={() => (
             <FormItem>
               <div className="mb-4">
@@ -131,7 +138,7 @@ const DonationForm = () => {
                 <FormField
                   key={item}
                   control={form.control}
-                  name="donationFor"
+                  name="donation_for"
                   render={({ field }) => {
                     return (
                       <FormItem
@@ -164,6 +171,12 @@ const DonationForm = () => {
               <FormMessage />
             </FormItem>
           )}
+        />
+        <input
+          type="text"
+          name="donation_for"
+          value={JSON.stringify(form.getValues("donation_for"))}
+          hidden
         />
         <Button
           type="submit"
