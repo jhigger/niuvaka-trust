@@ -160,6 +160,12 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
+        <input
+          type="text"
+          name="subject"
+          value={form.watch("subject")}
+          hidden
+        />
         <FormField
           control={form.control}
           name="message"
