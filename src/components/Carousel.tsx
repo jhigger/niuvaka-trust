@@ -5,7 +5,15 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { cn } from "~/lib/utils";
 
-const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"];
+const colors = [
+  "bg-red-500",
+  "bg-orange-500",
+  "bg-yellow-500",
+  "bg-green-500",
+  "bg-blue-500",
+  "bg-indigo-500",
+  "bg-purple-500",
+];
 
 const Carousel = () => {
   return (
@@ -32,7 +40,7 @@ const Carousel = () => {
             className="relative !h-full !w-max overflow-hidden rounded-xl"
           >
             <div className="flex aspect-video h-full w-full items-center justify-center">
-              <div className={cn("h-full w-full", `bg-${color}-500`)}></div>
+              <div className={cn("h-full w-full", color)}></div>
             </div>
           </SwiperSlide>
         ))}
