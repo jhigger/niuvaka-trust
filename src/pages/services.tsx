@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
@@ -80,7 +81,10 @@ const serviceDescriptions = [
     id: "outreach-services",
     description: (
       <>
-        <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
+        <h3
+          id="immunisation"
+          className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+        >
           Immunisations
         </h3>
         <p className="text-xl">
@@ -128,8 +132,11 @@ const serviceDescriptions = [
     id: "social-services",
     description: (
       <>
-        <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
-          Are Toa Kaikai
+        <h3
+          id="ara-toa-kaikai"
+          className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+        >
+          Ara Toa Kaikai
         </h3>
         <p className="text-xl">
           Our food-hub started because of COVID where we provided support to
@@ -172,11 +179,49 @@ const items = serviceItems.map(({ name, id }, i) => {
 });
 
 const Services = () => {
+  const router = useRouter();
   const [show, setShow] = useState(false);
 
   const handleToggle = () => {
     setShow((prev) => !prev);
   };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.substring(1);
+      console.log(hash);
+      if (
+        hash &&
+        [
+          "breast-screening",
+          "cervical-screening",
+          "bowel-screening",
+          "health-assessment-and-wellbeing-checks",
+        ].includes(hash)
+      ) {
+        console.log(hash);
+        setShow(true);
+      }
+    };
+
+    handleHashChange();
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, [router.asPath]);
+
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (show) {
+      const element = document.getElementById(hash ?? "");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [show]);
 
   return (
     <>
@@ -259,7 +304,10 @@ const Services = () => {
                         We also provide Screening support within the Outreach
                         Service:
                       </h2>
-                      <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
+                      <h3
+                        id="breast-screening"
+                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                      >
                         Breast Screening
                       </h3>
                       <p className="text-xl">
@@ -302,7 +350,10 @@ const Services = () => {
                       </p>
                       <br />
                       <br />
-                      <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
+                      <h3
+                        id="cervical-screening"
+                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                      >
                         Cervical Screening
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
@@ -376,7 +427,10 @@ const Services = () => {
                       </div>
                       <br />
                       <br />
-                      <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
+                      <h3
+                        id="bowel-screening"
+                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                      >
                         Bowel Screening
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
@@ -462,7 +516,10 @@ const Services = () => {
                       </div>
                       <br />
                       <br />
-                      <h3 className="text-2xl font-bold text-coffee-400 underline underline-offset-4">
+                      <h3
+                        id="health-assessment-and-wellbeing-checks"
+                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                      >
                         Health Assessments & Wellbeing Checks
                       </h3>
                       <p className="text-xl">
@@ -494,8 +551,9 @@ const Services = () => {
                     <Button
                       className="col-span-full my-8 justify-self-end rounded-full bg-mint-500 p-6 text-xl text-white"
                       onClick={handleToggle}
+                      asChild
                     >
-                      See Less
+                      <a href="#outreach-services">See Less</a>
                     </Button>
                   )}
                 </div>
@@ -507,7 +565,7 @@ const Services = () => {
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
           <div className="container mx-auto p-8">
             <h2
-              id="our-programmes"
+              id="our-projects-and-initiatives"
               className="p-8 text-6xl font-black text-white"
             >
               Our Projects and Initiatives

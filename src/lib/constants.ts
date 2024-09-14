@@ -2,7 +2,16 @@ import { type ArticleProps } from "~/pages/news";
 
 export const email = "njohnjhigger@gmail.com";
 
-export const services = [
+export const services: {
+  image: string;
+  name:
+    | "Navigation Services"
+    | "Ola Lelei & Kai Services"
+    | "Outreach Services"
+    | "Social Services";
+  description: string;
+  id: string;
+}[] = [
   {
     image: "/services/navigation.webp",
     name: "Navigation Services",
@@ -169,7 +178,17 @@ export const staff = [
   },
 ];
 
-export const links = [
+type SubLinkType = {
+  name: string;
+  href: string;
+  subLinks?: SubLinkType[];
+};
+
+export const navigationLinks: {
+  name: string;
+  href: string;
+  subLinks?: SubLinkType[];
+}[] = [
   {
     name: "Home",
     href: "/",
@@ -179,26 +198,85 @@ export const links = [
     href: "/about",
     subLinks: [
       {
-        name: "Who are we?",
-        href: "/about#who-are-we",
+        name: "Our Journey",
+        href: "/about#our-journey",
+        subLinks: [
+          {
+            name: "Our Name",
+            href: "/about#our-name",
+          },
+          {
+            name: "Our Logo",
+            href: "/about#our-logo",
+          },
+          {
+            name: "Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi",
+            href: "/about#tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi",
+          },
+
+          {
+            name: "Pasifika Diversity",
+            href: "/about#pasifika-diversity",
+          },
+        ],
       },
       {
         name: "Our Team",
         href: "/about#our-team",
       },
+      {
+        name: "Our Partners",
+        href: "/about#our-partners",
+      },
+      {
+        name: "Work With Us",
+        href: "/about#work-with-us",
+      },
     ],
   },
   {
-    name: "Services",
+    name: "Our Work",
     href: "/services",
     subLinks: [
       ...services.map(({ name, id: href }) => ({
         name,
         href: `/services#${href}`,
+        subLinks:
+          name === "Outreach Services"
+            ? [
+                {
+                  name: "Immunisation",
+                  href: "/services#immunisation",
+                },
+                {
+                  name: "Breast Screening",
+                  href: "/services#breast-screening",
+                },
+                {
+                  name: "Cervical Screening",
+                  href: "/services#cervical-screening",
+                },
+                {
+                  name: "Bowel Screening",
+                  href: "/services#bowel-screening",
+                },
+                {
+                  name: "Health Assessment and Wellbeing checks",
+                  href: "/services#health-assessment-and-wellbeing-checks",
+                },
+              ]
+            : name === "Social Services"
+              ? [
+                  {
+                    name: "Ara toa Kaikai",
+                    href: "/services#ara-toa-kaikai",
+                  },
+                ]
+              : undefined,
       })),
       {
-        name: "Our Programmes",
-        href: "/services#our-programmes",
+        name: "Our Projects and Initiatives",
+        href: "/services#our-projects-and-initiatives",
       },
     ],
   },

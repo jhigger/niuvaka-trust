@@ -30,7 +30,7 @@ export default function About() {
         </section>
 
         <section
-          id="who-are-we"
+          id="our-journey"
           className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
           <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
@@ -44,7 +44,10 @@ export default function About() {
           </p>
         </section>
 
-        <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
+        <section
+          id="our-name"
+          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+        >
           <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
             Our Name
           </h2>
@@ -54,8 +57,11 @@ export default function About() {
           </p>
         </section>
 
-        <section className="container mx-auto space-y-8 p-0">
-          <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
+        <section id="our-logo" className="container mx-auto space-y-8 p-0">
+          <h2
+            id="our-logo"
+            className="py-4 text-center text-5xl font-bold text-mint-500"
+          >
             Our Logo
           </h2>
           <div className="grid grid-cols-1 border border-black md:grid-cols-2 [&>div]:border [&>div]:border-black">
@@ -156,7 +162,10 @@ export default function About() {
                   className="absolute h-full w-full object-cover object-center"
                   loading="lazy"
                 />
-                <div className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8">
+                <div
+                  id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
+                  className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8"
+                >
                   <h2 className="max-w-screen-sm text-center text-4xl font-black text-white">
                     Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
                   </h2>
@@ -171,7 +180,10 @@ export default function About() {
                   className="absolute h-full w-full object-cover object-center"
                   loading="lazy"
                 />
-                <div className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8">
+                <div
+                  id="pasifika-diversity"
+                  className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8"
+                >
                   <h2 className="max-w-screen-sm text-center text-4xl font-black text-white">
                     Pasifika Diversity
                   </h2>
@@ -284,7 +296,10 @@ export default function About() {
           </div>
         </section>
 
-        <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
+        <section
+          id="our-partners"
+          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+        >
           <h2 className="py-8 text-center text-5xl font-bold text-mint-500">
             Our Partners
           </h2>
@@ -308,7 +323,10 @@ export default function About() {
           </div>
         </section>
 
-        <section className="bg-gradient-to-b from-mint-500 to-mint-400">
+        <section
+          id="work-with-us"
+          className="bg-gradient-to-b from-mint-500 to-mint-400"
+        >
           <div className="container mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
             <h2 className="py-8 text-center text-5xl font-bold text-white">
               Work With Us

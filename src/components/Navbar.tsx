@@ -2,8 +2,8 @@ import { useScroll } from "framer-motion";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
-import { links } from "~/lib/constants";
+import React, { Fragment, useState } from "react";
+import { navigationLinks } from "~/lib/constants";
 import { cn } from "~/lib/utils";
 import Logo from "./Logo";
 import { Button, buttonVariants } from "./ui/button";
@@ -34,12 +34,17 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
 
   const [y, setY] = useState(0);
   const { scrollY } = useScroll();
+  const [isSheetOpen, setSheetOpen] = useState(false);
 
   scrollY.on("change", (y) => {
     setY(y);
   });
 
   const crossed = y > 300;
+
+  const handleLinkClick = () => {
+    setSheetOpen(false);
+  };
 
   return (
     <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
@@ -62,7 +67,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           </span>
         </div>
 
-        <Sheet>
+        <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
           <SheetTrigger
             className="rounded-full bg-mint-500 stroke-white p-2 lg:hidden"
             asChild
@@ -71,42 +76,58 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           </SheetTrigger>
           <SheetContent className="bg-background">
             <SheetHeader className="space-y-4 text-left">
-              {links.map((link) => {
-                return (
-                  <SheetTitle key={link.name} className="space-y-4 text-3xl">
-                    <Button
-                      asChild
-                      variant="ghost"
-                      className={cn(path === link.href && "bg-coffee-50")}
-                    >
-                      <Link href={link.href}>{link.name}</Link>
-                    </Button>
-                    <SheetDescription className="flex flex-col gap-4 indent-12 text-xl">
-                      {Array.isArray(link.subLinks) &&
-                        link.subLinks.length > 0 &&
-                        link.subLinks.map((subLink) => (
+              {navigationLinks.map((link) => (
+                <SheetTitle
+                  key={`mobile-${link.href}`}
+                  className="space-y-4 text-base"
+                >
+                  <Button
+                    asChild
+                    variant="ghost"
+                    className={cn(path === link.href && "bg-coffee-50")}
+                  >
+                    <Link href={link.href} onClick={handleLinkClick}>
+                      {link.name}
+                    </Link>
+                  </Button>
+                  <SheetDescription className="ml-10 flex flex-col gap-4 text-base underline">
+                    {Array.isArray(link.subLinks) &&
+                      link.subLinks.length > 0 &&
+                      link.subLinks.map((subLink, index) => (
+                        <Fragment key={`mobile-${subLink.href}-${index}`}>
                           <Link
-                            key={subLink.name}
                             href={subLink.href}
                             className="text-neutral-foreground"
+                            onClick={handleLinkClick}
                           >
                             {subLink.name}
                           </Link>
-                        ))}
-                    </SheetDescription>
-                  </SheetTitle>
-                );
-              })}
+
+                          {subLink.subLinks?.map((subSubLink, subIndex) => (
+                            <Link
+                              key={`mobile-${subSubLink.href}-${subIndex}`}
+                              href={subSubLink.href}
+                              className="ml-10 text-neutral-foreground"
+                              onClick={handleLinkClick}
+                            >
+                              {subSubLink.name}
+                            </Link>
+                          ))}
+                        </Fragment>
+                      ))}
+                  </SheetDescription>
+                </SheetTitle>
+              ))}
             </SheetHeader>
           </SheetContent>
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
           <NavigationMenuList className="flex w-full flex-wrap items-center gap-2 xl:gap-4">
-            {links.map((link) => {
+            {navigationLinks.map((link) => {
               if (link.subLinks) {
                 return (
-                  <NavigationMenuItem key={link.name}>
+                  <NavigationMenuItem key={`desktop-${link.href}`}>
                     <Link href={link.href} legacyBehavior passHref>
                       <NavigationMenuTrigger
                         className={cn(
@@ -120,14 +141,40 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                     </Link>
                     <NavigationMenuContent>
                       <ul className="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                        {link.subLinks.map((subLink) => (
-                          <ListItem
-                            key={subLink.name}
-                            href={subLink.href}
-                            title={subLink.name}
-                            className="text-foreground"
-                          />
-                        ))}
+                        {link.subLinks.map((subLink, index) => {
+                          if (subLink.subLinks) {
+                            return (
+                              <Fragment
+                                key={`desktop-${subLink.href}-${index}`}
+                              >
+                                <ListItem
+                                  href={subLink.href}
+                                  title={subLink.name}
+                                  className="text-foreground"
+                                />
+                                {subLink.subLinks.map(
+                                  (subSubLink, subIndex) => (
+                                    <ListItem
+                                      key={`desktop-${subSubLink.href}-${subIndex}`}
+                                      href={subSubLink.href}
+                                      title={subSubLink.name}
+                                      className="indent-8 text-foreground"
+                                    />
+                                  ),
+                                )}
+                              </Fragment>
+                            );
+                          }
+
+                          return (
+                            <ListItem
+                              key={`desktop-${subLink.href}-${index}`}
+                              href={subLink.href}
+                              title={subLink.name}
+                              className="text-foreground"
+                            />
+                          );
+                        })}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
