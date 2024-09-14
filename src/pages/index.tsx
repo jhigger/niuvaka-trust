@@ -99,11 +99,13 @@ export default function Home() {
                   loading="lazy"
                 />
                 <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
-                  <h3 className="sr-only !relative mb-1 text-[100%] font-bold uppercase text-coffee-700 lg:not-sr-only xl:text-2xl">
+                  <h3 className="sr-only !relative mb-1 text-[100%] font-bold capitalize text-coffee-700 lg:not-sr-only xl:text-2xl">
                     {name}
-                    <span className="absolute -bottom-1 left-0 h-1 w-10 bg-coffee-400"></span>
+                    <span className="absolute -bottom-1 left-0 h-1 w-[20%] bg-coffee-400"></span>
                   </h3>
-                  <p className="text-[75%] xl:text-base">{description}</p>
+                  <p className="text-center text-[75%] xl:text-base">
+                    {description}
+                  </p>
                 </div>
               </div>
             );
