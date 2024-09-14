@@ -326,6 +326,7 @@ export const news: ArticleProps[] = [
     date: new Date(2024, 6, 1),
     excerpt:
       "Palmerston North family man Tui Saumalu has discovered the gift of gardening.\n\nThe father-of-four is among the 18 families who have learnt the joy of growing their own food through the Niuvaka Trust’s Pasifika Home Garden Initiative.",
+    url: "https://www.stuff.co.nz/nz-news/350321965/pasifika-families-learn-grow-their-own-kai",
   },
   {
     type: "news",
@@ -335,5 +336,6 @@ export const news: ArticleProps[] = [
     date: new Date(2024, 5, 22),
     excerpt:
       "Based in Palmerston North, Niuvaka Trust’s purpose is to work cooperatively with Tagata Pasifika, Pasifika communities, and Pasifika families in the MidCentral region, to build their capacity and capability, and realise their aspirations. It has a vision is for Tagata Pasifika to be ‘Thriving, Flourishing and Resilient’.",
+    url: "https://www.jrmckenzie.org.nz/stories/niuvaka-trust-thriving-flourishing-and-resilient-tagata-pasifika",
   },
 ];

@@ -13,6 +13,7 @@ export type ArticleProps = {
   date: Date;
   excerpt?: string;
   video?: string;
+  url?: string;
 };
 
 const Article = ({
@@ -22,6 +23,7 @@ const Article = ({
   date,
   excerpt,
   video,
+  url,
 }: ArticleProps) => {
   return (
     <article className="flex flex-col gap-4 py-8">
@@ -38,8 +40,13 @@ const Article = ({
         <p className="line-clamp-5 whitespace-pre-wrap">{excerpt}</p>
       )}
       {type === "news" && !video && (
-        <Button className="mt-auto self-end rounded-full bg-mint-500 p-6 text-2xl text-white">
-          Read More
+        <Button
+          className="mt-auto self-end rounded-full bg-mint-500 p-6 text-2xl text-white"
+          asChild
+        >
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            Read More
+          </a>
         </Button>
       )}
       {type === "event" && video && (
