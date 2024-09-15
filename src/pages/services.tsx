@@ -419,7 +419,7 @@ const Services = () => {
                         </div>
                         <div className="order-1 col-span-full lg:order-none lg:col-span-1">
                           <img
-                            src="https://placehold.co/400x500?text=Image"
+                            src="/services/cervical-screening.webp"
                             alt="poster"
                             className="w-full rounded"
                           />
@@ -508,7 +508,7 @@ const Services = () => {
                         </div>
                         <div className="col-span-full md:order-1 lg:col-span-1">
                           <img
-                            src="https://placehold.co/400x500?text=Image"
+                            src="/services/bowel-screening.webp"
                             alt="poster"
                             className="w-full rounded"
                           />
