@@ -258,8 +258,8 @@ export default function About() {
                         loading="lazy"
                       />
                     </div>
+                    <div className="text-2xl font-bold">{name}</div>
                     <div className="transition-all duration-200 ease-in-out group-hover:opacity-100 lg:opacity-0">
-                      <div className="text-2xl font-bold">{name}</div>
                       <div className="text-2xl font-medium">{role}</div>
                       <div className="text-2xl font-normal">{description}</div>
                     </div>
@@ -276,7 +276,7 @@ export default function About() {
               {staff.map(({ image, name, role, description }) => (
                 <div
                   key={name}
-                  className="group flex flex-col items-center gap-4 text-center"
+                  className="group relative flex flex-col items-center gap-4 text-center"
                 >
                   <div className="col-span-1 flex aspect-square w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
                     <img
@@ -286,8 +286,8 @@ export default function About() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="transition-all duration-200 ease-in-out group-hover:opacity-100 lg:opacity-0">
-                    <div className="text-2xl font-bold">{name}</div>
+                  <div className="text-2xl font-bold">{name}</div>
+                  <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
                     <div className="text-2xl font-medium">{role}</div>
                     <div className="text-2xl font-normal">{description}</div>
                   </div>
