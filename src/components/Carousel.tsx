@@ -30,9 +30,11 @@ const Carousel = () => {
           prevEl: ".swiper-button-prev",
         }}
         slidesPerView={"auto"}
-        spaceBetween={300}
+        spaceBetween={400}
         className="relative h-[40vw] w-full"
-        autoplay
+        autoplay={{
+          delay: 5000,
+        }}
       >
         {colors.map((color) => (
           <SwiperSlide
