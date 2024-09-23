@@ -1,7 +1,13 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
+import "swiper/css/pagination";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { cn } from "~/lib/utils";
 
@@ -24,7 +30,7 @@ const Carousel = () => {
         effect="coverflow"
         grabCursor={true}
         loop={true}
-        modules={[EffectCoverflow, Navigation, Autoplay]}
+        modules={[EffectCoverflow, Navigation, Autoplay, Pagination]}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -34,6 +40,17 @@ const Carousel = () => {
         className="relative h-[40vw] w-full"
         autoplay={{
           delay: 5000,
+        }}
+        pagination={{
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' +
+              className +
+              ' !bg-coffee-400 !size-4">' +
+              "</span>"
+            );
+          },
         }}
       >
         {colors.map((color) => (
