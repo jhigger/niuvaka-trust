@@ -4,7 +4,70 @@ import { useEffect, useState } from "react";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
-import { projects, services as serviceItems } from "~/lib/constants";
+import { services as serviceItems } from "~/lib/constants";
+
+export const projects = [
+  {
+    image: "/projects/paddles.webp",
+    name: "Poly Paddles",
+    description: (
+      <p className="text-xl">
+        Water safety and life skills programme for Pasifika & Māori Tamariki and
+        Rangatahi 5-18 years
+        <br />
+        <br />
+        If you would like to enquire about our Poly Paddles, please call Niuvaka
+        on 0800-648-8252 or via email:{" "}
+        <a
+          href="mailto:info@niuvaka.org.nz"
+          className="underline underline-offset-4"
+        >
+          info@niuvaka.org.nz
+        </a>
+      </p>
+    ),
+  },
+  {
+    image: "/projects/gardening.webp",
+    name: "Pasifica Home Gardening Initiatives",
+    description: (
+      <p className="text-xl">
+        Wellbeing programme using ancestral knowledge to support Pacific
+        families to be self-managing and self-sufficient.
+        <br />
+        <br />
+        If you would like to enquire about our Pacific Home Gardening
+        Initiatives, please call Niuvaka on 0800-648-8252 or via email:{" "}
+        <a
+          href="mailto:info@niuvaka.org.nz"
+          className="underline underline-offset-4"
+        >
+          info@niuvaka.org.nz
+        </a>
+      </p>
+    ),
+  },
+  {
+    image: "/projects/vaka.webp",
+    name: "Vaka Programme: Traditional Pacific Cultural Games",
+    description: (
+      <p className="text-xl">
+        Initiative to revive traditional Pacific cultural games to create
+        connectedness and belonging
+        <br />
+        <br />
+        If you would like to enquire about our Vaka Programmes, please call
+        Niuvaka on 0800-648-8252 or via email:{" "}
+        <a
+          href="mailto:info@niuvaka.org.nz"
+          className="underline underline-offset-4"
+        >
+          info@niuvaka.org.nz
+        </a>
+      </p>
+    ),
+  },
+];
 
 const images = [
   "/services/service1.webp",
@@ -33,8 +96,8 @@ const serviceDescriptions = [
         with other providers, community organisations and government agencies.
         <br />
         <br />
-        If you would like to enquire about our Navigation service, please
-        call Niuvaka on 0800-648-8252 or via email:{" "}
+        If you would like to enquire about our Navigation service, please call
+        Niuvaka on 0800-648-8252 or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="underline underline-offset-4"
@@ -66,8 +129,8 @@ const serviceDescriptions = [
         and pastoral care.
         <br />
         <br />
-        If you would like to enquire about our Ola Lelei service, please
-        call Niuvaka on 0800-648-8252 or via email:{" "}
+        If you would like to enquire about our Ola Lelei service, please call
+        Niuvaka on 0800-648-8252 or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="underline underline-offset-4"
@@ -576,23 +639,20 @@ const Services = () => {
                 return (
                   <div
                     key={name}
-                    className="grid grid-cols-1 gap-24 p-8 lg:grid-cols-5"
+                    className="grid grid-cols-1 gap-24 p-8 lg:grid-cols-2"
                   >
                     <img
                       src={image}
                       alt="service"
-                      className="col-span-full aspect-[4/3] w-full rounded object-cover lg:col-span-2"
+                      className="col-span-full aspect-video w-full rounded object-cover lg:col-span-1"
                     />
-                    <div className="col-span-full flex flex-col gap-12 lg:col-span-3">
-                      <h3 className="text-4xl font-semibold uppercase text-white md:text-6xl">
+                    <div className="col-span-full flex flex-col gap-12 lg:col-span-1">
+                      <h3 className="text-2xl font-semibold capitalize text-white md:text-4xl">
                         {name}
                       </h3>
-                      <p className="whitespace-pre-wrap text-xl">
+                      <div className="whitespace-pre-wrap text-xl">
                         {description}
-                        <Button className="float-right aspect-square size-max rounded-full bg-coffee-400 px-8 py-6 text-2xl font-black text-coffee-50">
-                          Register
-                        </Button>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 );
