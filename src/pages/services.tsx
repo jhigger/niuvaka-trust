@@ -33,7 +33,7 @@ const serviceDescriptions = [
         with other providers, community organisations and government agencies.
         <br />
         <br />
-        If you would like to enquire about our Are Toa Kaikai service, please
+        If you would like to enquire about our Navigation service, please
         call Niuvaka on 0800-648-8252 or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
@@ -66,7 +66,7 @@ const serviceDescriptions = [
         and pastoral care.
         <br />
         <br />
-        If you would like to enquire about our Are Toa Kaikai service, please
+        If you would like to enquire about our Ola Lelei service, please
         call Niuvaka on 0800-648-8252 or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
@@ -155,7 +155,7 @@ const serviceDescriptions = [
           depend on the supplies available to us.
           <br />
           <br />
-          If you would like to enquire about our Are Toa Kaikai service, please
+          If you would like to enquire about our Ara Toa Kaikai service, please
           call Niuvaka on 0800-648-8252 or via email:{" "}
           <a
             href="mailto:info@niuvaka.org.nz"
