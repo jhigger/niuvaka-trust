@@ -9,14 +9,15 @@ const Partners = () => {
       </h2>
       <InfiniteMovingCards
         speed="normal"
-        items={partners.map((image, i) => (
-          <img
-            key={i}
-            src={image}
-            alt="partner"
-            className="aspect-video h-full max-h-32 w-full object-contain object-center"
-            loading="lazy"
-          />
+        items={partners.map(({ image, link }, i) => (
+          <a key={i} href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={image}
+              alt="partner"
+              className="aspect-video h-full max-h-32 w-full object-contain object-center"
+              loading="lazy"
+            />
+          </a>
         ))}
       />
     </section>

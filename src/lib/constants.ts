@@ -340,14 +340,40 @@ export const events: ArticleProps[] = [
 ];
 
 export const partners = [
-  "/partners/1.webp",
-  "/partners/2.webp",
-  "/partners/3.webp",
-  "/partners/4.webp",
-  "/partners/5.webp",
-  "/partners/6.webp",
-  "/partners/7.webp",
-  "/partners/9.webp",
+  {
+    image: "/partners/1.webp",
+    link: "https://www.tewhatuora.govt.nz/",
+  },
+  {
+    image: "/partners/2.webp",
+    link: "https://www.msd.govt.nz/",
+  },
+  {
+    image: "/partners/3.webp",
+    link: "https://www.jrmckenzie.org.nz/",
+  },
+  {
+    image: "/partners/4.webp",
+    link: "https://www.dia.govt.nz/",
+  },
+  {
+    image: "/partners/5.webp",
+    link: "https://www.mpp.govt.nz/",
+  },
+
+  {
+    image: "/partners/6.webp",
+    link: "https://www.sportmanawatu.org.nz/",
+  },
+  {
+    image: "/partners/7.webp",
+    link: "https://tetihi.org.nz/collective-impact/ora-konnect/",
+  },
+
+  {
+    image: "/partners/8.webp",
+    link: "https://www.thinkhauora.nz/",
+  },
 ];
 
 export const projects = [

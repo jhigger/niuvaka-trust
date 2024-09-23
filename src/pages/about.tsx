@@ -310,15 +310,21 @@ export default function About() {
             outcomes.
           </p>
           <div className="grid w-full grid-cols-1 items-center justify-center gap-8 p-8 md:grid-cols-3">
-            {partners.map((image, i) => {
+            {partners.map(({ image, link }, i) => {
               return (
-                <img
+                <a
                   key={i}
-                  src={image}
-                  alt="partner"
-                  className="aspect-video h-full max-h-32 w-full object-contain object-center"
-                  loading="lazy"
-                />
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={image}
+                    alt="partner"
+                    className="aspect-video h-full max-h-32 w-full object-contain object-center"
+                    loading="lazy"
+                  />
+                </a>
               );
             })}
           </div>
