@@ -316,7 +316,7 @@ export default function About() {
                   key={i}
                   src={image}
                   alt="partner"
-                  className="aspect-video h-full max-h-32 w-full object-contain object-center grayscale hover:grayscale-0"
+                  className="aspect-video h-full max-h-32 w-full object-contain object-center"
                   loading="lazy"
                 />
               );
