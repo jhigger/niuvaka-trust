@@ -115,10 +115,9 @@ const Contact = () => {
               <div className="flex flex-col items-center gap-8 md:flex-row">
                 <img src="/location.svg" alt="location" />
                 <p className="text-lg font-bold">
-                  Level 1, 59 Queen Street, <br className="block lg:hidden" />{" "}
-                  Palmerston North Central,
-                  <br /> Palmerston North 4410,{" "}
-                  <br className="block lg:hidden" /> New Zealand
+                  Level 1, 59 Queen Street,
+                  <br /> Palmerston North 4410,
+                  <br /> New Zealand
                 </p>
               </div>
 
