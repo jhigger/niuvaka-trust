@@ -384,7 +384,7 @@ export const partners = [
 export const news: ArticleProps[] = [
   {
     type: "news",
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/news/pasifika-families.webp",
     title: "Pasifika families learn to grow their own kai",
     date: new Date(2024, 6, 1),
     excerpt:
@@ -393,7 +393,7 @@ export const news: ArticleProps[] = [
   },
   {
     type: "news",
-    image: "https://placehold.co/200x200/?text=Image",
+    image: "/news/jr-mckenzie.webp",
     title:
       "Niuvaka Trust – Thriving, Flourishing and Resilient Tagata Pasifika",
     date: new Date(2024, 5, 22),
