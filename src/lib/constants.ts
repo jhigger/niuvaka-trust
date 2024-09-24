@@ -1,6 +1,6 @@
 import { type ArticleProps } from "~/pages/news";
 
-export const email = "njohnjhigger@gmail.com";
+export const email = "info@niuvaka.org.nz";
 
 export const services: {
   image: string;
