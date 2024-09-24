@@ -316,6 +316,11 @@ export const socials = [
     href: "https://www.instagram.com/trustniuvaka",
     image: "/socials/instagram.png",
   },
+  {
+    name: "youtube",
+    href: "https://www.youtube.com/@niuvakatrust",
+    image: "/socials/youtube.png",
+  },
 ];
 
 export const events: ArticleProps[] = [
