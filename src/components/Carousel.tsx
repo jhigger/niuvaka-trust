@@ -9,16 +9,18 @@ import {
   Pagination,
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { cn } from "~/lib/utils";
 
-const colors = [
-  "bg-red-500",
-  "bg-orange-500",
-  "bg-yellow-500",
-  "bg-green-500",
-  "bg-blue-500",
-  "bg-indigo-500",
-  "bg-purple-500",
+export const gallery = [
+  "/gallery/1.webp",
+  "/gallery/2.webp",
+  "/gallery/3.webp",
+  "/gallery/4.webp",
+  "/gallery/5.webp",
+  "/gallery/6.webp",
+  "/gallery/7.webp",
+  "/gallery/8.webp",
+  "/gallery/9.webp",
+  "/gallery/10.webp",
 ];
 
 const Carousel = () => {
@@ -53,13 +55,17 @@ const Carousel = () => {
           },
         }}
       >
-        {colors.map((color) => (
+        {gallery.map((image) => (
           <SwiperSlide
-            key={color}
+            key={image}
             className="relative !h-full !w-max overflow-hidden rounded-xl"
           >
             <div className="flex aspect-video h-full w-full items-center justify-center">
-              <div className={cn("h-full w-full", color)}></div>
+              <img
+                src={image}
+                alt="gallery image"
+                className="aspect-video h-full w-full object-cover object-[0_25%]"
+              />
             </div>
           </SwiperSlide>
         ))}
