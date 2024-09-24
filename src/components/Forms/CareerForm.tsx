@@ -112,7 +112,7 @@ const CareerForm = () => {
             </FormItem>
           )}
         />
-        <input type="text" name="subject" value={"vacancies"} hidden />
+        <input type="text" name="subject" value={"vacancies"} hidden readOnly />
         <FormFooter className="col-span-full text-sm" />
         <Button
           type="submit"
