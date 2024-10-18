@@ -55,14 +55,14 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           crossed && "pb-0",
         )}
       >
-        <div className="flex shrink-0 items-center justify-center gap-2 xl:gap-4">
+        <div className="flex shrink-0 items-center justify-center gap-2 xl:gap-4 2xl:flex-1">
           <Logo
             className={cn(
               "my-8 transition-all duration-200 ease-in-out",
               crossed && "my-4 size-16",
             )}
           />
-          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block xl:max-w-full">
+          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block xl:max-w-full 2xl:mx-auto">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </span>
         </div>
@@ -123,7 +123,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex w-full flex-wrap items-center gap-2 xl:gap-4">
+          <NavigationMenuList className="flex w-full items-center gap-2 xl:gap-4">
             {navigationLinks.map((link) => {
               if (link.subLinks) {
                 return (
