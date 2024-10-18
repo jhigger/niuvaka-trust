@@ -50,9 +50,10 @@ export const values = [
       "Cherishing family as the centre and foundation for belonging and identity",
   },
   {
-    image: "/values/faithfulness.webp",
-    name: "Faithfulness",
-    description: "Being principled, devoted, dependable, and reliable",
+    image: "/values/relationships.webp",
+    name: "Relationships",
+    description:
+      "Relationships are nurtured, cared for, and honoured for shared mutual gain and success",
   },
   {
     image: "/values/service.webp",
@@ -61,16 +62,15 @@ export const values = [
       "Service for the benefit and good of all enacting kindness and thoughtfulness",
   },
   {
-    image: "/values/relationships.webp",
-    name: "Relationships",
-    description:
-      "Relationships are nurtured, cared for, and honoured for shared mutual gain and success",
-  },
-  {
     image: "/values/respect.webp",
     name: "Respect",
     description:
       "Paying regard and respect valuing everyone and every situation",
+  },
+  {
+    image: "/values/faithfulness.webp",
+    name: "Faithfulness",
+    description: "Being principled, devoted, dependable, and reliable",
   },
 ];
 
@@ -82,8 +82,8 @@ export const focusAreas = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/prosperity.webp",
-    name: "Prosperity",
+    image: "/focus_areas/leadership.webp",
+    name: "Leadership",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
@@ -100,8 +100,8 @@ export const focusAreas = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/leadership.webp",
-    name: "Leadership",
+    image: "/focus_areas/prosperity.webp",
+    name: "Prosperity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
@@ -350,12 +350,12 @@ export const partners = [
     link: "https://www.tewhatuora.govt.nz/",
   },
   {
-    image: "/partners/2.webp",
-    link: "https://www.msd.govt.nz/",
-  },
-  {
     image: "/partners/3.webp",
     link: "https://www.jrmckenzie.org.nz/",
+  },
+  {
+    image: "/partners/2.webp",
+    link: "https://www.msd.govt.nz/",
   },
   {
     image: "/partners/4.webp",
