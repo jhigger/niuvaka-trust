@@ -374,10 +374,13 @@ export const partners = [
     image: "/partners/7.webp",
     link: "https://tetihi.org.nz/collective-impact/ora-konnect/",
   },
-
   {
     image: "/partners/8.webp",
     link: "https://www.thinkhauora.nz/",
+  },
+  {
+    image: "/partners/9.webp",
+    link: "https://ecct.org.nz/",
   },
 ];
 
