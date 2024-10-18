@@ -122,10 +122,10 @@ export const staff = [
       "Mangaia i te Kuki Airani, Tahiti, Te Āti Haunui a Pāpārangi, Zierikzee i Horana",
   },
   {
-    image: "/team/Metaio Malama.webp",
-    name: "Metaio Malama",
-    role: "Business Development Manager",
-    description: "Fasito’outa me Nofoali’i i Samoa",
+    image: "/team/Sharron Smith.webp",
+    name: "Sharron Smith",
+    role: "Executive Assistant",
+    description: "Ngā Rauru",
   },
   {
     image: "/team/Waimarama Albert.webp",
@@ -134,21 +134,33 @@ export const staff = [
     description: "Ngāti Raukawa, Ngāti Kahungunu, Ngāti Maniapoto",
   },
   {
-    image: "/team/Analena Siu.webp",
-    name: "Analena Talikimuli Siu",
-    role: "Pasifika Community Connector",
-    description: "‘Oku ou hai mei Tonga",
+    image: "/team/Metaio Malama.webp",
+    name: "Metaio Malama",
+    role: "Business Development Manager",
+    description: "Fasito’outa me Nofoali’i i Samoa",
   },
   {
     image: "/team/Stephanie Haami.webp",
     name: "Stephanie Haami",
-    role: "Pasifika Immunisation Coordinator",
+    role: "Health Service Manager",
     description: "Aitutaki i te Kuki Airani, Rangitikei",
+  },
+  {
+    image: "/team/Analena Siu.webp",
+    name: "Analena Talikimuli Siu",
+    role: "Pasifika Pathway Navigator",
+    description: "‘Oku ou ha’u mei Tonga",
+  },
+  {
+    image: "/team/William Damudamu.webp",
+    name: "William Damudamu",
+    role: "Project Coordinator",
+    description: "Vanuatu, Fiji",
   },
   {
     image: "/team/Andrew Mulitalo.webp",
     name: "Andrew Mose Gu Mulitalo",
-    role: "Pasifika Health Navigator",
+    role: "Pasifika Navigator",
     description: "Letogo Apia, Iv’a Sava’i",
   },
   {
@@ -156,12 +168,6 @@ export const staff = [
     name: "Mutsuo Hatakeyama",
     role: "Pasifika Navigator",
     description: "Ou te Sau mai nu’u Tanugamanono",
-  },
-  {
-    image: "/team/William Damudamu.webp",
-    name: "William Damudamu",
-    role: "Project Coordinator",
-    description: "Vanuatu, Fiji",
   },
   {
     image: "/team/Aumetua Lackey.webp",
@@ -175,6 +181,24 @@ export const staff = [
     role: "Community Kai Support",
     description:
       "Rarotonga me Aitutaki i te Kuki Airani, Ngāti Kahungunu, Rongomaiwāhine",
+  },
+  {
+    image: "/team/Patricia Hadley.webp",
+    name: "Patricia Hadley",
+    role: "Pasifika Community Clinical Nurse",
+    description: "Afakasi Samoa, NZ European",
+  },
+  {
+    image: "/team/Randy Freddie (Liuvaie).webp",
+    name: "Randy Freddie (Liuvaie)",
+    role: "Pasifika Training Coordinator",
+    description: "Manunu, Hakupu, Niue mo Lakeba, Lau, Fiji",
+  },
+  {
+    image: "/team/Luana Tonga.webp",
+    name: "Luana Tonga",
+    role: "Pasifika Relationship Navigator",
+    description: "Vai-Ko-Puna/Pea, Tonga",
   },
 ];
 

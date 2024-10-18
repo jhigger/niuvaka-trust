@@ -1,9 +1,235 @@
 import Head from "next/head";
+import { useState } from "react";
 import Footer from "~/components/Footer";
 import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
+import { Button } from "~/components/ui/button";
 import { partners, staff } from "~/lib/constants";
+
+type GovernanceBoardType = {
+  image: string;
+  name: string;
+  role: string;
+  description: React.ReactNode;
+  readMore?: React.ReactNode;
+};
+
+const governanceBoard: GovernanceBoardType[] = [
+  {
+    image: "/team/board/Daniel.webp",
+    name: "Daniel Iose",
+    role: "Chair",
+    description: (
+      <>
+        <p>
+          Daniel joined Niuvaka as a board member in 2022 and currently holds
+          the elected position of Chairperson.
+        </p>
+        <p>
+          Daniel is of Samoan descent and was born in Porirua. Daniel&apos;s
+          late Father Semaoa Telu was from Fasito&apos;outa, Samoa, and his late
+          Mother Tiana, from Pata Faleatai, Samoa. Daniel is married to Sandra,
+          and has two adult sons, Jackson and Brayden.
+        </p>
+        <p>
+          Daniel is a proud Samoan who has built his career in ICT over three
+          decades and feels very privileged to be part of the Niuvaka journey in
+          supporting our Pasifika communities to achieve their aspirations.
+        </p>
+      </>
+    ),
+  },
+  {
+    image: "/team/board/Jenine.webp",
+    name: "Jenine Scoon",
+    role: "Chair",
+    description: (
+      <>
+        <p>
+          Jenine is of Te Ipukarea and Samoan descent, born in Dunedin and
+          raised in Te Papaieoa.
+        </p>
+        <p>
+          Jenine has three grown sons and six mokopuna and is actively involved
+          in the local Softball community holding the Chairperson&apos;s role
+          for the past five years.
+        </p>
+        <p>
+          Jenine currently works at Highbury Whānau Centre as a Team Lead for
+          the Transition Service and has over 30 years experience working in the
+          Public Service Sector.
+        </p>
+        <p>
+          She is passionate about ensuring that our Polynesian peoples have all
+          the opportunities available to them to succeed in their lives, and
+          homelife to support the sustainabilty of the work that Niuvaka can
+          offer to our beautiful communities.
+        </p>
+      </>
+    ),
+    readMore: (
+      <p>
+        E toru oire roto toku iwi
+        <br />
+        Ko Titikaveka, Ngatangiia, e Matavera
+        <br />
+        Te ingoa kapiti no te oire ko Takitumu
+        <br />
+        Ko Irirangi te Maunga
+        <br />
+        E ko Avana te Ava
+        <br />
+        Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani)
+        <br />
+        Te maata i taau ka Oranga ko te Maata rai ia i taau ka rauka.
+        <br />
+        <br />
+        &quot;The more you give the more you receive.&quot;
+        <br />
+        <br />
+        Meitaki Ma&apos;ata
+      </p>
+    ),
+  },
+  {
+    image: "/team/board/Suli.webp",
+    name: "Suliasi Vunibola",
+    role: "Founding Board Member",
+    description: (
+      <>
+        <p>
+          Dr Suli Vunibola is of Fijian descent and is one of the founding
+          members of Niuvaka Trust.
+        </p>
+        <p>
+          He is a transdisciplinary scholar and a Climate Research Fellow at
+          Macmillan Brown Centre for Pacific Studies, University of Canterbury
+          and adjunct with the{" "}
+          <a
+            href="https://www.usc.edu.au/research/australian-centre-for-pacific-islands-research"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4"
+          >
+            Australian Centre for Pacific Islands Research
+          </a>
+          .
+        </p>
+        <p>
+          Suli&apos;s research interests broadly lie in the interdisciplinary
+          areas of development studies, human geography, ethnography,
+          ethno-ecology, climate crisis, and community production. The core of
+          some of his research is around indigenous knowledge systems, community
+          indigenous innovation, alternative and pluriverse development,
+          community-driven development, and social transformation in the
+          Pacific.
+        </p>
+      </>
+    ),
+    readMore: (
+      <p>
+        Suli&apos;s doctoral research explored indigenous alternative economic
+        development on customary land in the Pacific through decolonised
+        indigenous methodologies. His interests also include developing cohesion
+        between Pasifika community providers and research, and he also
+        co-developed the new Pacific Studies courses at the University of
+        Canterbury, New Zealand, in 2024.
+      </p>
+    ),
+  },
+  {
+    image: "/team/board/Tawhiti.webp",
+    name: "Tawhiti Kunaiti",
+    role: "Tangata Whenua Representative",
+    description: (
+      <>
+        <p>
+          Tawhiti is of Raukawa, Ngāti Mango, Ngai Tara, Rangitāne, Ngāti Kuia,
+          Ngāti Kahungunu, Ngāti Ruapani, Rongomaiwahine, Te Āti Hau, Ngāti
+          Matakore descent and is the Tangata Whenua representative having
+          joined the Niuvaka Trust Board in 2023.
+        </p>
+        <p>
+          He has been in several key leadership roles with Te Tihi o Ruahine
+          Whānau Ora Alliance, New Zealand College of Clinical Psychologists and
+          Te Papa Tongarewa, the Museum of Aotearoa-New Zealand. Tawhiti was an
+          appointed member of the Manawhenua Iwi Relationship Board to the
+          MidCentral District Health Board (MDHB) Healthy Communities Advisory
+          Committee & MDHB Disability Support Advisory Committee.
+        </p>
+        <p>
+          Tawhiti is a Registered Graduate in Frontline Management, New Zealand
+          Institute of Management, a Bursar Recipient of Te Rau Puawai Māori
+          Mental Health Development studying Psychology through Te Kunenga ki
+          Pūrehuroa and has a background in the education sector, specifically
+          within total immersion Māori language settings.
+        </p>
+      </>
+    ),
+    readMore: (
+      <>
+        <p>
+          Tawhiti has given extensive contributions to the health sector and the
+          Whānau Ora movement including as Co-Project Lead for the establishment
+          of Te Awahou Community Health Service in Foxton.
+        </p>
+        <p>
+          He was a key Leader for the Ngāti Whakatere and Te Awahou Waitangi
+          Claims Hearings from and is the current Chair of Ngāti Whakatere Māori
+          Land Trust, as well as a member of Te Whare Makatea, Ngāti Raukawa
+          School of Traditional Māori Lore from 2018-2023.
+        </p>
+        <p>
+          Tawhiti is passionate about supporting the advancement of Whānau Ora
+          and extends this support to Pacific communities through his role on
+          the Niuvaka Trust Board.
+        </p>
+      </>
+    ),
+  },
+];
+
+const BoardItem = ({
+  image,
+  name,
+  role,
+  description,
+  readMore,
+}: GovernanceBoardType) => {
+  const [isReadMore, setIsReadMore] = useState(false);
+
+  return (
+    <div
+      key={name}
+      className="mx-auto grid max-w-screen-2xl grid-cols-1 place-items-start justify-items-center gap-8 lg:grid-cols-12"
+    >
+      <img
+        src={image}
+        alt={role}
+        className="col-span-full aspect-[13/16] w-full max-w-sm rounded-3xl object-cover lg:col-span-5"
+        loading="lazy"
+      />
+
+      <div className="col-span-full flex flex-col gap-8 text-center lg:col-span-7 lg:text-start">
+        <h3 className="flex flex-col gap-4">
+          <span className="text-4xl font-black">{name}</span>
+          <span className="text-2xl font-medium text-white">{role}</span>
+        </h3>
+        {description}
+        {isReadMore && readMore}
+        {readMore && (
+          <Button
+            className="mt-auto self-center rounded-full bg-coffee-50 p-8 text-2xl lg:self-end"
+            onClick={() => setIsReadMore(!isReadMore)}
+          >
+            {isReadMore ? "Read Less" : "Read More"}
+          </Button>
+        )}
+      </div>
+    </div>
+  );
+};
 
 export default function About() {
   return (
@@ -107,7 +333,7 @@ export default function About() {
             </div>
             <div className="order-3 col-span-1 md:order-none lg:aspect-video">
               <img
-                src="/sitting.webp"
+                src="/niu.webp"
                 alt="sitting woman"
                 className="h-full w-full object-cover object-bottom"
                 loading="lazy"
@@ -115,7 +341,7 @@ export default function About() {
             </div>
             <div className="order-5 col-span-1 md:order-none lg:aspect-video">
               <img
-                src="https://placehold.co/400?text=Image"
+                src="/vaka.webp"
                 alt="placeholder"
                 className="h-full w-full object-cover object-center"
                 loading="lazy"
@@ -138,6 +364,12 @@ export default function About() {
             </div>
             <div className="order-8 col-span-1 md:order-none lg:aspect-video">
               <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2
+                  id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
+                  className="text-4xl font-black"
+                >
+                  Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
+                </h2>
                 <p className="max-w-screen-sm text-lg">
                   Iwi-Māori and Pacific Peoples have many historical bonds and
                   connections including genealogy, kinship, traditions, and
@@ -158,41 +390,28 @@ export default function About() {
             <div className="order-7 col-span-1 h-96 md:order-none md:h-full lg:aspect-video">
               <div className="relative h-full w-full">
                 <img
-                  src="/hero_images/home.webp"
+                  src="/ngatangiia_rarotonga.webp"
                   alt="hero"
                   className="absolute h-full w-full object-cover object-center"
                   loading="lazy"
                 />
-                <div
-                  id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
-                  className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8"
-                >
-                  <h2 className="max-w-screen-sm text-center text-4xl font-black text-white">
-                    Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
-                  </h2>
-                </div>
               </div>
             </div>
             <div className="order-9 col-span-1 h-96 md:order-none md:h-full lg:aspect-video">
               <div className="relative h-full w-full">
                 <img
-                  src="/hero_images/home.webp"
+                  src="/tapa.webp"
                   alt="hero"
                   className="absolute h-full w-full object-cover object-center"
                   loading="lazy"
                 />
-                <div
-                  id="pasifika-diversity"
-                  className="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center bg-black/25 p-8"
-                >
-                  <h2 className="max-w-screen-sm text-center text-4xl font-black text-white">
-                    Pasifika Diversity
-                  </h2>
-                </div>
               </div>
             </div>
             <div className="order-10 col-span-1 md:order-none lg:aspect-video">
               <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2 id="pasifika-diversity" className="text-4xl font-black">
+                  Pasifika Diversity
+                </h2>
                 <p className="max-w-screen-sm text-lg">
                   Pacific Peoples or Tagata Pasifika are umbrella terms, among
                   others, used to describe the multitude of island territories
@@ -212,86 +431,52 @@ export default function About() {
           <div className="container mx-auto space-y-8 py-8">
             <div
               id="our-team"
-              className="mt-8 space-y-16 p-8 text-center font-bold text-white"
+              className="mt-8 space-y-8 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-16"
             >
-              <h2 className="text-7xl">Meet Our Team</h2>
-              <h3 className="text-5xl">Board of Trustees</h3>
+              <h2 className="text-4xl lg:text-7xl">Meet Our Team</h2>
+              <h3 className="text-3xl lg:text-5xl">Governance Board</h3>
             </div>
 
             <div className="flex flex-col gap-16 p-8">
-              <div className="mx-auto grid max-w-screen-2xl grid-cols-1 place-items-center gap-y-8 md:grid-cols-2">
-                <img
-                  src="https://placehold.co/200x200/?text=Image"
-                  alt="chairman"
-                  className="col-span-full w-full max-w-72 rounded-full object-cover md:col-span-1"
-                  loading="lazy"
-                />
-
-                <div className="col-span-full flex flex-col items-center gap-8 text-center md:col-span-1">
-                  <h3 className="flex flex-col gap-4 font-black">
-                    <span className="text-4xl">Daniel Iose</span>
-                    <span className="text-2xl">Chair</span>
-                  </h3>
-                  <p className="text-xl font-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque elit sem, pharetra ut semper sit amet,
-                    consectetur vel lectus. Pellentesque maximus sed nunc eget
-                    dapibus. Maecenas hendrerit commodo ante, sed consectetur
-                    nunc ultrices at.
-                  </p>
-                </div>
-              </div>
+              {governanceBoard.map(BoardItem)}
             </div>
 
+            <hr className="border-black lg:hidden" />
+
             <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
-              {staff.slice(0, 4).map(({ image, name, role, description }) => {
-                return (
+              <h3 className="col-span-full pb-8 text-center text-4xl font-black text-white lg:text-6xl">
+                Our Team
+              </h3>
+
+              {staff.map(({ image, name, role, description }, index) => (
+                <>
+                  {index === 0 && (
+                    <div key={index} className="col-span-1"></div>
+                  )}
+                  {index === 2 && (
+                    <div key={index} className="col-span-1"></div>
+                  )}
                   <div
                     key={name}
-                    className="group flex flex-col items-center gap-4 text-center"
+                    className={
+                      "group relative col-span-1 flex flex-col items-center gap-4 text-center"
+                    }
                   >
-                    <div className="col-span-1 flex aspect-square w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
+                    <div className="flex aspect-square w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
                       <img
                         src={image}
                         alt={name}
-                        className="size-full object-cover object-center"
+                        className="size-full object-cover object-top"
                         loading="lazy"
                       />
                     </div>
                     <div className="text-2xl font-bold">{name}</div>
-                    <div className="transition-all duration-200 ease-in-out group-hover:opacity-100 lg:opacity-0">
+                    <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
                       <div className="text-2xl font-medium">{role}</div>
                       <div className="text-2xl font-normal">{description}</div>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-
-            <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
-              <h3 className="col-span-full pb-8 text-center text-6xl font-black text-white">
-                Our Team
-              </h3>
-
-              {staff.map(({ image, name, role, description }) => (
-                <div
-                  key={name}
-                  className="group relative flex flex-col items-center gap-4 text-center"
-                >
-                  <div className="col-span-1 flex aspect-square w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
-                    <img
-                      src={image}
-                      alt={name}
-                      className="size-full object-cover object-center"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="text-2xl font-bold">{name}</div>
-                  <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
-                    <div className="text-2xl font-medium">{role}</div>
-                    <div className="text-2xl font-normal">{description}</div>
-                  </div>
-                </div>
+                </>
               ))}
             </div>
           </div>
