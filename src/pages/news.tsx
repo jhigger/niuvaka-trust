@@ -118,9 +118,11 @@ const News = () => {
             Events
           </h2>
 
-          {events.map((article, i) => (
-            <Article key={i} {...article} />
-          ))}
+          {events
+            .sort((a, b) => b.date.getTime() - a.date.getTime())
+            .map((article, i) => (
+              <Article key={i} {...article} />
+            ))}
         </section>
 
         <section className="container mx-auto mb-16 space-y-16 md:p-16">

@@ -352,19 +352,19 @@ export const events: ArticleProps[] = [
     type: "event",
     title: "Pasifika Fusion 2024 Immunisation",
     date: new Date(2024, 7, 2),
-    video: "https://www.youtube.com/embed/9Qrb0V3Hxdg?si=i7w5kh5yHepVAiRh",
+    video: "https://www.youtube.com/embed/ZZKVLEc8Weo?si=RDB0eudXHT7ZIHT1",
   },
   {
     type: "event",
     title: "Manawatū Rugby Immunisation campaign",
     date: new Date(2023, 1, 24),
-    video: "https://www.youtube.com/embed/9Qrb0V3Hxdg?si=i7w5kh5yHepVAiRh",
+    video: "https://youtube.com/embed/XnJvf8gIXnU?si=2RzLAh9XM8S8CKZA",
   },
   {
     type: "event",
-    title: "Pasifika Health Checks",
+    title: "Poly Paddles",
     date: new Date(2024, 8, 8),
-    image: "https://placehold.co/200x200/?text=Image",
+    video: "https://www.youtube.com/embed/ybQTydfoNpM?si=RsYLvWBhweEtEMKc",
   },
 ];
 
