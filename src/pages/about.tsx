@@ -451,10 +451,16 @@ export default function About() {
               {staff.map(({ image, name, role, description }, index) => (
                 <>
                   {index === 0 && (
-                    <div key={index} className="col-span-1"></div>
+                    <div
+                      key={index}
+                      className="col-span-1 hidden lg:block"
+                    ></div>
                   )}
                   {index === 2 && (
-                    <div key={index} className="col-span-1"></div>
+                    <div
+                      key={index}
+                      className="col-span-1 hidden lg:block"
+                    ></div>
                   )}
                   <div
                     key={name}
