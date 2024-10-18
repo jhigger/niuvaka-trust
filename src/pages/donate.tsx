@@ -20,7 +20,7 @@ const Donate = () => {
         <section className="mt-52">
           <div className="container mx-auto p-0">
             <img
-              src="/hero_images/about.webp"
+              src="/hero_images/services.webp"
               alt="hero"
               className="aspect-[20/8] w-full object-cover object-top"
               loading="eager"

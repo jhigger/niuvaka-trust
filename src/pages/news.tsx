@@ -92,7 +92,7 @@ const News = () => {
 
         <section className="container mx-auto p-0">
           <img
-            src="https://via.placeholder.com/1500x500?text=Image"
+            src="/hero_images/news.webp"
             alt="hero"
             className="aspect-[3/1] w-full object-cover"
             loading="eager"

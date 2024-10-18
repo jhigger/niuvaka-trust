@@ -302,7 +302,7 @@ const Services = () => {
         <section className="mt-52">
           <div className="container mx-auto p-0">
             <img
-              src="/services.jpeg"
+              src="/hero_images/services.webp"
               alt="hero"
               className="aspect-[25/10] w-full object-cover"
               loading="eager"
