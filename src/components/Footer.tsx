@@ -4,11 +4,11 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <footer className="bg-coffee-200 py-8 md:p-16">
-      <div className="container mx-auto flex flex-col items-center justify-center">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-4">
         <div className="space-y-4">
           <div className="flex items-end gap-4">
-            <div className="text-3xl font-black uppercase">NIUVAKA TRUST</div>
             <Logo className="-mb-2 h-max w-20" />
+            <div className="text-3xl font-black uppercase">NIUVAKA TRUST</div>
           </div>
 
           <div className="text-xl font-bold underline underline-offset-4">
@@ -32,6 +32,10 @@ const Footer = () => {
             ))}
           </div>
         </div>
+        <p className="inline-flex flex-wrap items-center justify-center text-center">
+          &copy; 2024 Niuvaka Trust. All Rights Reserved.{" "}
+          <span>Website Design by SGDesign</span>
+        </p>
       </div>
     </footer>
   );
