@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <div className="bg-mint-500 text-center">
                 <h2 className="p-12 text-5xl font-bold text-white">
-                  Our Mision
+                  Our Mission
                 </h2>
                 <p className="p-12 text-3xl font-bold leading-[45px] text-black">
                   Partnering to build capacity & capability of Pacific
