@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="transition-all duration-300 ease-in-out lg:group-hover:w-0"
+                  className="w-2/3 transition-all duration-300 ease-in-out lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
                 <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
@@ -103,7 +103,7 @@ export default function Home() {
                     {name}
                     <span className="absolute -bottom-1 left-0 h-1 w-[20%] bg-coffee-400"></span>
                   </h3>
-                  <p className="text-center text-[75%] xl:text-base">
+                  <p className="text-center text-2xl lg:text-[75%] xl:text-base">
                     {description}
                   </p>
                 </div>
