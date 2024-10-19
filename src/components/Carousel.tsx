@@ -39,7 +39,7 @@ const Carousel = () => {
         }}
         slidesPerView={"auto"}
         spaceBetween={400}
-        className="relative h-[40vw] max-h-[1080px] w-full"
+        className="relative h-[50vw] max-h-[720px] w-full max-w-screen-2xl"
         autoplay={{
           delay: 5000,
         }}
@@ -58,13 +58,13 @@ const Carousel = () => {
         {gallery.map((image) => (
           <SwiperSlide
             key={image}
-            className="relative !h-full !w-max overflow-hidden rounded-xl"
+            className="relative !h-full !w-full overflow-hidden rounded-xl"
           >
-            <div className="flex aspect-video h-full w-full items-center justify-center">
+            <div className="flex h-full w-full items-center justify-center">
               <img
                 src={image}
                 alt="gallery image"
-                className="aspect-video h-full w-full object-cover object-[0_25%]"
+                className="h-full w-full object-cover object-[0_25%]"
               />
             </div>
           </SwiperSlide>
