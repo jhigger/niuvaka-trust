@@ -284,7 +284,7 @@ export default function About() {
           </p>
         </section>
 
-        <section id="our-logo" className="container mx-auto space-y-8 p-0">
+        <section className="container mx-auto space-y-8 p-0">
           <h2
             id="our-logo"
             className="py-4 text-center text-5xl font-bold text-mint-500"
@@ -292,11 +292,11 @@ export default function About() {
             Our Logo
           </h2>
           <div className="grid grid-cols-1 border border-black md:grid-cols-2 [&>div]:border [&>div]:border-black">
-            <div className="order-1 col-span-1 flex items-center justify-center p-8 md:order-none lg:aspect-video">
-              <Logo className="h-fit w-64" />
+            <div className="order-1 col-span-1 flex items-center justify-center p-8 md:order-none">
+              <Logo className="h-auto w-64" />
             </div>
-            <div className="order-2 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+            <div className="order-2 col-span-1 md:order-none">
+              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-4xl font-black">Cyclic Border</h2>
                 <p className="max-w-screen-sm text-lg">
                   The cyclic border has a chevron design around the outside of
@@ -311,8 +311,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-4 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+            <div className="order-4 col-span-1 md:order-none">
+              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-4xl font-black">Niu</h2>
                 <p className="max-w-screen-sm text-lg">
                   The Niu (coconut) is one of the most valuable commodities of
@@ -331,24 +331,28 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-3 col-span-1 md:order-none lg:aspect-video">
-              <img
-                src="/niu.webp"
-                alt="sitting woman"
-                className="h-full w-full object-cover object-bottom"
-                loading="lazy"
-              />
+            <div className="order-3 col-span-1 md:order-none">
+              <div className="h-[400px] w-full">
+                <img
+                  src="/niu.webp"
+                  alt="sitting woman"
+                  className="h-full w-full object-cover object-bottom"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div className="order-5 col-span-1 md:order-none lg:aspect-video">
-              <img
-                src="/vaka.webp"
-                alt="placeholder"
-                className="h-full w-full object-cover object-center"
-                loading="lazy"
-              />
+            <div className="order-5 col-span-1 md:order-none">
+              <div className="h-[400px] w-full">
+                <img
+                  src="/vaka.webp"
+                  alt="placeholder"
+                  className="h-full w-full object-cover object-center"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div className="order-6 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+            <div className="order-6 col-span-1 md:order-none">
+              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-4xl font-black">Vaka</h2>
                 <p className="max-w-screen-sm text-lg">
                   The vaka sails pictured in our logo depict the journey ahead,
@@ -362,8 +366,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-8 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+            <div className="order-8 col-span-1 md:order-none">
+              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
                   className="text-4xl font-black"
@@ -408,7 +412,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-10 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 id="pasifika-diversity" className="text-4xl font-black">
                   Pasifika Diversity
                 </h2>
