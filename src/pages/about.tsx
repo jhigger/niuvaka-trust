@@ -213,8 +213,10 @@ const BoardItem = ({
 
       <div className="col-span-full flex flex-col gap-8 text-center lg:col-span-7 lg:text-start">
         <h3 className="flex flex-col gap-4">
-          <span className="text-4xl font-black">{name}</span>
-          <span className="text-2xl font-medium text-white">{role}</span>
+          <span className="text-3xl font-black lg:text-4xl">{name}</span>
+          <span className="text-xl font-medium text-white lg:text-2xl">
+            {role}
+          </span>
         </h3>
         {description}
         {isReadMore && readMore}
@@ -260,7 +262,7 @@ export default function About() {
           id="our-journey"
           className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
-          <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             About Us
           </h2>
           <p className="max-w-screen-xl text-center text-xl">
@@ -275,10 +277,10 @@ export default function About() {
           id="our-name"
           className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
-          <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Name
           </h2>
-          <p className="max-w-screen-lg text-center text-3xl">
+          <p className="max-w-screen-lg text-center text-xl">
             The name NIUVAKA is the result of intertwining two of the most
             valuable commodities in Pacific history.
           </p>
@@ -287,7 +289,7 @@ export default function About() {
         <section className="container mx-auto space-y-8 p-0">
           <h2
             id="our-logo"
-            className="py-4 text-center text-5xl font-bold text-mint-500"
+            className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl"
           >
             Our Logo
           </h2>
@@ -296,8 +298,10 @@ export default function About() {
               <Logo className="h-auto w-64" />
             </div>
             <div className="order-2 col-span-1 md:order-none">
-              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-4xl font-black">Cyclic Border</h2>
+              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2 className="text-2xl font-black lg:text-4xl">
+                  Cyclic Border
+                </h2>
                 <p className="max-w-screen-sm text-lg">
                   The cyclic border has a chevron design around the outside of
                   the circle that is a universal design across the pacific that
@@ -312,8 +316,8 @@ export default function About() {
               </div>
             </div>
             <div className="order-4 col-span-1 md:order-none">
-              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-4xl font-black">Niu</h2>
+              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2 className="text-2xl font-black lg:text-4xl">Niu</h2>
                 <p className="max-w-screen-sm text-lg">
                   The Niu (coconut) is one of the most valuable commodities of
                   the pacific, the background behind the sails inside of the
@@ -332,7 +336,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-3 col-span-1 md:order-none">
-              <div className="h-[400px] w-full">
+              <div className="h-[500px] w-full">
                 <img
                   src="/niu.webp"
                   alt="sitting woman"
@@ -342,7 +346,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-5 col-span-1 md:order-none">
-              <div className="h-[400px] w-full">
+              <div className="h-[500px] w-full">
                 <img
                   src="/vaka.webp"
                   alt="placeholder"
@@ -352,8 +356,8 @@ export default function About() {
               </div>
             </div>
             <div className="order-6 col-span-1 md:order-none">
-              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-4xl font-black">Vaka</h2>
+              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2 className="text-2xl font-black lg:text-4xl">Vaka</h2>
                 <p className="max-w-screen-sm text-lg">
                   The vaka sails pictured in our logo depict the journey ahead,
                   the future direction of Niuvaka and the aspirational futures
@@ -367,10 +371,10 @@ export default function About() {
               </div>
             </div>
             <div className="order-8 col-span-1 md:order-none">
-              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
-                  className="text-4xl font-black"
+                  className="text-2xl font-black lg:text-4xl"
                 >
                   Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
                 </h2>
@@ -391,29 +395,32 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-7 col-span-1 h-96 md:order-none md:h-full lg:aspect-video">
-              <div className="relative h-full w-full">
+            <div className="order-7 col-span-1 md:order-none">
+              <div className="h-[500px] w-full">
                 <img
                   src="/ngatangiia_rarotonga.webp"
                   alt="hero"
-                  className="absolute h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-9 col-span-1 h-96 md:order-none md:h-full lg:aspect-video">
-              <div className="relative h-full w-full">
+            <div className="order-9 col-span-1 md:order-none">
+              <div className="h-[500px] w-full">
                 <img
                   src="/tapa.webp"
                   alt="hero"
-                  className="absolute h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-10 col-span-1 md:order-none lg:aspect-video">
-              <div className="flex min-h-[400px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 id="pasifika-diversity" className="text-4xl font-black">
+            <div className="order-10 col-span-1 md:order-none">
+              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+                <h2
+                  id="pasifika-diversity"
+                  className="text-2xl font-black lg:text-4xl"
+                >
                   Pasifika Diversity
                 </h2>
                 <p className="max-w-screen-sm text-lg">
@@ -432,7 +439,7 @@ export default function About() {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="container mx-auto space-y-8 py-8">
+          <div className="container mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
               className="mt-8 space-y-8 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-16"
@@ -480,10 +487,10 @@ export default function About() {
                         loading="lazy"
                       />
                     </div>
-                    <div className="text-2xl font-bold">{name}</div>
+                    <div className="text-2xl font-black">{name}</div>
                     <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
-                      <div className="text-2xl font-medium">{role}</div>
-                      <div className="text-2xl font-normal">{description}</div>
+                      <div className="text-xl font-bold">{role}</div>
+                      <div className="text-xl font-normal">{description}</div>
                     </div>
                   </div>
                 </>
@@ -496,7 +503,7 @@ export default function About() {
           id="our-partners"
           className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
-          <h2 className="py-8 text-center text-5xl font-bold text-mint-500">
+          <h2 className="py-8 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Partners
           </h2>
           <p className="max-w-screen-sm text-center text-2xl">
@@ -505,10 +512,10 @@ export default function About() {
             outcomes.
           </p>
           <div className="grid w-full grid-cols-1 items-center justify-center gap-8 p-8 md:grid-cols-3">
-            {partners.map(({ image, link }, i) => {
+            {partners.map(({ image, link }) => {
               return (
                 <a
-                  key={i}
+                  key={link}
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -530,7 +537,7 @@ export default function About() {
           className="bg-gradient-to-b from-mint-500 to-mint-400"
         >
           <div className="container mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
-            <h2 className="py-8 text-center text-5xl font-bold text-white">
+            <h2 className="py-8 text-center text-3xl font-bold text-white lg:text-5xl">
               Work With Us
             </h2>
             <p className="max-w-screen-lg text-center text-2xl">

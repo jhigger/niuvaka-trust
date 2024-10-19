@@ -17,10 +17,10 @@ export const projects = [
         <br />
         <br />
         If you would like to enquire about our Poly Paddles, please call Niuvaka
-        on 0800-648-8252 or via email:{" "}
+        on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
-          className="underline underline-offset-4"
+          className="font-bold underline underline-offset-4"
         >
           info@niuvaka.org.nz
         </a>
@@ -37,10 +37,10 @@ export const projects = [
         <br />
         <br />
         If you would like to enquire about our Pacific Home Gardening
-        Initiatives, please call Niuvaka on 0800-648-8252 or via email:{" "}
+        Initiatives, please call Niuvaka on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
-          className="underline underline-offset-4"
+          className="font-bold underline underline-offset-4"
         >
           info@niuvaka.org.nz
         </a>
@@ -57,10 +57,10 @@ export const projects = [
         <br />
         <br />
         If you would like to enquire about our Vaka Programmes, please call
-        Niuvaka on 0800-648-8252 or via email:{" "}
+        Niuvaka on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
-          className="underline underline-offset-4"
+          className="font-bold underline underline-offset-4"
         >
           info@niuvaka.org.nz
         </a>
@@ -97,10 +97,10 @@ const serviceDescriptions = [
         <br />
         <br />
         If you would like to enquire about our Navigation service, please call
-        Niuvaka on 0800-648-8252 or via email:{" "}
+        Niuvaka on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
-          className="underline underline-offset-4"
+          className="font-bold underline underline-offset-4"
         >
           info@niuvaka.org.nz
         </a>
@@ -130,10 +130,10 @@ const serviceDescriptions = [
         <br />
         <br />
         If you would like to enquire about our Ola Lelei service, please call
-        Niuvaka on 0800-648-8252 or via email:{" "}
+        Niuvaka on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
-          className="underline underline-offset-4"
+          className="font-bold underline underline-offset-4"
         >
           info@niuvaka.org.nz
         </a>
@@ -219,10 +219,10 @@ const serviceDescriptions = [
           <br />
           <br />
           If you would like to enquire about our Ara Toa Kaikai service, please
-          call Niuvaka on 0800-648-8252 or via email:{" "}
+          call Niuvaka on <b>0800-648-8252</b> or via email:{" "}
           <a
             href="mailto:info@niuvaka.org.nz"
-            className="underline underline-offset-4"
+            className="font-bold underline underline-offset-4"
           >
             info@niuvaka.org.nz
           </a>
@@ -311,11 +311,11 @@ const Services = () => {
         </section>
 
         <section className="container mx-auto p-8">
-          <h1 className="border-b border-primary p-8 text-6xl font-black">
+          <h1 className="border-b border-primary p-8 text-4xl font-black text-white lg:text-6xl">
             Our Work
           </h1>
 
-          <div className="flex flex-col gap-8 divide-y divide-primary">
+          <div className="flex flex-col gap-8 divide-y divide-primary text-center lg:text-left">
             {items.map(({ image, name, description, id }) => {
               return (
                 <div
@@ -328,7 +328,7 @@ const Services = () => {
                     alt="service"
                     className="col-span-full aspect-[4/3] w-full rounded object-cover lg:col-span-2"
                   />
-                  <div className="col-span-full flex flex-col gap-12 p-8 lg:col-span-3">
+                  <div className="col-span-full flex flex-col gap-12 lg:col-span-3 lg:p-8">
                     <h2 className="text-bold text-4xl font-semibold capitalize">
                       {name}
                     </h2>
@@ -348,10 +348,10 @@ const Services = () => {
                       <p className="text-xl">
                         For more information on any immunisation services please
                         call your <b>General Practice team</b> or contact
-                        Niuvaka on 0800-648-8252 or email{" "}
+                        Niuvaka on <b>0800-648-8252</b> or email{" "}
                         <a
                           href="mailto:info@niuvaka.org.nz"
-                          className="underline underline-offset-4"
+                          className="font-bold underline underline-offset-4"
                         >
                           info@niuvaka.org.nz
                         </a>{" "}
@@ -406,7 +406,7 @@ const Services = () => {
                         or call{" "}
                         <a
                           href="tel:+0800270200"
-                          className="underline underline-offset-4"
+                          className="font-bold underline underline-offset-4"
                         >
                           0800 270 200
                         </a>
@@ -535,8 +535,8 @@ const Services = () => {
                             <br />
                             If you are Pasifika aged 50 to 74, but haven&apos;t
                             been invited, please call the National Bowel
-                            Screening Programme on 0800 924 432. If you need
-                            help, we can assist with connecting you for the
+                            Screening Programme on <b>0800 924 432</b>. If you
+                            need help, we can assist with connecting you for the
                             appropriate support.
                             <br />
                             <br />
@@ -552,7 +552,7 @@ const Services = () => {
                             Programme website or call{" "}
                             <a
                               href="tel:+0800924432"
-                              className="underline underline-offset-4"
+                              className="font-bold underline underline-offset-4"
                             >
                               0800 924 432
                             </a>
@@ -597,11 +597,13 @@ const Services = () => {
                         refer you if additional support is required.
                         <br />
                         <br />
-                        Get in touch with us at Niuvaka on 0800-648-8252 or
-                        email{" "}
+                        Get in touch with us at Niuvaka on <b>
+                          0800-648-8252
+                        </b>{" "}
+                        or email{" "}
                         <a
                           href="mailto:info@niuvaka.org.nz"
-                          className="underline underline-offset-4"
+                          className="font-bold underline underline-offset-4"
                         >
                           info@niuvaka.org.nz
                         </a>{" "}
@@ -626,10 +628,10 @@ const Services = () => {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="container mx-auto p-8">
+          <div className="container mx-auto px-0 py-8 lg:p-8">
             <h2
               id="our-projects-and-initiatives"
-              className="p-8 text-6xl font-black text-white"
+              className="p-8 text-4xl font-black text-white lg:text-6xl"
             >
               Our Projects and Initiatives
             </h2>
@@ -639,7 +641,7 @@ const Services = () => {
                 return (
                   <div
                     key={name}
-                    className="grid grid-cols-1 gap-24 p-8 lg:grid-cols-2"
+                    className="grid grid-cols-1 gap-12 p-8 lg:grid-cols-2 lg:gap-24"
                   >
                     <img
                       src={image}
@@ -647,7 +649,7 @@ const Services = () => {
                       className="col-span-full aspect-video w-full rounded object-cover lg:col-span-1"
                     />
                     <div className="col-span-full flex flex-col gap-12 lg:col-span-1">
-                      <h3 className="text-2xl font-semibold capitalize text-white md:text-4xl">
+                      <h3 className="text-3xl font-semibold capitalize text-white lg:text-4xl">
                         {name}
                       </h3>
                       <div className="whitespace-pre-wrap text-xl">

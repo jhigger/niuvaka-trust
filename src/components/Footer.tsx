@@ -8,10 +8,12 @@ const Footer = () => {
         <div className="space-y-4">
           <div className="flex items-end gap-4">
             <Logo className="-mb-2 h-max w-20" />
-            <div className="text-3xl font-black uppercase">NIUVAKA TRUST</div>
+            <div className="text-xl font-black uppercase lg:text-3xl">
+              NIUVAKA TRUST
+            </div>
           </div>
 
-          <div className="text-xl font-bold underline underline-offset-4">
+          <div className="text-base font-bold underline underline-offset-4 lg:text-xl">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </div>
 
@@ -32,7 +34,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <p className="inline-flex flex-wrap items-center justify-center text-center">
+        <p className="inline-flex flex-wrap items-center justify-center text-center text-sm lg:text-base">
           &copy; 2024 Niuvaka Trust. All Rights Reserved.{" "}
           <span>Website Design by SGDesign</span>
         </p>

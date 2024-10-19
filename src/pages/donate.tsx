@@ -29,14 +29,14 @@ const Donate = () => {
         </section>
 
         <section className="container mx-auto my-16 flex max-w-screen-xl flex-col gap-8 md:p-8">
-          <h1 className="text-center text-5xl font-black text-mint-500">
+          <h1 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
             Thank you for your contribution
           </h1>
-          <p className="text-center text-4xl font-bold">
+          <p className="text-center text-lg font-bold lg:text-2xl">
             Your donation will make a difference in supporting Pacific peoples
             to achieve their aspirations
           </p>
-          <p className="text-center text-2xl font-bold">
+          <p className="text-center text-lg font-bold lg:text-2xl">
             Please fill in the form below; we will contact you with more
             information
           </p>

@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 const Partners = () => {
   return (
     <section className="container mx-auto space-y-8 p-8">
-      <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
+      <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
         Our Partners
       </h2>
       <InfiniteMovingCards

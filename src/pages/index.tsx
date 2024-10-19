@@ -37,14 +37,14 @@ export default function Home() {
             <img
               src="/texts.webp"
               alt="texts"
-              className="-my-[15%] w-full scale-125 object-center"
+              className="-my-[15%] h-full w-full scale-125 object-center"
               loading="lazy"
             />
           </div>
         </section>
 
         <section>
-          <div className="container mx-auto flex flex-col lg:flex-row">
+          <div className="container mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
             <img
               src="/sitting.webp"
               alt="sitting woman"
@@ -52,28 +52,28 @@ export default function Home() {
               loading="lazy"
             />
             <div className="divide-y divide-white lg:w-1/2">
-              <div className="bg-mint-500 text-center">
-                <h2 className="p-12 text-5xl font-bold text-white">
+              <div className="space-y-8 bg-mint-500 p-8 text-center">
+                <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Vision
                 </h2>
-                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
+                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
-              <div className="bg-white text-center">
-                <h2 className="p-12 text-5xl font-bold text-mint-500">
+              <div className="space-y-8 bg-white p-8 text-center">
+                <h2 className="text-3xl font-bold text-mint-500 lg:text-5xl">
                   Our Purpose
                 </h2>
-                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
+                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
                   To work with Tagata Pasifika, Pasifika communities & Pasifika
                   families for the realisation of their aspirations
                 </p>
               </div>
-              <div className="bg-mint-500 text-center">
-                <h2 className="p-12 text-5xl font-bold text-white">
+              <div className="space-y-8 bg-mint-500 p-8 text-center">
+                <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Mission
                 </h2>
-                <p className="p-12 text-3xl font-bold leading-[45px] text-black">
+                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
                   Partnering to build capacity & capability of Pacific
                   communities
                 </p>
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-8 p-8 lg:grid-cols-5">
-          <h2 className="col-span-full py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Values
           </h2>
           {values.map(({ name, image, description }) => {
@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 transition-all duration-300 ease-in-out lg:w-full lg:group-hover:w-0"
+                  className="w-2/3 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
                 <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
@@ -103,7 +103,7 @@ export default function Home() {
                     {name}
                     <span className="absolute -bottom-1 left-0 h-1 w-[20%] bg-coffee-400"></span>
                   </h3>
-                  <p className="text-center text-2xl lg:text-[75%] xl:text-base">
+                  <p className="text-center text-xl lg:text-[75%] xl:text-base">
                     {description}
                   </p>
                 </div>
@@ -142,7 +142,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
-          <h2 className="col-span-full py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Key Strategic Focus Areas
           </h2>
           {focusAreas.map(({ name, image }) => {
@@ -164,7 +164,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
-          <h2 className="py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Programmes and Initiatives
           </h2>
 

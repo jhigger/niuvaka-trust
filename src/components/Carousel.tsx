@@ -39,7 +39,7 @@ const Carousel = () => {
         }}
         slidesPerView={"auto"}
         spaceBetween={400}
-        className="relative aspect-video h-[100%] w-full"
+        className="relative h-[40vw] max-h-[1080px] w-full"
         autoplay={{
           delay: 5000,
         }}

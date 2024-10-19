@@ -1,10 +1,10 @@
 import Head from "next/head";
+import Carousel from "~/components/Carousel";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
-import { formatDate } from "~/lib/utils";
 import { events, news } from "~/lib/constants";
-import Carousel from "~/components/Carousel";
+import { formatDate } from "~/lib/utils";
 
 export type ArticleProps = {
   type: "news" | "event";
@@ -85,7 +85,7 @@ const News = () => {
         <Navbar />
 
         <div className="container mx-auto mt-52 p-8 md:p-16">
-          <h1 className="text-3xl font-black text-mint-500 md:text-6xl">
+          <h1 className="text-4xl font-black text-mint-500 lg:text-6xl">
             News
           </h1>
         </div>
@@ -102,7 +102,7 @@ const News = () => {
         <section className="container mx-auto space-y-8 divide-y divide-primary p-8 md:p-16">
           <h2
             id="latest-news"
-            className="mb-8 text-center text-xl font-bold text-coffee-400 md:text-3xl lg:text-left"
+            className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-4xl"
           >
             Check out our news and events for the latest about what&apos;s
             happening in your community!
@@ -125,8 +125,8 @@ const News = () => {
             ))}
         </section>
 
-        <section className="container mx-auto mb-16 space-y-16 md:p-16">
-          <h2 className="py-8 text-3xl font-bold text-mint-500 md:text-6xl">
+        <section className="container mx-auto mb-16 space-y-16">
+          <h2 className="text-4xl font-bold text-mint-500 lg:text-6xl">
             Gallery
           </h2>
 
