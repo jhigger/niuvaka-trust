@@ -196,10 +196,10 @@ const serviceDescriptions = [
     description: (
       <>
         <h3
-          id="ara-toa-kaikai"
+          id="are-toa-kaikai"
           className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
         >
-          Ara Toa Kaikai
+          Are Toa Kaikai
         </h3>
         <p className="text-xl">
           Our food-hub started because of COVID where we provided support to

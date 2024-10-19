@@ -292,8 +292,8 @@ export const navigationLinks: {
             : name === "Social Services"
               ? [
                   {
-                    name: "Ara toa Kaikai",
-                    href: "/services#ara-toa-kaikai",
+                    name: "Are Toa Kaikai",
+                    href: "/services#are-toa-kaikai",
                   },
                 ]
               : undefined,
