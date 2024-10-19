@@ -33,11 +33,11 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container mx-auto p-0">
+          <div className="container mx-auto overflow-hidden p-0">
             <img
               src="/texts.webp"
               alt="texts"
-              className="w-full"
+              className="-my-[15%] w-full scale-125 object-center"
               loading="lazy"
             />
           </div>
