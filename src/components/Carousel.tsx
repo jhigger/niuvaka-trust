@@ -39,7 +39,7 @@ const Carousel = () => {
         }}
         slidesPerView={"auto"}
         spaceBetween={400}
-        className="relative h-[50vw] max-h-[720px] w-full max-w-screen-2xl"
+        className="relative h-[70vh] max-h-[720px] w-full lg:h-[60vw]"
         autoplay={{
           delay: 5000,
         }}
@@ -58,21 +58,21 @@ const Carousel = () => {
         {gallery.map((image) => (
           <SwiperSlide
             key={image}
-            className="relative !h-full !w-full overflow-hidden rounded-xl"
+            className="relative !h-full !w-full p-6 lg:p-8"
           >
-            <div className="flex h-full w-full items-center justify-center">
+            <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
               <img
                 src={image}
                 alt="gallery image"
-                className="h-full w-full object-cover object-[0_25%]"
+                className="h-full w-full object-cover object-[50%_25%]"
               />
             </div>
           </SwiperSlide>
         ))}
 
         <div className="relative bottom-1/2">
-          <ChevronLeft className="swiper-button-prev !left-[5%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1 md:!left-[10%]" />
-          <ChevronRight className="swiper-button-next !right-[5%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1 md:!right-[10%]" />
+          <ChevronLeft className="swiper-button-prev !left-[1%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1" />
+          <ChevronRight className="swiper-button-next !right-[1%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1" />
         </div>
       </Swiper>
     </div>
