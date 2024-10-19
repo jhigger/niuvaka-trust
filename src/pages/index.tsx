@@ -113,7 +113,7 @@ export default function Home() {
         </section>
 
         <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-16 gap-y-8 p-8 lg:grid-cols-4">
-          <h2 className="col-span-full py-4 text-center text-5xl font-bold text-mint-500">
+          <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Work
           </h2>
           {services.map(({ name, image, description, id }) => {
@@ -125,7 +125,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-80"
+                  className="w-2/3 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="sr-only">{name}</h3>
@@ -154,7 +154,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-80"
+                  className="w-2/3 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="sr-only">{name}</h3>
