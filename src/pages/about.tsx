@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Footer from "~/components/Footer";
 import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
@@ -460,21 +460,14 @@ export default function About() {
               </h3>
 
               {staff.map(({ image, name, role, description }, index) => (
-                <>
+                <Fragment key={name}>
                   {index === 0 && (
-                    <div
-                      key={index}
-                      className="col-span-1 hidden lg:block"
-                    ></div>
+                    <div className="col-span-1 hidden lg:block"></div>
                   )}
                   {index === 2 && (
-                    <div
-                      key={index}
-                      className="col-span-1 hidden lg:block"
-                    ></div>
+                    <div className="col-span-1 hidden lg:block"></div>
                   )}
                   <div
-                    key={name}
                     className={
                       "group relative col-span-1 flex flex-col items-center gap-4 text-center"
                     }
@@ -493,7 +486,7 @@ export default function About() {
                       <div className="text-xl font-normal">{description}</div>
                     </div>
                   </div>
-                </>
+                </Fragment>
               ))}
             </div>
           </div>
