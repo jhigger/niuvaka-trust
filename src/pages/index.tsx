@@ -56,7 +56,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Vision
                 </h2>
-                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
@@ -64,7 +64,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-mint-500 lg:text-5xl">
                   Our Purpose
                 </h2>
-                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
                   To work with Tagata Pasifika, Pasifika communities & Pasifika
                   families for the realisation of their aspirations
                 </p>
@@ -73,7 +73,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Mission
                 </h2>
-                <p className="text-xl font-normal leading-[45px] text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
                   Partnering to build capacity & capability of Pacific
                   communities
                 </p>
