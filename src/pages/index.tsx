@@ -48,11 +48,11 @@ export default function Home() {
             <img
               src="/sitting.webp"
               alt="sitting woman"
-              className="object-cover lg:w-1/2"
+              className="-mt-12 object-cover lg:w-1/2"
               loading="lazy"
             />
             <div className="flex flex-col lg:w-1/2">
-              <div className="flex-1 space-y-8 bg-mint-500 p-8 text-center">
+              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
                 <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Vision
                 </h2>
@@ -60,7 +60,7 @@ export default function Home() {
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
-              <div className="flex-1 space-y-8 bg-white p-8 text-center">
+              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-white p-8 text-center">
                 <h2 className="text-3xl font-bold text-mint-500 lg:text-5xl">
                   Our Purpose
                 </h2>
@@ -69,7 +69,7 @@ export default function Home() {
                   families for the realisation of their aspirations
                 </p>
               </div>
-              <div className="flex-1 space-y-8 bg-mint-500 p-8 text-center">
+              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
                 <h2 className="text-3xl font-bold text-white lg:text-5xl">
                   Our Mission
                 </h2>
