@@ -252,7 +252,7 @@ export default function About() {
             <img
               src="/hero_images/about.webp"
               alt="hero"
-              className="h-[800px] w-full object-cover object-top"
+              className="h-[550px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
@@ -260,12 +260,12 @@ export default function About() {
 
         <section
           id="our-journey"
-          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 p-8"
         >
-          <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             About Us
           </h2>
-          <p className="max-w-screen-xl text-center text-xl">
+          <p className="max-w-screen-xl text-balance text-center text-xl">
             The Niuvaka journey started in August 2020, and is the coming
             together of prominent Pasifika innovators, both locally and from
             across Aotearoa, to cultivate a culture of positive change and
@@ -275,12 +275,12 @@ export default function About() {
 
         <section
           id="our-name"
-          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 p-8"
         >
-          <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Name
           </h2>
-          <p className="max-w-screen-lg text-center text-xl">
+          <p className="max-w-screen-lg text-balance text-center text-xl">
             The name NIUVAKA is the result of intertwining two of the most
             valuable commodities in Pacific history.
           </p>
@@ -299,7 +299,7 @@ export default function About() {
             </div>
             <div className="order-2 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-2xl font-black lg:text-4xl">
+                <h2 className="text-xl font-black lg:text-3xl">
                   Cyclic Border
                 </h2>
                 <p className="max-w-screen-sm text-lg">
@@ -317,7 +317,7 @@ export default function About() {
             </div>
             <div className="order-4 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-2xl font-black lg:text-4xl">Niu</h2>
+                <h2 className="text-xl font-black lg:text-3xl">Niu</h2>
                 <p className="max-w-screen-sm text-lg">
                   The Niu (coconut) is one of the most valuable commodities of
                   the pacific, the background behind the sails inside of the
@@ -357,7 +357,7 @@ export default function About() {
             </div>
             <div className="order-6 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-2xl font-black lg:text-4xl">Vaka</h2>
+                <h2 className="text-xl font-black lg:text-3xl">Vaka</h2>
                 <p className="max-w-screen-sm text-lg">
                   The vaka sails pictured in our logo depict the journey ahead,
                   the future direction of Niuvaka and the aspirational futures
@@ -374,7 +374,7 @@ export default function About() {
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
-                  className="text-2xl font-black lg:text-4xl"
+                  className="text-xl font-black lg:text-3xl"
                 >
                   Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
                 </h2>
@@ -419,7 +419,7 @@ export default function About() {
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="pasifika-diversity"
-                  className="text-2xl font-black lg:text-4xl"
+                  className="text-xl font-black lg:text-3xl"
                 >
                   Pasifika Diversity
                 </h2>
@@ -442,9 +442,9 @@ export default function About() {
           <div className="mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
-              className="mt-8 space-y-8 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-16"
+              className="mt-8 space-y-4 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-8"
             >
-              <h2 className="text-4xl lg:text-7xl">Meet Our Team</h2>
+              <h2 className="text-3xl lg:text-5xl">Meet Our Team</h2>
               <h3 className="text-3xl lg:text-5xl">Governance Board</h3>
             </div>
 
@@ -455,7 +455,7 @@ export default function About() {
             <hr className="border-black lg:hidden" />
 
             <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
-              <h3 className="col-span-full pb-8 text-center text-4xl font-black text-white lg:text-6xl">
+              <h3 className="col-span-full pb-8 text-center text-3xl font-black text-white lg:text-5xl">
                 Our Team
               </h3>
 
