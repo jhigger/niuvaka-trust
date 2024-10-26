@@ -84,22 +84,22 @@ const News = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <div className="container mx-auto mt-52 p-8 md:p-16">
+        <div className="mx-auto mt-52 p-8 md:p-16">
           <h1 className="text-4xl font-black text-mint-500 lg:text-6xl">
             News
           </h1>
         </div>
 
-        <section className="container mx-auto p-0">
+        <section className="mx-auto p-0">
           <img
             src="/hero_images/news.webp"
             alt="hero"
-            className="aspect-[3/1] w-full object-cover"
+            className="h-[600px] w-full object-cover"
             loading="eager"
           />
         </section>
 
-        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 md:p-16">
+        <section className="mx-auto space-y-8 divide-y divide-primary p-8 md:p-16">
           <h2
             id="latest-news"
             className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-4xl"
@@ -125,7 +125,7 @@ const News = () => {
             ))}
         </section>
 
-        <section className="container mx-auto mb-16 space-y-16">
+        <section className="mx-auto mb-16 space-y-16">
           <h2 className="text-4xl font-bold text-mint-500 lg:text-6xl">
             Gallery
           </h2>

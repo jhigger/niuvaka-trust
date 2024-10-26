@@ -18,17 +18,17 @@ const Donate = () => {
         <Navbar />
 
         <section className="mt-52">
-          <div className="container mx-auto p-0">
+          <div className="mx-auto p-0">
             <img
               src="/hero_images/services.webp"
               alt="hero"
-              className="aspect-[20/8] w-full object-cover object-top"
+              className="h-[800px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
         </section>
 
-        <section className="container mx-auto my-16 flex max-w-screen-xl flex-col gap-8 md:p-8">
+        <section className="mx-auto my-16 flex max-w-screen-xl flex-col gap-8 md:p-8">
           <h1 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
             Thank you for your contribution
           </h1>

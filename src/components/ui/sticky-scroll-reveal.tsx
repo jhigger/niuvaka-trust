@@ -40,7 +40,7 @@ export const StickyScroll = ({
 
   return (
     <motion.section
-      className="container relative mx-auto grid grid-cols-1 place-items-center py-8 lg:grid-cols-2"
+      className="relative mx-auto grid grid-cols-1 place-items-center py-8 lg:grid-cols-2"
       ref={ref}
     >
       <div className="relative col-span-1 flex flex-col px-4">

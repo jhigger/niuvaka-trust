@@ -22,18 +22,18 @@ export default function Home() {
         <Navbar />
 
         <section className="mt-20">
-          <div className="container mx-auto p-0">
+          <div className="mx-auto p-0">
             <img
               src="/hero_images/home.webp"
               alt="hero"
-              className="aspect-[2/1] object-cover"
+              className="h-[1000px] w-full object-cover"
               loading="eager"
             />
           </div>
         </section>
 
         <section>
-          <div className="container mx-auto overflow-hidden p-0">
+          <div className="mx-auto overflow-hidden p-0">
             <img
               src="/texts.webp"
               alt="texts"
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
+          <div className="mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
             <img
               src="/sitting.webp"
               alt="sitting woman"
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-8 p-8 lg:grid-cols-5">
+        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-8 p-8 lg:grid-cols-5">
           <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Values
           </h2>
@@ -112,7 +112,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-16 gap-y-8 p-8 lg:grid-cols-4">
+        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-16 gap-y-8 p-8 lg:grid-cols-4">
           <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Work
           </h2>
@@ -141,7 +141,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
+        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
           <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Key Strategic Focus Areas
           </h2>
@@ -163,7 +163,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
+        <section className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
           <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Programmes and Initiatives
           </h2>

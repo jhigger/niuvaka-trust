@@ -300,17 +300,17 @@ const Services = () => {
         <Navbar />
 
         <section className="mt-52">
-          <div className="container mx-auto p-0">
+          <div className="mx-auto p-0">
             <img
               src="/hero_images/services.webp"
               alt="hero"
-              className="aspect-[25/10] w-full object-cover"
+              className="h-[800px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
         </section>
 
-        <section className="container mx-auto p-8">
+        <section className="mx-auto p-8">
           <h1 className="border-b border-primary p-8 text-4xl font-black text-white lg:text-6xl">
             Our Work
           </h1>
@@ -628,7 +628,7 @@ const Services = () => {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="container mx-auto px-0 py-8 lg:p-8">
+          <div className="mx-auto px-0 py-8 lg:p-8">
             <h2
               id="our-projects-and-initiatives"
               className="p-8 text-4xl font-black text-white lg:text-6xl"

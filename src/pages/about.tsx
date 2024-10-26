@@ -248,11 +248,11 @@ export default function About() {
         <Navbar />
 
         <section className="mt-52">
-          <div className="container mx-auto p-0">
+          <div className="mx-auto p-0">
             <img
               src="/hero_images/about.webp"
               alt="hero"
-              className="aspect-[20/8] w-full object-cover object-top"
+              className="h-[800px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
@@ -260,7 +260,7 @@ export default function About() {
 
         <section
           id="our-journey"
-          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
           <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             About Us
@@ -275,7 +275,7 @@ export default function About() {
 
         <section
           id="our-name"
-          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
           <h2 className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Name
@@ -286,7 +286,7 @@ export default function About() {
           </p>
         </section>
 
-        <section className="container mx-auto space-y-8 p-0">
+        <section className="mx-auto space-y-8 p-0">
           <h2
             id="our-logo"
             className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl"
@@ -439,7 +439,7 @@ export default function About() {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="container mx-auto space-y-8 px-0 py-8">
+          <div className="mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
               className="mt-8 space-y-8 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-16"
@@ -494,7 +494,7 @@ export default function About() {
 
         <section
           id="our-partners"
-          className="container mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
         >
           <h2 className="py-8 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Partners
@@ -529,7 +529,7 @@ export default function About() {
           id="work-with-us"
           className="bg-gradient-to-b from-mint-500 to-mint-400"
         >
-          <div className="container mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
+          <div className="mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
             <h2 className="py-8 text-center text-3xl font-bold text-white lg:text-5xl">
               Work With Us
             </h2>

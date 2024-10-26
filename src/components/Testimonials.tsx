@@ -27,7 +27,7 @@ const items = [
 
 const Testimonials = () => {
   return (
-    <section className="container mx-auto space-y-8 p-8">
+    <section className="mx-auto space-y-8 p-8">
       <h2 className="p-8 text-5xl font-bold text-black">
         What people say about us
       </h2>

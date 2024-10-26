@@ -50,7 +50,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
     <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
       <div
         className={cn(
-          "container mx-auto flex items-center justify-between gap-2 transition-all duration-200 ease-in-out",
+          "mx-auto flex items-center justify-between gap-2 transition-all duration-200 ease-in-out",
           size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
