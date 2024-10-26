@@ -144,7 +144,7 @@ const DonationForm = () => {
                     return (
                       <FormItem
                         key={item}
-                        className="flex flex-row items-start space-x-3 space-y-0"
+                        className="flex flex-row items-start space-x-3 space-y-0 capitalize"
                       >
                         <FormControl>
                           <Checkbox
