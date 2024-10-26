@@ -126,7 +126,7 @@ const News = () => {
         </section>
 
         <section className="mx-auto mb-16 space-y-16">
-          <h2 className="text-4xl font-bold text-mint-500 lg:text-6xl">
+          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Gallery
           </h2>
 
