@@ -17,7 +17,7 @@ const Donate = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-52">
+        <section className="mt-40">
           <div className="mx-auto p-0">
             <img
               src="/hero_images/services.webp"
@@ -28,7 +28,7 @@ const Donate = () => {
           </div>
         </section>
 
-        <section className="mx-auto my-16 flex max-w-screen-xl flex-col items-center gap-16 md:p-8">
+        <section className="mx-auto my-16 flex max-w-screen-xl flex-col items-center gap-16 p-4 md:p-8">
           <h1 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
             Thank you for your contribution
           </h1>
