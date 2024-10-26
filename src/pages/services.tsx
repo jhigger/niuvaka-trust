@@ -311,7 +311,7 @@ const Services = () => {
         </section>
 
         <section className="mx-auto p-8">
-          <h1 className="border-b border-primary p-8 text-4xl font-black text-white lg:text-6xl">
+          <h1 className="border-b border-primary p-8 text-3xl font-black lg:text-5xl">
             Our Work
           </h1>
 
@@ -326,7 +326,7 @@ const Services = () => {
                   <img
                     src={image}
                     alt="service"
-                    className="col-span-full aspect-[4/3] w-full rounded object-cover lg:col-span-2"
+                    className="col-span-full h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-2"
                   />
                   <div className="col-span-full flex flex-col gap-12 lg:col-span-3 lg:p-8">
                     <h2 className="text-bold text-4xl font-semibold capitalize">
@@ -646,7 +646,7 @@ const Services = () => {
                     <img
                       src={image}
                       alt="service"
-                      className="col-span-full aspect-video w-full rounded object-cover lg:col-span-1"
+                      className="col-span-full aspect-video h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-1"
                     />
                     <div className="col-span-full flex flex-col gap-12 lg:col-span-1">
                       <h3 className="text-3xl font-semibold capitalize text-white lg:text-4xl">
