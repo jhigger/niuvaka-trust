@@ -8,7 +8,7 @@ const Logo = ({ className }: LogoProps) => {
   return (
     <div
       className={cn(
-        "relative aspect-square size-36 overflow-hidden rounded-full",
+        "relative aspect-square size-24 overflow-hidden rounded-full md:size-36",
         className,
       )}
     >
