@@ -11,7 +11,7 @@ export const projects = [
     image: "/projects/paddles.webp",
     name: "Poly Paddles",
     description: (
-      <p className="text-xl">
+      <p className="lg:text-xl">
         Water safety and life skills programme for Pasifika & Māori Tamariki and
         Rangatahi 5-18 years
         <br />
@@ -31,7 +31,7 @@ export const projects = [
     image: "/projects/gardening.webp",
     name: "Pasifica Home Gardening Initiatives",
     description: (
-      <p className="text-xl">
+      <p className="lg:text-xl">
         Wellbeing programme using ancestral knowledge to support Pacific
         families to be self-managing and self-sufficient.
         <br />
@@ -51,7 +51,7 @@ export const projects = [
     image: "/projects/vaka.webp",
     name: "Vaka Programme: Traditional Pacific Cultural Games",
     description: (
-      <p className="text-xl">
+      <p className="lg:text-xl">
         Initiative to revive traditional Pacific cultural games to create
         connectedness and belonging
         <br />
@@ -80,7 +80,7 @@ const serviceDescriptions = [
   {
     id: "navigation-services",
     description: (
-      <p className="text-xl">
+      <p className="text-base lg:text-xl">
         The Niuvaka Trust Pasifika Navigation Team provide support to Pacific
         peoples to improve equity of access and health outcomes and support the
         increase of Primary Care enrolment numbers.
@@ -110,7 +110,7 @@ const serviceDescriptions = [
   {
     id: "ola-lelei-and-kai-services",
     description: (
-      <p className="text-xl">
+      <p className="text-base lg:text-xl">
         Ola Lelei is our new Job & Skills Hub that has been set up to support
         Tagata Pasifika to undertake training and study pathways to achieve
         sustainable employment outcomes.
@@ -146,11 +146,11 @@ const serviceDescriptions = [
       <>
         <h3
           id="immunisation"
-          className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+          className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
         >
           Immunisations
         </h3>
-        <p className="text-xl">
+        <p className="text-base lg:text-xl">
           Protecting the health of you and your vuvale (family) with necessary
           vaccinations and immunisations is important. The{" "}
           <a
@@ -170,12 +170,12 @@ const serviceDescriptions = [
           Immunisation Outreach Service including regular Pasifika Immunisation
           Clinics:
         </p>
-        <ul className="list-inside list-disc text-xl">
+        <ul className="list-inside list-disc self-center text-left lg:text-xl">
           <li>Childhood Immunisations</li>
           <li>Flu vaccinations</li>
           <li>COVID vaccinations</li>
         </ul>
-        <p className="text-2xl">
+        <p className="text-lg lg:text-2xl">
           The{" "}
           <a
             href="https://www.immune.org.nz/"
@@ -197,11 +197,11 @@ const serviceDescriptions = [
       <>
         <h3
           id="are-toa-kaikai"
-          className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+          className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
         >
           Are Toa Kaikai
         </h3>
-        <p className="text-xl">
+        <p className="text-base lg:text-xl">
           Our food-hub started because of COVID where we provided support to
           Pasifika communities who were isolating during the COVID-19 Pandemic.
           The support extended beyond COVID as we recognised the need for
@@ -299,7 +299,7 @@ const Services = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-52">
+        <section className="mt-40">
           <div className="mx-auto p-0">
             <img
               src="/hero_images/services.webp"
@@ -311,7 +311,7 @@ const Services = () => {
         </section>
 
         <section className="mx-auto p-8">
-          <h1 className="border-b border-primary p-8 text-3xl font-black lg:text-5xl">
+          <h1 className="border-b border-primary pb-8 text-3xl font-black lg:p-8 lg:text-5xl">
             Our Work
           </h1>
 
@@ -321,15 +321,15 @@ const Services = () => {
                 <div
                   key={id}
                   id={id}
-                  className="grid grid-cols-1 place-items-center gap-8 p-8 lg:grid-cols-5"
+                  className="grid grid-cols-1 place-items-center gap-8 pt-8 lg:grid-cols-5 lg:p-8"
                 >
                   <img
                     src={image}
                     alt="service"
                     className="col-span-full h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-2"
                   />
-                  <div className="col-span-full flex flex-col gap-12 lg:col-span-3 lg:p-8">
-                    <h2 className="text-bold text-4xl font-semibold capitalize">
+                  <div className="col-span-full flex flex-col gap-8 lg:col-span-3 lg:p-8">
+                    <h2 className="text-bold text-2xl font-semibold capitalize lg:text-4xl">
                       {name}
                     </h2>
                     {description}
@@ -345,7 +345,7 @@ const Services = () => {
                   )}
                   {show && id === "outreach-services" && (
                     <div className="col-span-full max-w-screen-2xl space-y-8">
-                      <p className="text-xl">
+                      <p className="lg:text-xl">
                         For more information on any immunisation services please
                         call your <b>General Practice team</b> or contact
                         Niuvaka on <b>0800-648-8252</b> or email{" "}
@@ -363,17 +363,17 @@ const Services = () => {
                       </p>
                       <br />
                       <br />
-                      <h2 className="text-bold text-4xl font-semibold text-coffee-400">
+                      <h2 className="text-bold text-2xl font-semibold text-coffee-400 lg:text-4xl">
                         We also provide Screening support within the Outreach
                         Service:
                       </h2>
                       <h3
                         id="breast-screening"
-                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                        className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
                       >
                         Breast Screening
                       </h3>
-                      <p className="text-xl">
+                      <p className="lg:text-xl">
                         Protecting the health of you and your vuvale Free
                         mammograms are available every two years through
                         BreastScreen Aotearoa for women aged 45&ndash;69 years.
@@ -385,7 +385,7 @@ const Services = () => {
                         you for free mammogram appointments that meet the
                         criteria, eligible women are:
                       </p>
-                      <ul className="list-inside list-disc text-xl">
+                      <ul className="list-inside list-disc self-center text-left lg:text-xl">
                         <li>Pacific women aged 45&ndash;69, and</li>
                         <li>
                           All women aged between 45&ndash;69 who have never been
@@ -393,7 +393,7 @@ const Services = () => {
                           years.
                         </li>
                       </ul>
-                      <p className="text-xl">
+                      <p className="lg:text-xl">
                         For more information on <b>Breast Screening</b> see{" "}
                         <a
                           href="https://info.health.nz/keeping-healthy/cancer-screening/breast-screening"
@@ -415,13 +415,13 @@ const Services = () => {
                       <br />
                       <h3
                         id="cervical-screening"
-                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                        className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
                       >
                         Cervical Screening
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
                         <div className="order-2 col-span-full space-y-8 lg:order-none lg:col-span-2">
-                          <p className="text-xl">
+                          <p className="lg:text-xl">
                             Cervical cancer is one of the most preventable
                             cancers. Regular cervical screening and human
                             papillomavirus (HPV) immunisation are the best ways
@@ -442,7 +442,7 @@ const Services = () => {
                             fully funded, however, free screening is available
                             for women and people with a cervix who:
                           </p>
-                          <ul className="list-inside list-disc text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
                             <li>are Māori or Pacific, any age</li>
                             <li>
                               are 30 years and over who are under-screened (have
@@ -452,7 +452,7 @@ const Services = () => {
                             <li>require follow-up testing, any age</li>
                             <li>hold a Community Services Card, any age.</li>
                           </ul>
-                          <p className="text-xl">
+                          <p className="lg:text-xl">
                             In September 2023, HPV screening became the new
                             method for cervical screening in Aotearoa New
                             Zealand. HPV testing is a better first screening
@@ -464,7 +464,7 @@ const Services = () => {
                             This gives you options for how you have your
                             screening sample taken:
                           </p>
-                          <ul className="list-inside list-disc text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
                             <li>
                               a vaginal swab - you can either self-test, or a
                               health professional can help
@@ -492,20 +492,20 @@ const Services = () => {
                       <br />
                       <h3
                         id="bowel-screening"
-                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                        className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
                       >
                         Bowel Screening
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
                         <div className="col-span-full space-y-8 md:order-2 lg:col-span-2">
-                          <p className="text-xl">
+                          <p className="lg:text-xl">
                             The National Bowel Screening Programme (NBSP) is a
                             FREE programme to help detect bowel cancer. It is
                             available for people who are eligible for publicly
                             funded health care. In the MidCentral region, Bowel
                             Screening is available for:
                           </p>
-                          <ul className="list-inside list-disc text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
                             <li>
                               Māori and Pacific people aged 50 to 74 years
                             </li>
@@ -513,7 +513,7 @@ const Services = () => {
                               For everyone else, the age is 60 &ndash; 74 years
                             </li>
                           </ul>
-                          <p className="text-xl">
+                          <p className="lg:text-xl">
                             Pacific people in the MidCentral district, aged
                             between 50 and 59, will receive an invite through
                             the mail to take part in free bowel screening. You
@@ -581,11 +581,11 @@ const Services = () => {
                       <br />
                       <h3
                         id="health-assessment-and-wellbeing-checks"
-                        className="text-2xl font-bold text-coffee-400 underline underline-offset-4"
+                        className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
                       >
                         Health Assessments & Wellbeing Checks
                       </h3>
-                      <p className="text-xl">
+                      <p className="lg:text-xl">
                         Niuvaka are committed to delivering mobile services
                         closer to home in your community.
                         <br />
@@ -628,10 +628,10 @@ const Services = () => {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="mx-auto px-0 py-8 lg:p-8">
+          <div className="mx-4 px-0 py-8 lg:mx-auto lg:p-8">
             <h2
               id="our-projects-and-initiatives"
-              className="p-8 text-4xl font-black text-white lg:text-6xl"
+              className="p-4 text-3xl font-black text-white lg:p-8 lg:text-5xl"
             >
               Our Projects and Initiatives
             </h2>
@@ -641,7 +641,7 @@ const Services = () => {
                 return (
                   <div
                     key={name}
-                    className="grid grid-cols-1 gap-12 p-8 lg:grid-cols-2 lg:gap-24"
+                    className="grid grid-cols-1 gap-12 p-4 pt-8 lg:grid-cols-2 lg:gap-24 lg:p-8"
                   >
                     <img
                       src={image}
@@ -649,10 +649,10 @@ const Services = () => {
                       className="col-span-full aspect-video h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-1"
                     />
                     <div className="col-span-full flex flex-col gap-12 lg:col-span-1">
-                      <h3 className="text-3xl font-semibold capitalize text-white lg:text-4xl">
+                      <h3 className="text-2xl font-semibold capitalize text-white lg:text-4xl">
                         {name}
                       </h3>
-                      <div className="whitespace-pre-wrap text-xl">
+                      <div className="whitespace-pre-wrap lg:text-xl">
                         {description}
                       </div>
                     </div>
