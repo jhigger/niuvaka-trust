@@ -252,7 +252,7 @@ export default function About() {
             <img
               src="/hero_images/about.webp"
               alt="hero"
-              className="h-[550px] w-full object-cover object-top"
+              className="h-[600px] w-full object-cover object-top"
               loading="eager"
             />
           </div>

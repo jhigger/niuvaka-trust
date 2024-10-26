@@ -21,12 +21,12 @@ export default function Home() {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-20">
+        <section className="mt-40">
           <div className="mx-auto p-0">
             <img
               src="/hero_images/home.webp"
               alt="hero"
-              className="h-[1000px] w-full object-cover"
+              className="h-[700px] w-full object-cover"
               loading="eager"
             />
           </div>

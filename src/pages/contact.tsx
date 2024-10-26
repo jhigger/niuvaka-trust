@@ -31,7 +31,7 @@ const Contact = () => {
             <img
               src="/hero_images/contact.webp"
               alt="hero"
-              className="h-[800px] w-full object-cover object-top"
+              className="h-[600px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
@@ -39,7 +39,7 @@ const Contact = () => {
 
         <section className="mx-auto mb-32 space-y-8">
           <div className="relative my-8 h-12 overflow-hidden text-3xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
-            <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4 lg:items-start">
+            <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4">
               <span>Contact</span>
               <span className="text-coffee-400">Faafesootai matou</span>
               <span className="text-[#3390B3]">Fetu&#699;utaki ki ai</span>

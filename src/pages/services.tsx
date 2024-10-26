@@ -304,7 +304,7 @@ const Services = () => {
             <img
               src="/hero_images/services.webp"
               alt="hero"
-              className="h-[800px] w-full object-cover object-top"
+              className="h-[600px] w-full object-cover object-top"
               loading="eager"
             />
           </div>
