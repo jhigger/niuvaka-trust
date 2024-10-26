@@ -214,7 +214,7 @@ const BoardItem = ({
       <div className="col-span-full flex flex-col gap-8 text-center lg:col-span-7 lg:text-start">
         <h3 className="flex flex-col gap-4">
           <span className="text-3xl font-black lg:text-4xl">{name}</span>
-          <span className="text-xl font-medium text-white lg:text-2xl">
+          <span className="text-xl font-bold text-white lg:text-2xl">
             {role}
           </span>
         </h3>
@@ -222,7 +222,7 @@ const BoardItem = ({
         {isReadMore && readMore}
         {readMore && (
           <Button
-            className="mt-auto self-center rounded-full bg-coffee-50 p-8 text-2xl lg:self-end"
+            className="mt-auto hidden self-center rounded-full bg-coffee-50 p-8 text-2xl lg:flex lg:self-end"
             onClick={() => setIsReadMore(!isReadMore)}
           >
             {isReadMore ? "Read Less" : "Read More"}
@@ -293,7 +293,7 @@ export default function About() {
           >
             Our Logo
           </h2>
-          <div className="grid grid-cols-1 border border-black md:grid-cols-2 [&>div]:border [&>div]:border-black">
+          <div className="grid grid-cols-1 border-black md:grid-cols-2 md:border [&>div]:border-black md:[&>div]:border">
             <div className="order-1 col-span-1 flex items-center justify-center p-8 md:order-none">
               <Logo className="h-auto w-64" />
             </div>
@@ -335,22 +335,22 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-3 col-span-1 md:order-none">
-              <div className="h-[500px] w-full">
+            <div className="order-3 col-span-1 mx-4 border-t md:order-none md:mx-0">
+              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
                 <img
                   src="/niu.webp"
-                  alt="sitting woman"
-                  className="h-full w-full object-cover object-bottom"
+                  alt="niu"
+                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover md:object-bottom"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-5 col-span-1 md:order-none">
-              <div className="h-[500px] w-full">
+            <div className="order-5 col-span-1 mx-4 border-t md:order-none md:mx-0">
+              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
                 <img
                   src="/vaka.webp"
-                  alt="placeholder"
-                  className="h-full w-full object-cover object-center"
+                  alt="vaka"
+                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
                   loading="lazy"
                 />
               </div>
@@ -395,22 +395,22 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-7 col-span-1 md:order-none">
-              <div className="h-[500px] w-full">
+            <div className="order-7 col-span-1 mx-4 border-t md:order-none md:mx-0">
+              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
                 <img
                   src="/ngatangiia_rarotonga.webp"
-                  alt="hero"
-                  className="h-full w-full object-cover object-center"
+                  alt="ngatangiia rarotonga"
+                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-9 col-span-1 md:order-none">
-              <div className="h-[500px] w-full">
+            <div className="order-9 col-span-1 mx-4 border-t md:order-none md:mx-0">
+              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
                 <img
                   src="/tapa.webp"
-                  alt="hero"
-                  className="h-full w-full object-cover object-center"
+                  alt="tapa"
+                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
                   loading="lazy"
                 />
               </div>
@@ -442,7 +442,7 @@ export default function About() {
           <div className="mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
-              className="mt-8 space-y-4 p-8 text-center font-bold text-white lg:mt-0 lg:space-y-8"
+              className="mt-4 space-y-4 text-center font-black text-white lg:mt-0 lg:space-y-8 lg:p-8"
             >
               <h2 className="text-3xl lg:text-5xl">Meet Our Team</h2>
               <h3 className="text-3xl lg:text-5xl">Governance Board</h3>
@@ -452,7 +452,7 @@ export default function About() {
               {governanceBoard.map(BoardItem)}
             </div>
 
-            <hr className="border-black lg:hidden" />
+            <hr className="mx-4 border-black lg:hidden" />
 
             <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
               <h3 className="col-span-full pb-8 text-center text-3xl font-black text-white lg:text-5xl">
@@ -494,12 +494,12 @@ export default function About() {
 
         <section
           id="our-partners"
-          className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 p-8 lg:gap-8"
         >
           <h2 className="py-8 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Partners
           </h2>
-          <p className="max-w-screen-sm text-center text-2xl">
+          <p className="max-w-screen-sm text-center text-lg lg:text-2xl">
             We partner and collaborate with many organisations, agencies and
             services who support Pasifika communities to achieve better
             outcomes.
@@ -533,7 +533,7 @@ export default function About() {
             <h2 className="py-8 text-center text-3xl font-bold text-white lg:text-5xl">
               Work With Us
             </h2>
-            <p className="max-w-screen-lg text-center text-2xl">
+            <p className="max-w-screen-lg text-center text-lg lg:text-2xl">
               Join the Niuvaka Trust team to be an important part of making a
               real difference for Pasifika communities that we serve. We are a
               small team of dedicated and friendly staff, in an organisation
