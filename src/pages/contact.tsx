@@ -115,8 +115,7 @@ const Contact = () => {
               <div className="flex flex-col items-center gap-8 md:flex-row">
                 <img src="/location.svg" alt="location" />
                 <p className="text-lg font-bold">
-                  Level 1, 59 Queen Street,
-                  <br /> Palmerston North 4410,
+                  Level 1, 59 Queen Street, Palmerston North 4410,
                   <br /> New Zealand
                 </p>
               </div>
