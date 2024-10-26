@@ -59,7 +59,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
           <Logo
             className={cn(
               "my-8 transition-all duration-200 ease-in-out",
-              crossed && "my-4 size-16",
+              crossed && "my-4 lg:size-16",
             )}
           />
           <span className="hidden max-w-64 text-lg font-black leading-tight lg:block xl:max-w-full 2xl:mx-auto">

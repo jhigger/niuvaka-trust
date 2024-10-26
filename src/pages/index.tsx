@@ -26,7 +26,7 @@ export default function Home() {
             <img
               src="/hero_images/home.webp"
               alt="hero"
-              className="h-[700px] w-full object-cover"
+              className="h-[600px] w-full object-cover xl:h-[900px]"
               loading="eager"
             />
           </div>
