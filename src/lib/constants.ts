@@ -412,6 +412,14 @@ export const partners = [
     image: "/partners/9.webp",
     link: "https://ecct.org.nz/",
   },
+  {
+    image: "/partners/10.webp",
+    link: "https://lionfoundation.nz/",
+  },
+  {
+    image: "/partners/11.webp",
+    link: "https://www.pubcharitylimited.org.nz/",
+  },
 ];
 
 export const news: ArticleProps[] = [
