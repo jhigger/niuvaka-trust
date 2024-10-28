@@ -376,7 +376,7 @@ const Services = () => {
                       </h3>
                       <p className="lg:text-xl">
                         Free mammograms are available every two years through
-                        BreastScreen Aotearoa for women aged 45 &ndash; 69
+                        BreastScreen Aotearoa for women aged 45&ndash;69
                         years.
                         <br />
                         We want to empower Pacific women to actively lead their
