@@ -666,14 +666,14 @@ const Services = () => {
                 return (
                   <div
                     key={name}
-                    className="grid grid-cols-1 gap-12 p-4 pt-8 lg:grid-cols-2 lg:gap-24 lg:p-8"
+                    className="grid grid-cols-1 gap-8 p-4 pt-8 lg:grid-cols-2 lg:gap-16 lg:p-8"
                   >
                     <img
                       src={image}
                       alt="service"
-                      className="col-span-full aspect-video h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-1"
+                      className="col-span-full ml-auto aspect-video h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-1"
                     />
-                    <div className="col-span-full flex flex-col gap-12 lg:col-span-1">
+                    <div className="col-span-full flex flex-col gap-6 lg:col-span-1 lg:gap-12">
                       <h3 className="text-2xl font-semibold capitalize text-white lg:text-4xl">
                         {name}
                       </h3>
