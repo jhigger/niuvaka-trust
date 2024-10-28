@@ -4,7 +4,7 @@ import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 import { Button } from "~/components/ui/button";
 import { events, news } from "~/lib/constants";
-import { formatDate } from "~/lib/utils";
+import { cn, formatDate } from "~/lib/utils";
 
 export type ArticleProps = {
   type: "news" | "event";
@@ -14,7 +14,7 @@ export type ArticleProps = {
   excerpt?: string;
   video?: string;
   url?: string;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 
 const Article = ({
   type,
@@ -24,9 +24,10 @@ const Article = ({
   excerpt,
   video,
   url,
+  className,
 }: ArticleProps) => {
   return (
-    <article className="flex flex-col gap-4 py-8">
+    <article className={cn("flex flex-col gap-4", className)}>
       {type === "news" && image && (
         <img
           src={image}
@@ -35,7 +36,7 @@ const Article = ({
         />
       )}
       <h3 className="text-xl font-black">{title}</h3>
-      <span className="text-sm">Published: {formatDate(date)}</span>
+      <span className="mt-auto text-sm">Published: {formatDate(date)}</span>
       {type === "news" && excerpt && (
         <p className="line-clamp-5 whitespace-pre-wrap">{excerpt}</p>
       )}
@@ -99,7 +100,7 @@ const News = () => {
           />
         </section>
 
-        <section className="mx-auto space-y-8 divide-y divide-primary p-8 md:p-16">
+        <section className="mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 md:p-16">
           <h2
             id="latest-news"
             className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-4xl"
@@ -108,7 +109,7 @@ const News = () => {
             happening in your community!
           </h2>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
             {news.map((article, i) => (
               <Article key={i} {...article} />
             ))}
@@ -118,14 +119,31 @@ const News = () => {
             Events
           </h2>
 
-          {events
-            .sort((a, b) => b.date.getTime() - a.date.getTime())
-            .map((article, i) => (
-              <Article key={i} {...article} />
-            ))}
+          <div className="divide-y divide-primary">
+            {events.map((event, i) => {
+              return (
+                <div
+                  key={i}
+                  className="grid grid-cols-1 gap-8 py-8 lg:grid-cols-2"
+                >
+                  {event
+                    .sort((a, b) => b.date.getTime() - a.date.getTime())
+                    .map((article, i) => (
+                      <Article
+                        key={i}
+                        {...article}
+                        className={cn(
+                          event.length > 1 ? "col-span-1" : "col-span-full",
+                        )}
+                      />
+                    ))}
+                </div>
+              );
+            })}
+          </div>
         </section>
 
-        <section className="mx-auto mb-16 space-y-16">
+        <section className="mx-auto mb-16 space-y-8 p-8">
           <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Gallery
           </h2>

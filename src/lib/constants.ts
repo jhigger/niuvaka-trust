@@ -347,31 +347,69 @@ export const socials = [
   },
 ];
 
-export const events: ArticleProps[] = [
-  {
-    type: "event",
-    title: "Pasifika Fusion 2024 Immunisation",
-    date: new Date(2024, 7 - 1, 2),
-    video: "https://www.youtube.com/embed/ZZKVLEc8Weo?si=RDB0eudXHT7ZIHT1",
-  },
-  {
-    type: "event",
-    title: "Manawatū Rugby Immunisation campaign",
-    date: new Date(2023, 11 - 1, 24),
-    video: "https://youtube.com/embed/XnJvf8gIXnU?si=2RzLAh9XM8S8CKZA",
-  },
-  {
-    type: "event",
-    title: "Poly Paddles",
-    date: new Date(2024, 10 - 1, 6),
-    video: "https://www.youtube.com/embed/ybQTydfoNpM?si=RsYLvWBhweEtEMKc",
-  },
-  {
-    type: "event",
-    title: "Pacific Health Clinics",
-    date: new Date(2024, 8 - 1, 8),
-    image: "/news/clinic.webp",
-  },
+export const events: ArticleProps[][] = [
+  [
+    {
+      type: "event",
+      title: "Poly Paddles Promo October 2024",
+      date: new Date(2024, 10 - 1),
+      video: "https://youtube.com/embed/ybQTydfoNpM?si=PODjF-b1ehZSk4r8",
+    },
+    {
+      type: "event",
+      title: "Poly Paddles July 2024 Promo",
+      date: new Date(2024, 7 - 1),
+      video: "https://youtube.com/embed/hDcELzeFr4A?si=1spZdiH3863GR-S9",
+    }
+  ],
+  [
+    {
+      type: "event",
+      title: "Pasifika Fusion 2024 (Day 1)",
+      date: new Date(2024, 9 - 1),
+      video: "https://youtube.com/embed/ZZKVLEc8Weo?si=TFbCd42wsoT7WHuD",
+    },
+    {
+      type: "event",
+      title: "Pasifika Fusion 2024 (Day 2)",
+      date: new Date(2024, 9 - 1),
+      video: "https://youtube.com/embed/_-KGZjZhq18?si=nK-opSBalYk985HY",
+    }
+  ],
+  [
+    {
+      type: "event",
+      title: "Manawatū Turbo Immunisation Promo",
+      date: new Date(2024, 9 - 1, 19),
+      video: "https://youtube.com/embed/XnJvf8gIXnU?si=oVaYaK6IAmCZ8FPi",
+    },
+    {
+      type: "event",
+      title: "Manawatū Turbo Immunisation 65+",
+      date: new Date(2024, 9 - 1, 19),
+      video: "https://youtube.com/embed/2Ctfu7TE2sE?si=NNrn3r7D3VRdQSl0",
+    },
+    {
+      type: "event",
+      title: "Manawatū Turbo Immunisaiton Baby",
+      date: new Date(2024, 9 - 1, 19),
+      video: "https://youtube.com/embed/Fqz13YCoQtw?si=GP6TC_xUGkoY1DNM",
+    },
+    {
+      type: "event",
+      title: "Manawatū Turbo Immunisaiton 45+",
+      date: new Date(2024, 9 - 1, 19),
+      video: "https://youtube.com/embed/D0e8oRJnwx0?si=-S7VygSg1BkrFbjw",
+    },
+  ],
+  [
+    {
+      type: "event",
+      title: "Pacific Health Clinics",
+      date: new Date(2024, 8 - 1, 8),
+      image: "/news/clinic.webp",
+    }
+  ],
 ];
 
 export const partners = [
