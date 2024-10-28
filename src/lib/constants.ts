@@ -142,7 +142,7 @@ export const staff = [
   {
     image: "/team/Stephanie Haami.webp",
     name: "Stephanie Haami",
-    role: "Health Service Manager",
+    role: "Pasifika Health Service Manager",
     description: "Aitutaki i te Kuki Airani, Rangitikei",
   },
   {
@@ -159,7 +159,7 @@ export const staff = [
   },
   {
     image: "/team/Andrew Mulitalo.webp",
-    name: "Andrew Mose Gu Mulitalo",
+    name: "Andrew Gu-Mulitalo",
     role: "Pasifika Navigator",
     description: "Letogo Apia, Iv’a Sava’i",
   },
@@ -186,7 +186,7 @@ export const staff = [
     image: "/team/Patricia Hadley.webp",
     name: "Patricia Hadley",
     role: "Pasifika Community Clinical Nurse",
-    description: "Afakasi Samoa, NZ European",
+    description: "Lotofaga Safata, Samoa, Waitaha, Aotearoa",
   },
   {
     image: "/team/Randy Freddie (Liuvaie).webp",

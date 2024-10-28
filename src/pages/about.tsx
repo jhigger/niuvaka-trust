@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import Footer from "~/components/Footer";
 import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
-import { Button } from "~/components/ui/button";
 import { partners, staff } from "~/lib/constants";
 
 type GovernanceBoardType = {
@@ -12,7 +11,6 @@ type GovernanceBoardType = {
   name: string;
   role: string;
   description: React.ReactNode;
-  readMore?: React.ReactNode;
 };
 
 const governanceBoard: GovernanceBoardType[] = [
@@ -43,7 +41,7 @@ const governanceBoard: GovernanceBoardType[] = [
   {
     image: "/team/board/Jenine.webp",
     name: "Jenine Scoon",
-    role: "Chair",
+    role: "Deputy Chair",
     description: (
       <>
         <p>
@@ -66,30 +64,28 @@ const governanceBoard: GovernanceBoardType[] = [
           homelife to support the sustainabilty of the work that Niuvaka can
           offer to our beautiful communities.
         </p>
+        <p>
+          E toru oire roto toku iwi
+          <br />
+          Ko Titikaveka, Ngatangiia, e Matavera
+          <br />
+          Te ingoa kapiti no te oire ko Takitumu
+          <br />
+          Ko Irirangi te Maunga
+          <br />
+          E ko Avana te Ava
+          <br />
+          Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani)
+          <br />
+          Te maata i taau ka Oranga ko te Maata rai ia i taau ka rauka.
+          <br />
+          <br />
+          &quot;The more you give the more you receive.&quot;
+          <br />
+          <br />
+          Meitaki Ma&apos;ata
+        </p>
       </>
-    ),
-    readMore: (
-      <p>
-        E toru oire roto toku iwi
-        <br />
-        Ko Titikaveka, Ngatangiia, e Matavera
-        <br />
-        Te ingoa kapiti no te oire ko Takitumu
-        <br />
-        Ko Irirangi te Maunga
-        <br />
-        E ko Avana te Ava
-        <br />
-        Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani)
-        <br />
-        Te maata i taau ka Oranga ko te Maata rai ia i taau ka rauka.
-        <br />
-        <br />
-        &quot;The more you give the more you receive.&quot;
-        <br />
-        <br />
-        Meitaki Ma&apos;ata
-      </p>
     ),
   },
   {
@@ -125,17 +121,15 @@ const governanceBoard: GovernanceBoardType[] = [
           community-driven development, and social transformation in the
           Pacific.
         </p>
+        <p>
+          Suli&apos;s doctoral research explored indigenous alternative economic
+          development on customary land in the Pacific through decolonised
+          indigenous methodologies. His interests also include developing
+          cohesion between Pasifika community providers and research, and he
+          also co-developed the new Pacific Studies courses at the University of
+          Canterbury, New Zealand, in 2024.
+        </p>
       </>
-    ),
-    readMore: (
-      <p>
-        Suli&apos;s doctoral research explored indigenous alternative economic
-        development on customary land in the Pacific through decolonised
-        indigenous methodologies. His interests also include developing cohesion
-        between Pasifika community providers and research, and he also
-        co-developed the new Pacific Studies courses at the University of
-        Canterbury, New Zealand, in 2024.
-      </p>
     ),
   },
   {
@@ -165,10 +159,6 @@ const governanceBoard: GovernanceBoardType[] = [
           Pūrehuroa and has a background in the education sector, specifically
           within total immersion Māori language settings.
         </p>
-      </>
-    ),
-    readMore: (
-      <>
         <p>
           Tawhiti has given extensive contributions to the health sector and the
           Whānau Ora movement including as Co-Project Lead for the establishment
@@ -190,24 +180,16 @@ const governanceBoard: GovernanceBoardType[] = [
   },
 ];
 
-const BoardItem = ({
-  image,
-  name,
-  role,
-  description,
-  readMore,
-}: GovernanceBoardType) => {
-  const [isReadMore, setIsReadMore] = useState(false);
-
+const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
   return (
     <div
       key={name}
-      className="mx-auto grid max-w-screen-2xl grid-cols-1 place-items-start justify-items-center gap-8 lg:grid-cols-12"
+      className="mx-auto grid max-w-screen-xl grid-cols-1 place-items-start justify-items-center gap-8 lg:grid-cols-11"
     >
       <img
         src={image}
         alt={role}
-        className="col-span-full aspect-[13/16] w-full max-w-sm rounded-3xl object-cover lg:col-span-5"
+        className="col-span-full h-full max-h-[330px] w-full max-w-[270px] rounded-3xl object-cover lg:col-span-4"
         loading="lazy"
       />
 
@@ -219,15 +201,6 @@ const BoardItem = ({
           </span>
         </h3>
         {description}
-        {isReadMore && readMore}
-        {readMore && (
-          <Button
-            className="mt-auto hidden self-center rounded-full bg-coffee-50 p-8 text-2xl lg:flex lg:self-end"
-            onClick={() => setIsReadMore(!isReadMore)}
-          >
-            {isReadMore ? "Read Less" : "Read More"}
-          </Button>
-        )}
       </div>
     </div>
   );
@@ -323,6 +296,7 @@ export default function About() {
                   the pacific, the background behind the sails inside of the
                   coconut can also be looked at as the horizon coming off the
                   water.
+                  <br />
                   <br />
                   Niuvaka Trust is the body of the vaka - navigating, exploring,
                   researching and guiding development and interventions which
@@ -482,7 +456,9 @@ export default function About() {
                     </div>
                     <div className="text-2xl font-black">{name}</div>
                     <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
-                      <div className="text-xl font-bold">{role}</div>
+                      <div className="text-xl font-bold text-coffee-400">
+                        {role}
+                      </div>
                       <div className="text-xl font-normal">{description}</div>
                     </div>
                   </div>
@@ -534,22 +510,27 @@ export default function About() {
               Work With Us
             </h2>
             <p className="max-w-screen-lg text-center text-lg lg:text-2xl">
+              Niuvaka Trust has a vision for Tagata Pasifika to be Thriving,
+              Flourishing and Resilient. We work with Tagata Pasifika, Pasifika
+              families & Pasifika communities for the realisation of their
+              aspirations and do this through partnering to build capacity &
+              capability of Pasifika communities. We aim to achieve our Vision
+              through the delivery of our health, social, training & employment
+              services as well as our community-led projects & initiatives.
+              <br />
+              <br />
               Join the Niuvaka Trust team to be an important part of making a
               real difference for Pasifika communities that we serve. We are a
-              small team of dedicated and friendly staff, in an organisation
+              small team of 14 dedicated and friendly staff, in an organisation
               that is growing and developing. The environment is lively and
               perfect for someone who is passionate about advancing aspirations
-              for Tagata Pasifika.
-              <br />
-              <br />
-              Niuvaka Trust is a Pasifika community provider covering the
-              MidCentral region providing health, social services, training and
-              employment support. We support and encourage this by providing
-              opportunities to Pasifika communities and connecting Tagata
-              Pasifika to support services for the best possible outcomes.
-              Niuvaka Trust has a holistic approach to our work, this is
-              reflected in the services we provide with and for Pasifika
-              communities.
+              for Tagata Pasifika. Niuvaka Trust is a Not-for-Profit Pasifika
+              Charitable Trust based in Palmerston North covering the MidCentral
+              region providing opportunities to Pasifika communities and
+              connecting Tagata Pasifika to support services for the best
+              possible outcomes. Niuvaka Trust has a holistic approach to our
+              work, this is reflected in the services we provide with and for
+              Pasifika communities.
             </p>
 
             <CareerForm />
