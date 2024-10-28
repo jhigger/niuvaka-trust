@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
-          <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="col-span-full text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Values
           </h2>
           {values.map(({ name, image, description }) => {
@@ -98,7 +98,7 @@ export default function Home() {
                   className="w-2/3 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
-                <div className="-bottom-full w-full p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
+                <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
                   <h3 className="sr-only !relative mb-1 text-[100%] font-bold capitalize text-coffee-700 lg:not-sr-only xl:text-2xl">
                     {name}
                     <span className="absolute -bottom-1 left-0 h-1 w-[20%] bg-coffee-400"></span>
@@ -112,8 +112,8 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-16 p-8 lg:grid-cols-4">
-          <h2 className="col-span-full py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
+          <h2 className="col-span-full text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Work
           </h2>
           {services.map(({ name, image, description, id }) => {
@@ -142,7 +142,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
-          <h2 className="col-span-full text-balance py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="col-span-full text-balance text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Key Strategic Focus Areas
           </h2>
           {focusAreas.map(({ name, image }) => {
@@ -164,7 +164,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
-          <h2 className="text-balance py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-balance text-center text-3xl font-bold text-mint-500 lg:text-5xl">
             Our Programmes and Initiatives
           </h2>
 
