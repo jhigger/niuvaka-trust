@@ -126,9 +126,7 @@ const serviceDescriptions = [
         <br />
         We support Pacific parents, women and youth in the MidCentral region who
         are specifically looking for opportunities within the health, social
-        service and IT sectors. The Ola Lelei team are able to support Pacific
-        individuals through their study journey by providing tailored workshops
-        and pastoral care.
+        service data, digital and IT sectors.
         <br />
         <br />
         If you would like to enquire about our Ola Lelei service, please call{" "}
@@ -378,10 +376,11 @@ const Services = () => {
                       </h3>
                       <p className="lg:text-xl">
                         Free mammograms are available every two years through
-                        BreastScreen Aotearoa for women aged 45&ndash;69 years.
+                        BreastScreen Aotearoa for women aged 45 &ndash; 69
+                        years.
                         <br />
                         We want to empower Pacific women to actively lead their
-                        health and wellbeing aspirations
+                        health and wellbeing aspirations.
                         <br />
                         Niuvaka are here to support and guide you by connecting
                         you for free mammogram appointments that meet the
