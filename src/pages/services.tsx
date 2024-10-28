@@ -17,7 +17,7 @@ export const projects = [
         <br />
         <br />
         If you would like to enquire about our Poly Paddles Initiative, please
-        contact Niuvaka on <b>0800-648-8252</b> or via email:{" "}
+        contact <b>Niuvaka</b> on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -38,7 +38,8 @@ export const projects = [
         <br />
         <br />
         If you would like to enquire about our Pacific Home Gardening
-        Initiatives, please call Niuvaka on <b>0800-648-8252</b> or via email:{" "}
+        Initiatives, please call <b>Niuvaka</b> on <b>0800-648-8252</b> or via
+        email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -97,8 +98,8 @@ const serviceDescriptions = [
         with other providers, community organisations and government agencies.
         <br />
         <br />
-        If you would like to enquire about our Navigation service, please call
-        Niuvaka on <b>0800-648-8252</b> or via email:{" "}
+        If you would like to enquire about our Navigation service, please call{" "}
+        <b>Niuvaka</b> on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -130,8 +131,8 @@ const serviceDescriptions = [
         and pastoral care.
         <br />
         <br />
-        If you would like to enquire about our Ola Lelei service, please call
-        Niuvaka on <b>0800-648-8252</b> or via email:{" "}
+        If you would like to enquire about our Ola Lelei service, please call{" "}
+        <b>Niuvaka</b> on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -158,7 +159,7 @@ const serviceDescriptions = [
             href="https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/new-zealand-immunisation-schedule"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4"
+            className="font-bold underline underline-offset-4"
           >
             National Immunisation Schedule
           </a>{" "}
@@ -206,8 +207,8 @@ const serviceDescriptions = [
           community garden that is then distributed to Pacific communities.
           <br />
           <br />
-          If you require support through our Are Toa Kaikai, please call Niuvaka
-          on <b>0800-648-8252</b> or via email:{" "}
+          If you require support through our Are Toa Kaikai, please call{" "}
+          <b>Niuvaka</b> on <b>0800-648-8252</b> or via email:{" "}
           <a
             href="mailto:info@niuvaka.org.nz"
             className="font-bold underline underline-offset-4"
@@ -344,7 +345,7 @@ const Services = () => {
                           href="https://www.immune.org.nz/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline underline-offset-4"
+                          className="font-bold underline underline-offset-4"
                         >
                           Immunisation Advisory Centre
                         </a>{" "}
@@ -395,12 +396,12 @@ const Services = () => {
                         </li>
                       </ul>
                       <p className="lg:text-xl">
-                        For more information on <b>Breast Screening</b> see{" "}
+                        For more information on Breast Screening see{" "}
                         <a
                           href="https://info.health.nz/keeping-healthy/cancer-screening/breast-screening"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="underline underline-offset-4"
+                          className="font-bold underline underline-offset-4"
                         >
                           BreastScreen Aotearoa
                         </a>{" "}
@@ -411,7 +412,8 @@ const Services = () => {
                         >
                           0800 270 200
                         </a>{" "}
-                        or contact Niuvaka on <b>0800-648-8252</b> or email{" "}
+                        or contact <b>Niuvaka</b> on <b>0800-648-8252</b> or
+                        email{" "}
                         <a
                           href="mailto:info@niuvaka.org.nz"
                           className="font-bold underline underline-offset-4"
@@ -484,8 +486,15 @@ const Services = () => {
                           </ul>
                           <p className="text-xl">
                             For more information about what screening tests and
-                            what follow-up tests are funded, please get in touch
-                            with us.
+                            follow-up tests are funded, please contact our
+                            Pasifika Health Team at <b>Niuvaka</b> on{" "}
+                            <b>0800-648-8252</b> or email{" "}
+                            <a
+                              href="mailto:info@niuvaka.org.nz"
+                              className="font-bold underline underline-offset-4"
+                            >
+                              info@niuvaka.org.nz
+                            </a>
                           </p>
                         </div>
                         <div className="order-1 col-span-full lg:order-none lg:col-span-1">
@@ -515,7 +524,7 @@ const Services = () => {
                           </p>
                           <ul className="list-inside list-disc self-center text-left lg:text-xl">
                             <li>
-                              Māori and Pacific people aged 50 to 74 years
+                              Māori and Pacific people aged 50 &ndash; 74 years
                             </li>
                             <li>
                               For everyone else, the age is 60 &ndash; 74 years
@@ -535,7 +544,7 @@ const Services = () => {
                             that can be done at home.
                             <br />
                             <br />
-                            Once you start on the bowel screening programme, a
+                            Once you start on the Bowel Screening Programme, a
                             bowel screening test kit will be delivered to your
                             home every two years while you are aged 50 to 74
                             years.
@@ -553,11 +562,11 @@ const Services = () => {
                               href="https://info.health.nz/keeping-healthy/cancer-screening/bowel-screening"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="underline underline-offset-4"
+                              className="font-bold underline underline-offset-4"
                             >
-                              National Bowel Screening
+                              National Bowel Screening Programme
                             </a>{" "}
-                            Programme website or call{" "}
+                            website or call{" "}
                             <a
                               href="tel:+0800924432"
                               className="font-bold underline underline-offset-4"
@@ -571,9 +580,17 @@ const Services = () => {
                             at{" "}
                             <a
                               href="mailto:bowelscreening@midcentraldhb.govt.nz"
-                              className="break-words underline underline-offset-4"
+                              className="break-words font-bold underline underline-offset-4"
                             >
                               bowelscreening@midcentraldhb.govt.nz
+                            </a>{" "}
+                            or contact <b>Niuvaka</b> on <b>0800-648-8252</b> or
+                            email{" "}
+                            <a
+                              href="mailto:info@niuvaka.org.nz"
+                              className="font-bold underline underline-offset-4"
+                            >
+                              info@niuvaka.org.nz
                             </a>
                           </p>
                         </div>
