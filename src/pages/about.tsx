@@ -260,9 +260,9 @@ export default function About() {
 
         <section
           id="our-journey"
-          className="mx-auto flex flex-col items-center justify-center gap-4 p-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-8"
         >
-          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
             About Us
           </h2>
           <p className="max-w-screen-xl text-balance text-center text-xl">
@@ -275,9 +275,9 @@ export default function About() {
 
         <section
           id="our-name"
-          className="mx-auto flex flex-col items-center justify-center gap-4 p-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-4"
         >
-          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
             Our Name
           </h2>
           <p className="max-w-screen-lg text-balance text-center text-xl">
@@ -286,10 +286,10 @@ export default function About() {
           </p>
         </section>
 
-        <section className="mx-auto space-y-8 p-0">
+        <section className="mx-auto space-y-4 p-0">
           <h2
             id="our-logo"
-            className="py-4 text-center text-3xl font-bold text-mint-500 lg:text-5xl"
+            className="pt-4 text-center text-3xl font-black text-mint-500 lg:text-5xl"
           >
             Our Logo
           </h2>
