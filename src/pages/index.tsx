@@ -95,14 +95,18 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
+                  className="w-2/3 max-w-80 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
+                <h3 className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out group-hover:opacity-0 lg:not-sr-only">
+                  {name}
+                  <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
+                </h3>
                 <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
-                  <h3 className="sr-only !relative mb-1 text-[100%] font-bold capitalize text-coffee-700 lg:not-sr-only xl:text-2xl">
+                  <div className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
                     {name}
-                    <span className="absolute -bottom-1 left-0 h-1 w-[20%] bg-coffee-400"></span>
-                  </h3>
+                    <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
+                  </div>
                   <p className="text-center text-base lg:text-[75%] xl:text-base">
                     {description}
                   </p>
@@ -125,10 +129,13 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
-                <h3 className="sr-only">{name}</h3>
+                <h3 className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
+                  {name.slice(0, -7)}
+                  <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
+                </h3>
                 <p className="line-clamp-4 text-center">{description}</p>
                 <Button
                   asChild
@@ -149,15 +156,18 @@ export default function Home() {
             return (
               <div
                 key={name}
-                className="col-span-1 flex h-full flex-col items-center justify-start gap-4 overflow-hidden"
+                className="col-span-1 flex h-full flex-col items-center justify-start gap-4"
               >
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
-                <h3 className="sr-only">{name}</h3>
+                <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
+                  {name}
+                  <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
+                </h3>
               </div>
             );
           })}

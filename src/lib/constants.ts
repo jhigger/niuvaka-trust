@@ -13,28 +13,28 @@ export const services: {
   id: string;
 }[] = [
     {
-      image: "/services/navigation.webp",
+      image: "/services/navigation.svg",
       name: "Navigation Service",
       description:
         "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
       id: "navigation-services",
     },
     {
-      image: "/services/ola.webp",
+      image: "/services/ola.svg",
       name: "Ola Lelei Service",
       description:
         "Ola Lelei is our new Job & Skills Hub that has been set up to support Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
       id: "ola-lelei-and-kai-services",
     },
     {
-      image: "/services/outreach.webp",
+      image: "/services/outreach.svg",
       name: "Outreach Service",
       description:
         "Immunisations Protecting the health of you and your vuvale (family) with necessary vaccinations and immunisations is important.",
       id: "outreach-services",
     },
     {
-      image: "/services/social.webp",
+      image: "/services/social.svg",
       name: "Social Service",
       description:
         "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
@@ -44,31 +44,31 @@ export const services: {
 
 export const values = [
   {
-    image: "/values/family.webp",
+    image: "/values/family.svg",
     name: "Family",
     description:
       "Cherishing family as the centre and foundation for belonging and identity",
   },
   {
-    image: "/values/relationships.webp",
+    image: "/values/relationships.svg",
     name: "Relationships",
     description:
       "Relationships are nurtured, cared for, and honoured for shared mutual gain and success",
   },
   {
-    image: "/values/service.webp",
+    image: "/values/service.svg",
     name: "Service",
     description:
       "Service for the benefit and good of all enacting kindness and thoughtfulness",
   },
   {
-    image: "/values/respect.webp",
+    image: "/values/respect.svg",
     name: "Respect",
     description:
       "Paying regard and respect valuing everyone and every situation",
   },
   {
-    image: "/values/faithfulness.webp",
+    image: "/values/faithfulness.svg",
     name: "Faithfulness",
     description: "Being principled, devoted, dependable, and reliable",
   },
@@ -76,37 +76,37 @@ export const values = [
 
 export const focusAreas = [
   {
-    image: "/focus_areas/cultural_identity.webp",
+    image: "/focus_areas/cultural_identity.svg",
     name: "Cultural Identity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/leadership.webp",
+    image: "/focus_areas/leadership.svg",
     name: "Leadership",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/wellbeing.webp",
+    image: "/focus_areas/wellbeing.svg",
     name: "Wellbeing",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/connectivity.webp",
+    image: "/focus_areas/connectivity.svg",
     name: "Connectivity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/prosperity.webp",
+    image: "/focus_areas/prosperity.svg",
     name: "Prosperity",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",
   },
   {
-    image: "/focus_areas/young_people.webp",
+    image: "/focus_areas/young_people.svg",
     name: "Young People",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit sem, pharetra ut semper sit amet, consectetur vel lectus. Pellentesque maximus sed nunc eget dapibus. Maecenas hendrerit commodo ante, sed consectetur nunc ultrices at.",

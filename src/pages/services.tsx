@@ -71,10 +71,10 @@ export const projects = [
 ];
 
 const images = [
-  "/services/navigation.webp",
-  "/services/ola.webp",
-  "/services/outreach.webp",
-  "/services/social.webp",
+  "/services/navigation.svg",
+  "/services/ola.svg",
+  "/services/outreach.svg",
+  "/services/social.svg",
 ];
 
 const serviceDescriptions = [
