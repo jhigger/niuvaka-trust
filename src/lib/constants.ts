@@ -37,7 +37,7 @@ export const services: {
       image: "/services/social.webp",
       name: "Social Service",
       description:
-        "Are Toa Kaikai Our food-hub started because of COVID where we provided support to Pasifika communities who were isolating during the COVID-19 Pandemic.",
+        "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
       id: "social-services",
     },
   ];

@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     image: "/projects/gardening.webp",
-    name: "Pasifica Home Gardening Initiative",
+    name: "Pasifika Home Gardening Initiative",
     description: (
       <p className="lg:text-xl">
         Wellbeing programme using ancestral knowledge to support Pacific
