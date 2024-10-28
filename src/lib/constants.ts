@@ -5,42 +5,42 @@ export const email = "info@niuvaka.org.nz";
 export const services: {
   image: string;
   name:
-    | "Navigation Services"
-    | "Ola Lelei Services"
-    | "Outreach Services"
-    | "Social Services";
+  | "Navigation Service"
+  | "Ola Lelei Service"
+  | "Outreach Service"
+  | "Social Service";
   description: string;
   id: string;
 }[] = [
-  {
-    image: "/services/navigation.webp",
-    name: "Navigation Services",
-    description:
-      "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
-    id: "navigation-services",
-  },
-  {
-    image: "/services/ola.webp",
-    name: "Ola Lelei Services",
-    description:
-      "Ola Lelei is our new Job & Skills Hub that has been set up to support Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
-    id: "ola-lelei-and-kai-services",
-  },
-  {
-    image: "/services/outreach.webp",
-    name: "Outreach Services",
-    description:
-      "Immunisations Protecting the health of you and your vuvale (family) with necessary vaccinations and immunisations is important.",
-    id: "outreach-services",
-  },
-  {
-    image: "/services/social.webp",
-    name: "Social Services",
-    description:
-      "Are Toa Kaikai Our food-hub started because of COVID where we provided support to Pasifika communities who were isolating during the COVID-19 Pandemic.",
-    id: "social-services",
-  },
-];
+    {
+      image: "/services/navigation.webp",
+      name: "Navigation Service",
+      description:
+        "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
+      id: "navigation-services",
+    },
+    {
+      image: "/services/ola.webp",
+      name: "Ola Lelei Service",
+      description:
+        "Ola Lelei is our new Job & Skills Hub that has been set up to support Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
+      id: "ola-lelei-and-kai-services",
+    },
+    {
+      image: "/services/outreach.webp",
+      name: "Outreach Service",
+      description:
+        "Immunisations Protecting the health of you and your vuvale (family) with necessary vaccinations and immunisations is important.",
+      id: "outreach-services",
+    },
+    {
+      image: "/services/social.webp",
+      name: "Social Service",
+      description:
+        "Are Toa Kaikai Our food-hub started because of COVID where we provided support to Pasifika communities who were isolating during the COVID-19 Pandemic.",
+      id: "social-services",
+    },
+  ];
 
 export const values = [
   {
@@ -213,61 +213,61 @@ export const navigationLinks: {
   href: string;
   subLinks?: SubLinkType[];
 }[] = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-    subLinks: [
-      {
-        name: "Our Journey",
-        href: "/about#our-journey",
-        subLinks: [
-          {
-            name: "Our Name",
-            href: "/about#our-name",
-          },
-          {
-            name: "Our Logo",
-            href: "/about#our-logo",
-          },
-          {
-            name: "Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi",
-            href: "/about#tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi",
-          },
+    {
+      name: "Home",
+      href: "/",
+    },
+    {
+      name: "About",
+      href: "/about",
+      subLinks: [
+        {
+          name: "Our Journey",
+          href: "/about#our-journey",
+          subLinks: [
+            {
+              name: "Our Name",
+              href: "/about#our-name",
+            },
+            {
+              name: "Our Logo",
+              href: "/about#our-logo",
+            },
+            {
+              name: "Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi",
+              href: "/about#tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi",
+            },
 
-          {
-            name: "Pasifika Diversity",
-            href: "/about#pasifika-diversity",
-          },
-        ],
-      },
-      {
-        name: "Our Team",
-        href: "/about#our-team",
-      },
-      {
-        name: "Our Partners",
-        href: "/about#our-partners",
-      },
-      {
-        name: "Work With Us",
-        href: "/about#work-with-us",
-      },
-    ],
-  },
-  {
-    name: "Our Work",
-    href: "/services",
-    subLinks: [
-      ...services.map(({ name, id: href }) => ({
-        name,
-        href: `/services#${href}`,
-        subLinks:
-          name === "Outreach Services"
-            ? [
+            {
+              name: "Pasifika Diversity",
+              href: "/about#pasifika-diversity",
+            },
+          ],
+        },
+        {
+          name: "Our Team",
+          href: "/about#our-team",
+        },
+        {
+          name: "Our Partners",
+          href: "/about#our-partners",
+        },
+        {
+          name: "Work With Us",
+          href: "/about#work-with-us",
+        },
+      ],
+    },
+    {
+      name: "Our Work",
+      href: "/services",
+      subLinks: [
+        ...services.map(({ name, id: href }) => ({
+          name,
+          href: `/services#${href}`,
+          subLinks:
+            name === "Outreach Service"
+              ? [
                 {
                   name: "Immunisation",
                   href: "/services#immunisation",
@@ -289,40 +289,40 @@ export const navigationLinks: {
                   href: "/services#health-assessment-and-wellbeing-checks",
                 },
               ]
-            : name === "Social Services"
-              ? [
+              : name === "Social Service"
+                ? [
                   {
                     name: "Are Toa Kaikai",
                     href: "/services#are-toa-kaikai",
                   },
                 ]
-              : undefined,
-      })),
-      {
-        name: "Our Projects and Initiatives",
-        href: "/services#our-projects-and-initiatives",
-      },
-    ],
-  },
-  {
-    name: "News",
-    href: "/news",
-    subLinks: [
-      {
-        name: "Latest News",
-        href: "/news#latest-news",
-      },
-      {
-        name: "Events",
-        href: "/news#events",
-      },
-    ],
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
-];
+                : undefined,
+        })),
+        {
+          name: "Our Projects and Initiatives",
+          href: "/services#our-projects-and-initiatives",
+        },
+      ],
+    },
+    {
+      name: "News",
+      href: "/news",
+      subLinks: [
+        {
+          name: "Latest News",
+          href: "/news#latest-news",
+        },
+        {
+          name: "Events",
+          href: "/news#events",
+        },
+      ],
+    },
+    {
+      name: "Contact",
+      href: "/contact",
+    },
+  ];
 
 export const socials = [
   {

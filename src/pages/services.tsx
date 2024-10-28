@@ -12,12 +12,12 @@ export const projects = [
     name: "Poly Paddles",
     description: (
       <p className="lg:text-xl">
-        Water safety and life skills programme for Pasifika & Māori Tamariki and
-        Rangatahi 5-18 years
+        Water safety and life skills programme for Pasifika and Māori Tamariki
+        and Rangatahi 5-18 years.
         <br />
         <br />
-        If you would like to enquire about our Poly Paddles, please call Niuvaka
-        on <b>0800-648-8252</b> or via email:{" "}
+        If you would like to enquire about our Poly Paddles Initiative, please
+        contact Niuvaka on <b>0800-648-8252</b> or via email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -29,11 +29,12 @@ export const projects = [
   },
   {
     image: "/projects/gardening.webp",
-    name: "Pasifica Home Gardening Initiatives",
+    name: "Pasifica Home Gardening Initiative",
     description: (
       <p className="lg:text-xl">
         Wellbeing programme using ancestral knowledge to support Pacific
-        families to be self-managing and self-sufficient.
+        families to be self-managing and self-sufficient and support the
+        achievement of kai sovereignty.
         <br />
         <br />
         If you would like to enquire about our Pacific Home Gardening
@@ -53,7 +54,7 @@ export const projects = [
     description: (
       <p className="lg:text-xl">
         Initiative to revive traditional Pacific cultural games to create
-        connectedness and belonging
+        connectedness and belonging.
         <br />
         <br />
         If you would like to enquire about our Vaka Programmes, please call
@@ -70,10 +71,10 @@ export const projects = [
 ];
 
 const images = [
-  "/services/service1.webp",
-  "/services/service2.webp",
-  "/services/service3.webp",
-  "/services/service4.webp",
+  "/services/navigation.webp",
+  "/services/ola.webp",
+  "/services/outreach.webp",
+  "/services/social.webp",
 ];
 
 const serviceDescriptions = [
@@ -170,24 +171,11 @@ const serviceDescriptions = [
           Immunisation Outreach Service including regular Pasifika Immunisation
           Clinics:
         </p>
-        <ul className="list-inside list-disc self-center text-left lg:text-xl">
+        <ul className="list-inside list-disc self-center text-left lg:w-full lg:text-xl">
           <li>Childhood Immunisations</li>
           <li>Flu vaccinations</li>
           <li>COVID vaccinations</li>
         </ul>
-        <p className="text-lg lg:text-2xl">
-          The{" "}
-          <a
-            href="https://www.immune.org.nz/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4"
-          >
-            Immunisation Advisory Centre
-          </a>{" "}
-          provides useful information to help make informed decisions about
-          immunisation.
-        </p>
       </>
     ),
   },
@@ -202,24 +190,24 @@ const serviceDescriptions = [
           Are Toa Kaikai
         </h3>
         <p className="text-base lg:text-xl">
-          Our food-hub started because of COVID where we provided support to
-          Pasifika communities who were isolating during the COVID-19 Pandemic.
-          The support extended beyond COVID as we recognised the need for
-          ongoing support for Pacific peoples in our region who were struggling
-          to meet their basic living needs.
+          Our food hub was born out of COVID initially supporting Pacific
+          communities who were isolating during the COVID-19 Pandemic. The
+          support extended beyond COVID as we recognised the need for ongoing
+          support for Pacific peoples in our region who were struggling to meet
+          their basic living needs.
           <br />
           <br />
-          Niuvaka provide free, fresh and healthy food to our local Pasifika
-          communities and in particular to those who are in need.
+          Niuvaka provide free, fresh, and healthy food to our local Pacific
+          communities and to those who are in need. Are Toa Kaikai relies on the
+          support and generosity of our funders, donations and food suppliers in
+          supplying rescued food to Pacific communities. The contents of our kai
+          packs depend on the supplies available to us. We are also able to
+          provide fresh fruit and vegetables grown and harvested from our own
+          community garden that is then distributed to Pacific communities.
           <br />
           <br />
-          Are Toa Kaikai relies on the support and generosity of our partner
-          food suppliers, funders and donations. The contents of our food packs
-          depend on the supplies available to us.
-          <br />
-          <br />
-          If you would like to enquire about our Ara Toa Kaikai service, please
-          call Niuvaka on <b>0800-648-8252</b> or via email:{" "}
+          If you require support through our Are Toa Kaikai, please call Niuvaka
+          on <b>0800-648-8252</b> or via email:{" "}
           <a
             href="mailto:info@niuvaka.org.nz"
             className="font-bold underline underline-offset-4"
@@ -326,7 +314,7 @@ const Services = () => {
                   <img
                     src={image}
                     alt="service"
-                    className="col-span-full h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-2"
+                    className="col-span-full h-full max-h-[327px] w-full max-w-[462px] rounded object-contain lg:col-span-2"
                   />
                   <div className="col-span-full flex flex-col gap-8 lg:col-span-3 lg:p-8">
                     <h2 className="text-bold text-2xl font-semibold capitalize lg:text-4xl">
@@ -344,7 +332,25 @@ const Services = () => {
                     </Button>
                   )}
                   {show && id === "outreach-services" && (
-                    <div className="col-span-full max-w-screen-2xl space-y-8">
+                    <div className="col-span-full space-y-8">
+                      <img
+                        src="/services/service3.webp"
+                        alt="immunisation"
+                        className="mx-auto h-[385px] w-[320px] rounded object-cover lg:float-right lg:m-8 xl:-mt-32"
+                      />
+                      <p className="text-lg lg:text-xl">
+                        The{" "}
+                        <a
+                          href="https://www.immune.org.nz/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline underline-offset-4"
+                        >
+                          Immunisation Advisory Centre
+                        </a>{" "}
+                        provides useful information to help make informed
+                        decisions about immunisation.
+                      </p>
                       <p className="lg:text-xl">
                         For more information on any immunisation services please
                         call your <b>General Practice team</b> or contact
@@ -363,10 +369,6 @@ const Services = () => {
                       </p>
                       <br />
                       <br />
-                      <h2 className="text-bold text-2xl font-semibold text-coffee-400 lg:text-4xl">
-                        We also provide Screening support within the Outreach
-                        Service:
-                      </h2>
                       <h3
                         id="breast-screening"
                         className="text-xl font-bold text-coffee-400 underline underline-offset-4 lg:text-2xl"
@@ -374,12 +376,11 @@ const Services = () => {
                         Breast Screening
                       </h3>
                       <p className="lg:text-xl">
-                        Protecting the health of you and your vuvale Free
-                        mammograms are available every two years through
+                        Free mammograms are available every two years through
                         BreastScreen Aotearoa for women aged 45&ndash;69 years.
                         <br />
-                        We want to empower Pasifika women to actively lead their
-                        health and wellbeing aspirations.
+                        We want to empower Pacific women to actively lead their
+                        health and wellbeing aspirations
                         <br />
                         Niuvaka are here to support and guide you by connecting
                         you for free mammogram appointments that meet the
@@ -409,6 +410,13 @@ const Services = () => {
                           className="font-bold underline underline-offset-4"
                         >
                           0800 270 200
+                        </a>{" "}
+                        or contact Niuvaka on <b>0800-648-8252</b> or email{" "}
+                        <a
+                          href="mailto:info@niuvaka.org.nz"
+                          className="font-bold underline underline-offset-4"
+                        >
+                          info@niuvaka.org.nz
                         </a>
                       </p>
                       <br />
@@ -633,7 +641,7 @@ const Services = () => {
               id="our-projects-and-initiatives"
               className="p-4 text-3xl font-black text-white lg:p-8 lg:text-5xl"
             >
-              Our Projects and Initiatives
+              Our Projects & Initiatives
             </h2>
 
             <div className="flex flex-col gap-8 divide-y divide-primary">
