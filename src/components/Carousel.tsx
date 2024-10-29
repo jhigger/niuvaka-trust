@@ -9,6 +9,7 @@ import {
   Pagination,
 } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 export const gallery = [
   "/gallery/1.webp",
@@ -39,7 +40,7 @@ const Carousel = () => {
         }}
         slidesPerView={"auto"}
         spaceBetween={400}
-        className="relative h-[70vh] max-h-[720px] w-full lg:h-[60vw]"
+        className="relative w-full"
         autoplay={{
           delay: 5000,
         }}
@@ -60,17 +61,19 @@ const Carousel = () => {
             key={image}
             className="relative !h-full !w-full p-6 lg:p-8"
           >
-            <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
-              <img
-                src={image}
-                alt="gallery image"
-                className="h-full w-full object-cover object-[50%_25%]"
-              />
-            </div>
+            <AspectRatio ratio={16 / 9}>
+              <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
+                <img
+                  src={image}
+                  alt="gallery image"
+                  className="h-full w-full object-cover object-[50%_25%]"
+                />
+              </div>
+            </AspectRatio>
           </SwiperSlide>
         ))}
 
-        <div className="relative bottom-1/2">
+        <div className="bottom-1/2">
           <ChevronLeft className="swiper-button-prev !left-[1%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1" />
           <ChevronRight className="swiper-button-next !right-[1%] !h-max !w-10 rounded-full bg-coffee-400 stroke-white stroke-2 p-1" />
         </div>

@@ -4,6 +4,7 @@ import Footer from "~/components/Footer";
 import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
+import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { partners, staff } from "~/lib/constants";
 
 type GovernanceBoardType = {
@@ -446,13 +447,15 @@ export default function About() {
                       "group relative col-span-1 flex flex-col items-center gap-4 text-center"
                     }
                   >
-                    <div className="flex aspect-square w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
-                      <img
-                        src={image}
-                        alt={name}
-                        className="size-full object-cover object-top"
-                        loading="lazy"
-                      />
+                    <div className="flex w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
+                      <AspectRatio ratio={1 / 1}>
+                        <img
+                          src={image}
+                          alt={name}
+                          className="size-full object-cover object-top"
+                          loading="lazy"
+                        />
+                      </AspectRatio>
                     </div>
                     <div className="text-2xl font-black">{name}</div>
                     <div className="max-h-0 overflow-hidden opacity-0 transition-all duration-200 ease-in-out group-hover:max-h-48 group-hover:opacity-100">
@@ -480,7 +483,7 @@ export default function About() {
             services who support Pasifika communities to achieve better
             outcomes.
           </p>
-          <div className="grid w-full grid-cols-1 items-center justify-center gap-8 p-8 md:grid-cols-3">
+          <div className="grid w-full grid-cols-1 place-items-center items-center justify-center gap-8 p-8 md:grid-cols-3">
             {partners.map(({ image, link }) => {
               return (
                 <a
@@ -492,7 +495,7 @@ export default function About() {
                   <img
                     src={image}
                     alt="partner"
-                    className="aspect-video h-full max-h-32 w-full object-contain object-center"
+                    className="h-full max-h-36 w-full max-w-64 object-contain object-center"
                     loading="lazy"
                   />
                 </a>

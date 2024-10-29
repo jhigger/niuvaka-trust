@@ -3,6 +3,7 @@ import Link from "next/link";
 import Footer from "~/components/Footer";
 import ContactForm from "~/components/Forms/ContactForm";
 import Navbar from "~/components/Navbar";
+import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { Button } from "~/components/ui/button";
 import {
   Tooltip,
@@ -120,10 +121,12 @@ const Contact = () => {
                 </p>
               </div>
 
-              <iframe
-                className="my-4 aspect-video w-full rounded-3xl border-2 border-black"
-                src="https://www.google.com/maps/embed/v1/place?q=level+1/59+Queen+Street,+Palmerston+North+Central,+Palmerston+North+4410,+New+Zealand&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-              ></iframe>
+              <AspectRatio ratio={16 / 9}>
+                <iframe
+                  className="my-4 h-full w-full rounded-3xl border-2 border-black"
+                  src="https://www.google.com/maps/embed/v1/place?q=level+1/59+Queen+Street,+Palmerston+North+Central,+Palmerston+North+4410,+New+Zealand&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                ></iframe>
+              </AspectRatio>
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 <div className="col-span-full text-2xl font-black">

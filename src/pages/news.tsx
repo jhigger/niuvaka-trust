@@ -2,6 +2,7 @@ import Head from "next/head";
 import Carousel from "~/components/Carousel";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
+import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { Button } from "~/components/ui/button";
 import { events, news } from "~/lib/constants";
 import { cn, formatDate } from "~/lib/utils";
@@ -29,11 +30,13 @@ const Article = ({
   return (
     <article className={cn("flex flex-col gap-4", className)}>
       {type === "news" && image && (
-        <img
-          src={image}
-          alt="thumbnail"
-          className="aspect-video w-full rounded-xl object-cover"
-        />
+        <AspectRatio ratio={16 / 9}>
+          <img
+            src={image}
+            alt="thumbnail"
+            className="h-full w-full rounded-xl object-cover"
+          />
+        </AspectRatio>
       )}
       <h3 className="text-xl font-black">{title}</h3>
       <span className="mt-auto text-sm">Published: {formatDate(date)}</span>
@@ -51,21 +54,25 @@ const Article = ({
         </Button>
       )}
       {type === "event" && video && (
-        <iframe
-          src={video}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          className="mx-auto aspect-video w-full max-w-screen-2xl rounded-xl"
-        ></iframe>
+        <AspectRatio ratio={16 / 9}>
+          <iframe
+            src={video}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="mx-auto h-full w-full max-w-screen-2xl rounded-xl"
+          ></iframe>
+        </AspectRatio>
       )}
       {type === "event" && !video && image && (
-        <img
-          src={image}
-          alt="thumbnail"
-          className="mx-auto aspect-video w-full max-w-screen-2xl rounded-xl object-cover"
-        />
+        <AspectRatio ratio={16 / 9}>
+          <img
+            src={image}
+            alt="thumbnail"
+            className="mx-auto h-full w-full max-w-screen-2xl rounded-xl object-cover"
+          />
+        </AspectRatio>
       )}
     </article>
   );

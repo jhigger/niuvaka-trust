@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
+import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { Button } from "~/components/ui/button";
 import { services as serviceItems } from "~/lib/constants";
 
@@ -376,8 +377,7 @@ const Services = () => {
                       </h3>
                       <p className="lg:text-xl">
                         Free mammograms are available every two years through
-                        BreastScreen Aotearoa for women aged 45&ndash;69
-                        years.
+                        BreastScreen Aotearoa for women aged 45&ndash;69 years.
                         <br />
                         We want to empower Pacific women to actively lead their
                         health and wellbeing aspirations.
@@ -667,11 +667,13 @@ const Services = () => {
                     key={name}
                     className="grid grid-cols-1 gap-8 p-4 pt-8 lg:grid-cols-2 lg:gap-16 lg:p-8"
                   >
-                    <img
-                      src={image}
-                      alt="service"
-                      className="col-span-full ml-auto aspect-video h-full max-h-[720px] w-full max-w-[1080px] rounded object-cover lg:col-span-1"
-                    />
+                    <AspectRatio ratio={16 / 9}>
+                      <img
+                        src={image}
+                        alt="service"
+                        className="col-span-full ml-auto h-full w-full rounded object-cover lg:col-span-1"
+                      />
+                    </AspectRatio>
                     <div className="col-span-full flex flex-col gap-6 lg:col-span-1 lg:gap-12">
                       <h3 className="text-2xl font-semibold capitalize text-white lg:text-4xl">
                         {name}
