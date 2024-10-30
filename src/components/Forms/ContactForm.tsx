@@ -63,7 +63,6 @@ const ContactForm = () => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
     formRef.current?.submit();
   };
 
