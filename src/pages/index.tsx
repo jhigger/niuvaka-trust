@@ -98,11 +98,11 @@ export default function Home() {
                   className="w-2/3 max-w-80 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
-                <h3 className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out group-hover:opacity-0 lg:not-sr-only">
+                <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out lg:not-sr-only lg:group-hover:opacity-0">
                   {name}
                   <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
                 </h3>
-                <div className="-bottom-full w-full space-y-4 p-4 transition-all duration-150 ease-in-out lg:absolute lg:group-hover:bottom-0 xl:p-8">
+                <div className="-bottom-full w-full space-y-4 transition-all duration-150 ease-in-out lg:absolute lg:p-4 lg:group-hover:bottom-0 xl:p-8">
                   <div className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
                     {name}
                     <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
