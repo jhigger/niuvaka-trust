@@ -221,7 +221,7 @@ export default function About() {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-52">
+        <section className="mt-40">
           <div className="mx-auto p-0">
             <img
               src="/hero_images/about.webp"
