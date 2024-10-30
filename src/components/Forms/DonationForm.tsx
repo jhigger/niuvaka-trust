@@ -176,7 +176,7 @@ const DonationForm = () => {
         <input
           type="text"
           name="donation_for"
-          value={JSON.stringify(form.watch("donation_for"))}
+          defaultValue={JSON.stringify(form.watch("donation_for"))}
           hidden
         />
         <FormFooter className="col-span-full text-sm" />
