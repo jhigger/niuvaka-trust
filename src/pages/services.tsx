@@ -240,7 +240,6 @@ const Services = () => {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.substring(1);
-      console.log(hash);
       if (
         hash &&
         [
@@ -250,7 +249,6 @@ const Services = () => {
           "health-assessment-and-wellbeing-checks",
         ].includes(hash)
       ) {
-        console.log(hash);
         setShow(true);
       }
     };
