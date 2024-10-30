@@ -481,7 +481,7 @@ const Services = () => {
                               test) - taken by a health professional.
                             </li>
                           </ul>
-                          <p className="text-xl">
+                          <p className="text-lg">
                             For more information about what screening tests and
                             follow-up tests are funded, please contact our
                             Pasifika Health Team at <b>Niuvaka</b> on{" "}
