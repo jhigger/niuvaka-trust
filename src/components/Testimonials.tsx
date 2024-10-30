@@ -28,7 +28,7 @@ const items = [
 const Testimonials = () => {
   return (
     <section className="mx-auto space-y-8 p-8">
-      <h2 className="p-8 text-5xl font-bold text-black">
+      <h2 className="p-8 text-4xl font-bold text-black">
         What people say about us
       </h2>
       <div className="flex items-center justify-center gap-8 overflow-x-auto">

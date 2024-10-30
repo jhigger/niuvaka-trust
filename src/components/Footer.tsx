@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="space-y-4">
           <div className="flex items-end gap-4">
             <Logo className="-mb-2 h-max w-20" />
-            <div className="text-xl font-black uppercase lg:text-3xl">
+            <div className="text-xl font-black uppercase lg:text-2xl">
               NIUVAKA TRUST
             </div>
           </div>
 
-          <div className="text-base font-bold underline underline-offset-4 lg:text-xl">
+          <div className="text-base font-bold underline underline-offset-4 lg:text-lg">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </div>
 

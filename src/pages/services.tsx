@@ -12,7 +12,7 @@ export const projects = [
     image: "/projects/paddles.webp",
     name: "Poly Paddles",
     description: (
-      <p className="lg:text-xl">
+      <p className="lg:text-lg">
         Water safety and life skills programme for Pasifika and Māori Tamariki
         and Rangatahi 5-18 years.
         <br />
@@ -32,7 +32,7 @@ export const projects = [
     image: "/projects/gardening.webp",
     name: "Pasifika Home Gardening Initiative",
     description: (
-      <p className="lg:text-xl">
+      <p className="lg:text-lg">
         Wellbeing programme using ancestral knowledge to support Pacific
         families to be self-managing and self-sufficient and support the
         achievement of kai sovereignty.
@@ -54,7 +54,7 @@ export const projects = [
     image: "/projects/vaka.webp",
     name: "Vaka Programme: Traditional Pacific Cultural Games",
     description: (
-      <p className="lg:text-xl">
+      <p className="lg:text-lg">
         Initiative to revive traditional Pacific cultural games to create
         connectedness and belonging.
         <br />
@@ -83,7 +83,7 @@ const serviceDescriptions = [
   {
     id: "navigation-services",
     description: (
-      <p className="text-base lg:text-xl">
+      <p className="text-base lg:text-lg">
         The Niuvaka Trust Pasifika Navigation Team provide support to Pacific
         peoples to improve equity of access and health outcomes and support the
         increase of Primary Care enrolment numbers.
@@ -113,7 +113,7 @@ const serviceDescriptions = [
   {
     id: "ola-lelei-and-kai-services",
     description: (
-      <p className="text-base lg:text-xl">
+      <p className="text-base lg:text-lg">
         Ola Lelei is our new Job & Skills Hub that has been set up to support
         Tagata Pasifika to undertake training and study pathways to achieve
         sustainable employment outcomes.
@@ -151,7 +151,7 @@ const serviceDescriptions = [
         >
           Immunisations
         </h3>
-        <p className="text-base lg:text-xl">
+        <p className="text-base lg:text-lg">
           Protecting the health of you and your vuvale (family) with necessary
           vaccinations and immunisations is important. The{" "}
           <a
@@ -171,7 +171,7 @@ const serviceDescriptions = [
           Immunisation Outreach Service including regular Pasifika Immunisation
           Clinics:
         </p>
-        <ul className="list-inside list-disc self-center text-left lg:w-full lg:text-xl">
+        <ul className="list-inside list-disc self-center text-left lg:w-full lg:text-lg">
           <li>Childhood Immunisations</li>
           <li>Flu vaccinations</li>
           <li>COVID vaccinations</li>
@@ -189,7 +189,7 @@ const serviceDescriptions = [
         >
           Are Toa Kaikai
         </h3>
-        <p className="text-base lg:text-xl">
+        <p className="text-base lg:text-lg">
           Our food hub was born out of COVID initially supporting Pacific
           communities who were isolating during the COVID-19 Pandemic. The
           support extended beyond COVID as we recognised the need for ongoing
@@ -297,7 +297,7 @@ const Services = () => {
         </section>
 
         <section className="mx-auto p-8">
-          <h1 className="border-b border-primary pb-8 text-3xl font-black lg:p-8 lg:text-5xl">
+          <h1 className="border-b border-primary pb-8 text-2xl font-black lg:p-8 lg:text-4xl">
             Our Work
           </h1>
 
@@ -315,7 +315,7 @@ const Services = () => {
                     className="col-span-full h-full max-h-[327px] w-full max-w-[462px] rounded object-contain lg:col-span-2"
                   />
                   <div className="col-span-full flex flex-col gap-8 lg:col-span-3 lg:p-8">
-                    <h2 className="text-bold text-2xl font-semibold capitalize lg:text-4xl">
+                    <h2 className="text-bold text-2xl font-semibold capitalize lg:text-3xl">
                       {name}
                     </h2>
                     {description}
@@ -336,7 +336,7 @@ const Services = () => {
                         alt="immunisation"
                         className="mx-auto h-[385px] w-[320px] rounded object-cover lg:float-right lg:m-8 xl:-mt-32"
                       />
-                      <p className="text-lg lg:text-xl">
+                      <p className="text-base lg:text-lg">
                         The{" "}
                         <a
                           href="https://www.immune.org.nz/"
@@ -349,7 +349,7 @@ const Services = () => {
                         provides useful information to help make informed
                         decisions about immunisation.
                       </p>
-                      <p className="lg:text-xl">
+                      <p className="lg:text-lg">
                         For more information on any immunisation services please
                         call your <b>General Practice team</b> or contact
                         Niuvaka on <b>0800-648-8252</b> or email{" "}
@@ -373,7 +373,7 @@ const Services = () => {
                       >
                         Breast Screening
                       </h3>
-                      <p className="lg:text-xl">
+                      <p className="lg:text-lg">
                         Free mammograms are available every two years through
                         BreastScreen Aotearoa for women aged 45&ndash;69 years.
                         <br />
@@ -384,7 +384,7 @@ const Services = () => {
                         you for free mammogram appointments that meet the
                         criteria, eligible women are:
                       </p>
-                      <ul className="list-inside list-disc self-center text-left lg:text-xl">
+                      <ul className="list-inside list-disc self-center text-left lg:text-lg">
                         <li>Pacific women aged 45&ndash;69, and</li>
                         <li>
                           All women aged between 45&ndash;69 who have never been
@@ -392,7 +392,7 @@ const Services = () => {
                           years.
                         </li>
                       </ul>
-                      <p className="lg:text-xl">
+                      <p className="lg:text-lg">
                         For more information on Breast Screening see{" "}
                         <a
                           href="https://info.health.nz/keeping-healthy/cancer-screening/breast-screening"
@@ -428,7 +428,7 @@ const Services = () => {
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
                         <div className="order-2 col-span-full space-y-8 lg:order-none lg:col-span-2">
-                          <p className="lg:text-xl">
+                          <p className="lg:text-lg">
                             Cervical cancer is one of the most preventable
                             cancers. Regular cervical screening and human
                             papillomavirus (HPV) immunisation are the best ways
@@ -449,7 +449,7 @@ const Services = () => {
                             fully funded, however, free screening is available
                             for women and people with a cervix who:
                           </p>
-                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-lg">
                             <li>are Māori or Pacific, any age</li>
                             <li>
                               are 30 years and over who are under-screened (have
@@ -459,7 +459,7 @@ const Services = () => {
                             <li>require follow-up testing, any age</li>
                             <li>hold a Community Services Card, any age.</li>
                           </ul>
-                          <p className="lg:text-xl">
+                          <p className="lg:text-lg">
                             In September 2023, HPV screening became the new
                             method for cervical screening in Aotearoa New
                             Zealand. HPV testing is a better first screening
@@ -471,7 +471,7 @@ const Services = () => {
                             This gives you options for how you have your
                             screening sample taken:
                           </p>
-                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-lg">
                             <li>
                               a vaginal swab - you can either self-test, or a
                               health professional can help
@@ -512,14 +512,14 @@ const Services = () => {
                       </h3>
                       <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
                         <div className="col-span-full space-y-8 md:order-2 lg:col-span-2">
-                          <p className="lg:text-xl">
+                          <p className="lg:text-lg">
                             The National Bowel Screening Programme (NBSP) is a
                             FREE programme to help detect bowel cancer. It is
                             available for people who are eligible for publicly
                             funded health care. In the MidCentral region, Bowel
                             Screening is available for:
                           </p>
-                          <ul className="list-inside list-disc self-center text-left lg:text-xl">
+                          <ul className="list-inside list-disc self-center text-left lg:text-lg">
                             <li>
                               Māori and Pacific people aged 50 &ndash; 74 years
                             </li>
@@ -527,7 +527,7 @@ const Services = () => {
                               For everyone else, the age is 60 &ndash; 74 years
                             </li>
                           </ul>
-                          <p className="lg:text-xl">
+                          <p className="lg:text-lg">
                             Pacific people in the MidCentral district, aged
                             between 50 and 59, will receive an invite through
                             the mail to take part in free bowel screening. You
@@ -607,7 +607,7 @@ const Services = () => {
                       >
                         Health Assessments & Wellbeing Checks
                       </h3>
-                      <p className="lg:text-xl">
+                      <p className="lg:text-lg">
                         Niuvaka are committed to delivering mobile services
                         closer to home in your community.
                         <br />
@@ -653,7 +653,7 @@ const Services = () => {
           <div className="mx-4 px-0 py-8 lg:mx-auto lg:p-8">
             <h2
               id="our-projects-and-initiatives"
-              className="p-4 text-3xl font-black text-white lg:p-8 lg:text-5xl"
+              className="p-4 text-2xl font-black text-white lg:p-8 lg:text-4xl"
             >
               Our Projects & Initiatives
             </h2>
@@ -673,10 +673,10 @@ const Services = () => {
                       />
                     </AspectRatio>
                     <div className="col-span-full flex flex-col gap-6 lg:col-span-1 lg:gap-12">
-                      <h3 className="text-2xl font-semibold capitalize text-white lg:text-4xl">
+                      <h3 className="text-2xl font-semibold capitalize text-white lg:text-3xl">
                         {name}
                       </h3>
-                      <div className="whitespace-pre-wrap lg:text-xl">
+                      <div className="whitespace-pre-wrap lg:text-lg">
                         {description}
                       </div>
                     </div>

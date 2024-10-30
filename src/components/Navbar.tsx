@@ -62,7 +62,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
               crossed && "my-4 lg:size-16",
             )}
           />
-          <span className="hidden max-w-64 text-lg font-black leading-tight lg:block xl:max-w-full 2xl:mx-auto">
+          <span className="hidden max-w-64 text-base font-black leading-tight lg:block xl:max-w-full 2xl:mx-auto">
             Tagata Pasifika: Thriving, Flourishing, Resilient
           </span>
         </div>
@@ -133,7 +133,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                         className={cn(
                           cn(buttonVariants({ variant: "ghost" })),
                           path === link.href && "bg-coffee-50",
-                          "px-2 py-1 pr-2 text-lg text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
+                          "px-2 py-1 pr-2 text-base text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
                         )}
                       >
                         {link.name}
@@ -186,7 +186,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                   <Button
                     variant="ghost"
                     className={cn(
-                      "px-2 py-1 text-lg text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
+                      "px-2 py-1 text-base text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
                       path === link.href && "bg-coffee-50",
                     )}
                     asChild

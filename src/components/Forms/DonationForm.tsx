@@ -161,7 +161,7 @@ const DonationForm = () => {
                             className="mt-2 rounded-full border-0 bg-[#D9D9D9]"
                           />
                         </FormControl>
-                        <FormLabel className="text-xl font-normal">
+                        <FormLabel className="text-lg font-normal">
                           {item}
                         </FormLabel>
                       </FormItem>

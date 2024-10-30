@@ -53,27 +53,27 @@ export default function Home() {
             />
             <div className="flex flex-col lg:w-1/2">
               <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
-                <h2 className="text-3xl font-bold text-white lg:text-5xl">
+                <h2 className="text-2xl font-bold text-white lg:text-4xl">
                   Our Vision
                 </h2>
-                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-2xl">
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
               <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-white p-8 text-center">
-                <h2 className="text-3xl font-bold text-mint-500 lg:text-5xl">
+                <h2 className="text-2xl font-bold text-mint-500 lg:text-4xl">
                   Our Purpose
                 </h2>
-                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-2xl">
                   To work with Tagata Pasifika, Pasifika communities & Pasifika
                   families for the realisation of their aspirations
                 </p>
               </div>
               <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
-                <h2 className="text-3xl font-bold text-white lg:text-5xl">
+                <h2 className="text-2xl font-bold text-white lg:text-4xl">
                   Our Mission
                 </h2>
-                <p className="text-xl font-normal leading-normal text-black lg:text-3xl">
+                <p className="text-xl font-normal leading-normal text-black lg:text-2xl">
                   Partnering to build capacity & capability of Pacific
                   communities
                 </p>
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
-          <h2 className="col-span-full text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
           {values.map(({ name, image, description }) => {
@@ -117,7 +117,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
-          <h2 className="col-span-full text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Work
           </h2>
           {services.map(({ name, image, description, id }) => {
@@ -149,7 +149,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
-          <h2 className="col-span-full text-balance text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="col-span-full text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Key Strategic Focus Areas
           </h2>
           {focusAreas.map(({ name, image }) => {
@@ -174,7 +174,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
-          <h2 className="text-balance text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Programmes and Initiatives
           </h2>
 

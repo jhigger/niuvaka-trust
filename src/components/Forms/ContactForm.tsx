@@ -140,7 +140,7 @@ const ContactForm = () => {
               <FormLabel>Subject</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl className="capitalize">
-                  <SelectTrigger className="h-14 bg-[#D9D9D9] text-lg">
+                  <SelectTrigger className="h-14 bg-[#D9D9D9] text-base">
                     <SelectValue placeholder="Reason for contact" />
                   </SelectTrigger>
                 </FormControl>

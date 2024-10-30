@@ -196,7 +196,7 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
 
       <div className="col-span-full flex flex-col gap-8 text-center lg:col-span-7 lg:text-start">
         <h3 className="flex flex-col gap-4">
-          <span className="text-3xl font-black lg:text-4xl">{name}</span>
+          <span className="text-2xl font-black lg:text-3xl">{name}</span>
           <span className="text-xl font-bold text-white lg:text-2xl">
             {role}
           </span>
@@ -236,10 +236,10 @@ export default function About() {
           id="our-journey"
           className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-8"
         >
-          <h2 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-2xl font-black text-mint-500 lg:text-4xl">
             About Us
           </h2>
-          <p className="max-w-screen-xl text-balance text-center text-xl">
+          <p className="max-w-screen-xl text-balance text-center text-lg">
             The Niuvaka journey started in August 2020, and is the coming
             together of prominent Pasifika innovators, both locally and from
             across Aotearoa, to cultivate a culture of positive change and
@@ -251,10 +251,10 @@ export default function About() {
           id="our-name"
           className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-4"
         >
-          <h2 className="text-center text-3xl font-black text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-2xl font-black text-mint-500 lg:text-4xl">
             Our Name
           </h2>
-          <p className="max-w-screen-lg text-balance text-center text-xl">
+          <p className="max-w-screen-lg text-balance text-center text-lg">
             The name NIUVAKA is the result of intertwining two of the most
             valuable commodities in Pacific history.
           </p>
@@ -263,7 +263,7 @@ export default function About() {
         <section className="mx-auto space-y-4 p-0">
           <h2
             id="our-logo"
-            className="pt-4 text-center text-3xl font-black text-mint-500 lg:text-5xl"
+            className="pt-4 text-center text-2xl font-black text-mint-500 lg:text-4xl"
           >
             Our Logo
           </h2>
@@ -273,10 +273,10 @@ export default function About() {
             </div>
             <div className="order-2 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-xl font-black lg:text-3xl">
+                <h2 className="text-xl font-black lg:text-2xl">
                   Cyclic Border
                 </h2>
-                <p className="max-w-screen-sm text-lg">
+                <p className="max-w-screen-sm text-base">
                   The cyclic border has a chevron design around the outside of
                   the circle that is a universal design across the pacific that
                   represents the uniqueness of each Pasifika culture and our
@@ -291,8 +291,8 @@ export default function About() {
             </div>
             <div className="order-4 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-xl font-black lg:text-3xl">Niu</h2>
-                <p className="max-w-screen-sm text-lg">
+                <h2 className="text-xl font-black lg:text-2xl">Niu</h2>
+                <p className="max-w-screen-sm text-base">
                   The Niu (coconut) is one of the most valuable commodities of
                   the pacific, the background behind the sails inside of the
                   coconut can also be looked at as the horizon coming off the
@@ -332,8 +332,8 @@ export default function About() {
             </div>
             <div className="order-6 col-span-1 md:order-none">
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
-                <h2 className="text-xl font-black lg:text-3xl">Vaka</h2>
-                <p className="max-w-screen-sm text-lg">
+                <h2 className="text-xl font-black lg:text-2xl">Vaka</h2>
+                <p className="max-w-screen-sm text-base">
                   The vaka sails pictured in our logo depict the journey ahead,
                   the future direction of Niuvaka and the aspirational futures
                   for our Pasifika communities. They also represent the Pacific
@@ -349,11 +349,11 @@ export default function About() {
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
-                  className="text-xl font-black lg:text-3xl"
+                  className="text-xl font-black lg:text-2xl"
                 >
                   Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
                 </h2>
-                <p className="max-w-screen-sm text-lg">
+                <p className="max-w-screen-sm text-base">
                   Iwi-Māori and Pacific Peoples have many historical bonds and
                   connections including genealogy, kinship, traditions, and
                   beliefs, as well as navigating and traversing Te Moana nui o
@@ -394,11 +394,11 @@ export default function About() {
               <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="pasifika-diversity"
-                  className="text-xl font-black lg:text-3xl"
+                  className="text-xl font-black lg:text-2xl"
                 >
                   Pasifika Diversity
                 </h2>
-                <p className="max-w-screen-sm text-lg">
+                <p className="max-w-screen-sm text-base">
                   Pacific Peoples or Tagata Pasifika are umbrella terms, among
                   others, used to describe the multitude of island territories
                   and nations across the South Pacific Ocean, yet each nation
@@ -419,8 +419,8 @@ export default function About() {
               id="our-team"
               className="mt-4 space-y-4 text-center font-black text-white lg:mt-0 lg:space-y-8 lg:p-8"
             >
-              <h2 className="text-3xl lg:text-5xl">Meet Our Team</h2>
-              <h3 className="text-3xl lg:text-5xl">Governance Board</h3>
+              <h2 className="text-2xl lg:text-4xl">Meet Our Team</h2>
+              <h3 className="text-2xl lg:text-4xl">Governance Board</h3>
             </div>
 
             <div className="flex flex-col gap-16 p-8">
@@ -430,7 +430,7 @@ export default function About() {
             <hr className="mx-4 border-black lg:hidden" />
 
             <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
-              <h3 className="col-span-full pb-8 text-center text-3xl font-black text-white lg:text-5xl">
+              <h3 className="col-span-full pb-8 text-center text-2xl font-black text-white lg:text-4xl">
                 Our Team
               </h3>
 
@@ -475,10 +475,10 @@ export default function About() {
           id="our-partners"
           className="mx-auto flex flex-col items-center justify-center gap-4 p-8 lg:gap-8"
         >
-          <h2 className="py-8 text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="pt-8 text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Partners
           </h2>
-          <p className="max-w-screen-sm text-center text-lg lg:text-2xl">
+          <p className="max-w-screen-sm text-center text-base lg:text-lg">
             We partner and collaborate with many organisations, agencies and
             services who support Pasifika communities to achieve better
             outcomes.
@@ -509,10 +509,10 @@ export default function About() {
           className="bg-gradient-to-b from-mint-500 to-mint-400"
         >
           <div className="mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
-            <h2 className="py-8 text-center text-3xl font-bold text-white lg:text-5xl">
+            <h2 className="py-8 text-center text-2xl font-bold text-white lg:text-4xl">
               Work With Us
             </h2>
-            <p className="max-w-screen-lg text-center text-lg lg:text-2xl">
+            <p className="max-w-screen-lg text-center text-base lg:text-lg">
               Niuvaka Trust has a vision for Tagata Pasifika to be Thriving,
               Flourishing and Resilient. We work with Tagata Pasifika, Pasifika
               families & Pasifika communities for the realisation of their

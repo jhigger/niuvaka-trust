@@ -39,7 +39,7 @@ const Contact = () => {
         </section>
 
         <section className="mx-auto mb-32 space-y-8">
-          <div className="relative my-8 h-12 overflow-hidden text-3xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
+          <div className="relative my-8 h-12 overflow-hidden text-2xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
             <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4">
               <span>Contact</span>
               <span className="text-coffee-400">Faafesootai matou</span>
@@ -89,15 +89,15 @@ const Contact = () => {
                 <img src="/phone.svg" alt="phone" />
                 <a
                   href="tel:+08006488252"
-                  className="whitespace-nowrap text-4xl font-black"
+                  className="whitespace-nowrap text-3xl font-black"
                 >
                   0800 6488252
                 </a>
-                <span className="text-4xl font-black">(NIUVAKA)</span>
+                <span className="text-3xl font-black">(NIUVAKA)</span>
               </div>
 
               <div className="flex flex-col items-center gap-8 md:flex-row">
-                <h2 className="text-3xl font-black">Follow us</h2>
+                <h2 className="text-2xl font-black">Follow us</h2>
                 <div className="flex items-center gap-4">
                   {socials.map(({ href, image, name }) => (
                     <a
@@ -115,7 +115,7 @@ const Contact = () => {
 
               <div className="flex flex-col items-center gap-8 md:flex-row">
                 <img src="/location.svg" alt="location" />
-                <p className="text-lg font-bold">
+                <p className="text-base font-bold">
                   Level 1, 59 Queen Street, Palmerston North 4410,
                   <br /> New Zealand
                 </p>
@@ -132,21 +132,21 @@ const Contact = () => {
                 <div className="col-span-full text-2xl font-black">
                   Office Hours
                 </div>
-                <div className="col-span-1 text-lg font-black">
+                <div className="col-span-1 text-base font-black">
                   Monday - Friday
                 </div>
-                <div className="col-span-1 text-lg font-black">
+                <div className="col-span-1 text-base font-black">
                   9:00 AM - 4:00 PM
                 </div>
-                <div className="col-span-1 text-lg font-black">
+                <div className="col-span-1 text-base font-black">
                   Saturday & Sunday
                 </div>
-                <div className="col-span-1 text-lg font-black">Closed</div>
+                <div className="col-span-1 text-base font-black">Closed</div>
               </div>
             </div>
 
             <div className="col-span-1 space-y-8 p-4 md:p-8">
-              <p className="text-center text-2xl font-bold">
+              <p className="text-center text-xl font-bold">
                 If you have any questions, feedback, or just want to know more
                 about us, use the form below. We&apos;re here to help.
               </p>

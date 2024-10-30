@@ -93,7 +93,7 @@ const News = () => {
         <Navbar />
 
         <div className="mx-auto mt-40 p-8 md:p-16">
-          <h1 className="text-4xl font-black text-mint-500 lg:text-6xl">
+          <h1 className="text-3xl font-black text-mint-500 lg:text-6xl">
             News
           </h1>
         </div>
@@ -110,7 +110,7 @@ const News = () => {
         <section className="mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 md:p-16">
           <h2
             id="latest-news"
-            className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-4xl"
+            className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-3xl"
           >
             Check out our news and events for the latest about what&apos;s
             happening in your community!
@@ -151,7 +151,7 @@ const News = () => {
         </section>
 
         <section className="mx-auto mb-16 space-y-8 p-8">
-          <h2 className="text-center text-3xl font-bold text-mint-500 lg:text-5xl">
+          <h2 className="text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Gallery
           </h2>
 
