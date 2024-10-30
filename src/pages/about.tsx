@@ -194,7 +194,7 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
         loading="lazy"
       />
 
-      <div className="col-span-full flex flex-col gap-8 text-center lg:col-span-7 lg:text-start">
+      <div className="col-span-full flex flex-col gap-6 text-center lg:col-span-7 lg:text-start">
         <h3 className="flex flex-col gap-4">
           <span className="text-2xl font-black lg:text-3xl">{name}</span>
           <span className="text-xl font-bold text-white lg:text-2xl">
