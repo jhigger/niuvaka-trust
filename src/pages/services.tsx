@@ -286,7 +286,7 @@ const Services = () => {
         <Navbar />
 
         <section className="mt-40">
-          <div className="mx-auto p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/hero_images/services.webp"
               alt="hero"
@@ -309,11 +309,20 @@ const Services = () => {
                   id={id}
                   className="grid grid-cols-1 place-items-center gap-8 pt-8 lg:grid-cols-5 lg:p-8"
                 >
-                  <img
-                    src={image}
-                    alt="service"
-                    className="col-span-full h-full max-h-[327px] w-full max-w-[462px] rounded object-contain lg:col-span-2"
-                  />
+                  <div
+                    key={name}
+                    className="col-span-full flex h-full max-h-[327px] w-full max-w-[462px] flex-col items-center justify-center gap-4 rounded object-contain lg:col-span-2"
+                  >
+                    <img
+                      src={image}
+                      alt="service"
+                      className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
+                    />
+                    <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700">
+                      {name}
+                      <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
+                    </h3>
+                  </div>
                   <div className="col-span-full flex flex-col gap-8 lg:col-span-3 lg:p-8">
                     <h2 className="text-bold text-2xl font-semibold capitalize lg:text-3xl">
                       {name}

@@ -5,37 +5,37 @@ export const email = "info@niuvaka.org.nz";
 export const services: {
   image: string;
   name:
-  | "Navigation Service"
-  | "Ola Lelei Service"
-  | "Outreach Service"
-  | "Social Service";
+  | "Navigation Services"
+  | "Ola Lelei"
+  | "Outreach Services"
+  | "Social Services";
   description: string;
   id: string;
 }[] = [
     {
       image: "/services/navigation.svg",
-      name: "Navigation Service",
+      name: "Navigation Services",
       description:
         "The Pasifika Navigation Team provide support to Pacific peoples to improve equity of access, health outcomes and support the increase of Primary Care enrolment for Pacific communities.",
       id: "navigation-services",
     },
     {
       image: "/services/ola.svg",
-      name: "Ola Lelei Service",
+      name: "Ola Lelei",
       description:
         "Ola Lelei is our new training and employment Hub supporting Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
       id: "ola-lelei-and-kai-services",
     },
     {
       image: "/services/outreach.svg",
-      name: "Outreach Service",
+      name: "Outreach Services",
       description:
         "Our Pacific Outreach service is a mobile service supporting Pacific communities with immunisations, screening, health and wellbeing checks along with health promotion.",
       id: "outreach-services",
     },
     {
       image: "/services/social.svg",
-      name: "Social Service",
+      name: "Social Services",
       description:
         "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
       id: "social-services",
@@ -266,7 +266,7 @@ export const navigationLinks: {
           name,
           href: `/services#${href}`,
           subLinks:
-            name === "Outreach Service"
+            name === "Outreach Services"
               ? [
                 {
                   name: "Immunisation",
@@ -289,7 +289,7 @@ export const navigationLinks: {
                   href: "/services#health-assessment-and-wellbeing-checks",
                 },
               ]
-              : name === "Social Service"
+              : name === "Social Services"
                 ? [
                   {
                     name: "Are Toa Kaikai",
