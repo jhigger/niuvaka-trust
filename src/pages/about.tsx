@@ -211,11 +211,11 @@ export default function About() {
         <Navbar />
 
         <section className="mt-40">
-          <div className="mx-auto p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/hero_images/about.webp"
               alt="hero"
-              className="container mx-auto h-[500px] w-full object-cover object-top xl:h-[800px]"
+              className="h-[500px] w-full object-cover object-top xl:h-[800px]"
               loading="eager"
             />
           </div>
