@@ -4,8 +4,9 @@ import Footer from "~/components/Footer";
 import CareerForm from "~/components/Forms/CareerForm";
 import Logo from "~/components/Logo";
 import Navbar from "~/components/Navbar";
+import Partners from "~/components/Partners";
 import { AspectRatio } from "~/components/ui/aspect-ratio";
-import { partners, staff } from "~/lib/constants";
+import { staff } from "~/lib/constants";
 
 type GovernanceBoardType = {
   image: string;
@@ -47,23 +48,15 @@ const governanceBoard: GovernanceBoardType[] = [
       <>
         <p>
           Jenine is of Te Ipukarea and Samoan descent, born in Dunedin and
-          raised in Te Papaieoa.
-        </p>
-        <p>
-          Jenine has three grown sons and six mokopuna and is actively involved
-          in the local Softball community holding the Chairperson&apos;s role
-          for the past five years.
-        </p>
-        <p>
-          Jenine currently works at Highbury Whānau Centre as a Team Lead for
-          the Transition Service and has over 30 years experience working in the
-          Public Service Sector.
-        </p>
-        <p>
-          She is passionate about ensuring that our Polynesian peoples have all
-          the opportunities available to them to succeed in their lives, and
-          homelife to support the sustainabilty of the work that Niuvaka can
-          offer to our beautiful communities.
+          raised in Te Papaieoa. Jenine has three grown sons and six mokopuna
+          and is actively involved in the local Softball community holding the
+          Chairperson&apos;s role for the past five years. Jenine currently
+          works at Highbury Whānau Centre as a Team Lead for the Transition
+          Service and has over 30 years experience working in the Public Service
+          Sector. She is passionate about ensuring that our Polynesian peoples
+          have all the opportunities available to them to succeed in their
+          lives, and homelife to support the sustainabilty of the work that
+          Niuvaka can offer to our beautiful communities.
         </p>
         <p>
           E toru oire roto toku iwi
@@ -111,10 +104,7 @@ const governanceBoard: GovernanceBoardType[] = [
           >
             Australian Centre for Pacific Islands Research
           </a>
-          .
-        </p>
-        <p>
-          Suli&apos;s research interests broadly lie in the interdisciplinary
+          . Suli&apos;s research interests broadly lie in the interdisciplinary
           areas of development studies, human geography, ethnography,
           ethno-ecology, climate crisis, and community production. The core of
           some of his research is around indigenous knowledge systems, community
@@ -152,29 +142,24 @@ const governanceBoard: GovernanceBoardType[] = [
           appointed member of the Manawhenua Iwi Relationship Board to the
           MidCentral District Health Board (MDHB) Healthy Communities Advisory
           Committee & MDHB Disability Support Advisory Committee.
-        </p>
-        <p>
+          <br />
           Tawhiti is a Registered Graduate in Frontline Management, New Zealand
           Institute of Management, a Bursar Recipient of Te Rau Puawai Māori
           Mental Health Development studying Psychology through Te Kunenga ki
           Pūrehuroa and has a background in the education sector, specifically
-          within total immersion Māori language settings.
-        </p>
-        <p>
-          Tawhiti has given extensive contributions to the health sector and the
-          Whānau Ora movement including as Co-Project Lead for the establishment
-          of Te Awahou Community Health Service in Foxton.
+          within total immersion Māori language settings. Tawhiti has given
+          extensive contributions to the health sector and the Whānau Ora
+          movement including as Co-Project Lead for the establishment of Te
+          Awahou Community Health Service in Foxton.
         </p>
         <p>
           He was a key Leader for the Ngāti Whakatere and Te Awahou Waitangi
           Claims Hearings from and is the current Chair of Ngāti Whakatere Māori
           Land Trust, as well as a member of Te Whare Makatea, Ngāti Raukawa
-          School of Traditional Māori Lore from 2018-2023.
-        </p>
-        <p>
-          Tawhiti is passionate about supporting the advancement of Whānau Ora
-          and extends this support to Pacific communities through his role on
-          the Niuvaka Trust Board.
+          School of Traditional Māori Lore from 2018-2023. Tawhiti is passionate
+          about supporting the advancement of Whānau Ora and extends this
+          support to Pacific communities through his role on the Niuvaka Trust
+          Board.
         </p>
       </>
     ),
@@ -185,16 +170,20 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
   return (
     <div
       key={name}
-      className="mx-auto grid max-w-screen-xl grid-cols-1 place-items-start justify-items-center gap-8 lg:grid-cols-11"
+      className="grid grid-cols-1 place-items-start justify-items-center gap-16 px-8 lg:grid-cols-12"
     >
-      <img
-        src={image}
-        alt={role}
-        className="col-span-full h-full max-h-[330px] w-full max-w-[270px] rounded-3xl object-cover lg:col-span-4"
-        loading="lazy"
-      />
+      <div className="col-span-full h-max w-full overflow-hidden rounded-3xl lg:col-span-3">
+        <AspectRatio ratio={9 / 12}>
+          <img
+            src={image}
+            alt={role}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </AspectRatio>
+      </div>
 
-      <div className="col-span-full flex flex-col gap-6 text-center lg:col-span-7 lg:text-start">
+      <div className="col-span-full flex flex-col gap-6 text-center lg:col-span-9 lg:text-start">
         <h3 className="flex flex-col gap-4">
           <span className="text-2xl font-black lg:text-3xl">{name}</span>
           <span className="text-xl font-bold text-white lg:text-2xl">
@@ -226,7 +215,7 @@ export default function About() {
             <img
               src="/hero_images/about.webp"
               alt="hero"
-              className="h-[500px] w-full object-cover object-top xl:h-[800px]"
+              className="container mx-auto h-[500px] w-full object-cover object-top xl:h-[800px]"
               loading="eager"
             />
           </div>
@@ -260,7 +249,7 @@ export default function About() {
           </p>
         </section>
 
-        <section className="mx-auto space-y-4 p-0">
+        <section className="container mx-auto space-y-4 p-0">
           <h2
             id="our-logo"
             className="pt-4 text-center text-2xl font-black text-mint-500 lg:text-4xl"
@@ -414,7 +403,7 @@ export default function About() {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="mx-auto space-y-8 px-0 py-8">
+          <div className="container mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
               className="mt-4 space-y-4 text-center font-black text-white lg:mt-0 lg:space-y-8 lg:p-8"
@@ -423,7 +412,7 @@ export default function About() {
               <h3 className="text-2xl lg:text-4xl">Governance Board</h3>
             </div>
 
-            <div className="flex flex-col gap-16 p-8">
+            <div className="flex flex-col items-center justify-center gap-16">
               {governanceBoard.map(BoardItem)}
             </div>
 
@@ -471,48 +460,17 @@ export default function About() {
           </div>
         </section>
 
-        <section
-          id="our-partners"
-          className="mx-auto flex flex-col items-center justify-center gap-4 p-8 lg:gap-8"
-        >
-          <h2 className="pt-8 text-center text-2xl font-bold text-mint-500 lg:text-4xl">
-            Our Partners
-          </h2>
-          <p className="max-w-screen-sm text-center text-base lg:text-lg">
-            We partner and collaborate with many organisations, agencies and
-            services who support Pasifika communities to achieve better
-            outcomes.
-          </p>
-          <div className="grid w-full grid-cols-1 place-items-center items-center justify-center gap-8 p-8 md:grid-cols-3">
-            {partners.map(({ image, link }) => {
-              return (
-                <a
-                  key={link}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={image}
-                    alt="partner"
-                    className="h-full max-h-36 w-full max-w-64 object-contain object-center"
-                    loading="lazy"
-                  />
-                </a>
-              );
-            })}
-          </div>
-        </section>
+        <Partners showDescription />
 
         <section
           id="work-with-us"
           className="bg-gradient-to-b from-mint-500 to-mint-400"
         >
           <div className="mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
-            <h2 className="py-8 text-center text-2xl font-bold text-white lg:text-4xl">
+            <h2 className="pt-4 text-center text-2xl font-bold text-white lg:text-4xl">
               Work With Us
             </h2>
-            <p className="max-w-screen-lg text-center text-base lg:text-lg">
+            <p className="max-w-screen-2xl text-center text-base lg:text-lg">
               Niuvaka Trust has a vision for Tagata Pasifika to be Thriving,
               Flourishing and Resilient. We work with Tagata Pasifika, Pasifika
               families & Pasifika communities for the realisation of their
