@@ -47,8 +47,8 @@ const Contact = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 justify-items-center gap-8 md:pt-8 lg:grid-cols-2">
-            <div className="col-span-1 space-y-8">
+          <div className="grid grid-cols-1 justify-items-center gap-8 md:pt-8 lg:grid-cols-12">
+            <div className="col-span-full space-y-8 p-4 lg:col-span-5">
               <TooltipProvider delayDuration={0}>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -96,16 +96,16 @@ const Contact = () => {
                 <span className="text-3xl font-black">(NIUVAKA)</span>
               </div>
 
-              <div className="flex flex-col items-center gap-8 md:flex-row">
+              <div className="flex flex-col items-center gap-4 md:flex-row">
                 <h2 className="text-2xl font-black">Follow us</h2>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   {socials.map(({ href, image, name }) => (
                     <a
                       key={name}
                       href={href}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-16"
+                      className="w-12"
                     >
                       <img src={image} alt={name} />
                     </a>
@@ -116,8 +116,7 @@ const Contact = () => {
               <div className="flex flex-col items-center gap-8 md:flex-row">
                 <img src="/location.svg" alt="location" />
                 <p className="text-base font-bold">
-                  Level 1, 59 Queen Street, Palmerston North 4410,
-                  <br /> New Zealand
+                  Level 1, 59 Queen Street, Palmerston North 4410, New Zealand
                 </p>
               </div>
 
@@ -145,7 +144,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-span-1 space-y-8 p-4">
+            <div className="col-span-full space-y-8 p-4 lg:col-span-7">
               <p className="text-center text-xl font-bold">
                 If you have any questions, feedback, or just want to know more
                 about us, use the form below. We&apos;re here to help.
