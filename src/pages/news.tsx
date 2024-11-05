@@ -61,16 +61,19 @@ const Article = ({
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-            className="mx-auto h-full w-full max-w-screen-2xl rounded-xl"
+            className="mx-auto h-full w-full rounded-xl"
           ></iframe>
         </AspectRatio>
       )}
       {type === "event" && !video && image && (
-        <AspectRatio ratio={16 / 9}>
+        <AspectRatio
+          ratio={2.25 / 1}
+          className="flex items-center justify-center"
+        >
           <img
             src={image}
             alt="thumbnail"
-            className="mx-auto h-full w-full max-w-screen-2xl rounded-xl object-cover"
+            className="mx-auto h-full max-h-[400px] w-full max-w-[900px] rounded-xl object-cover"
           />
         </AspectRatio>
       )}
@@ -92,13 +95,13 @@ const News = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <div className="mx-auto mt-40 p-8 md:p-16">
+        <div className="container mx-auto mt-48 p-8 md:p-16">
           <h1 className="text-3xl font-black text-mint-500 lg:text-6xl">
             News
           </h1>
         </div>
 
-        <section className="mx-auto p-0">
+        <section className="container mx-auto p-0">
           <img
             src="/hero_images/news.webp"
             alt="hero"
@@ -107,7 +110,7 @@ const News = () => {
           />
         </section>
 
-        <section className="mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 md:p-16">
+        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 md:p-16">
           <h2
             id="latest-news"
             className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-3xl"
@@ -134,7 +137,7 @@ const News = () => {
                   className="grid grid-cols-1 gap-8 py-8 lg:grid-cols-2"
                 >
                   {event
-                    .sort((a, b) => b.date.getTime() - a.date.getTime())
+                    .sort((a, b) => a.date.getTime() - b.date.getTime())
                     .map((article, i) => (
                       <Article
                         key={i}

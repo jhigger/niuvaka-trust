@@ -391,13 +391,13 @@ export const events: ArticleProps[][] = [
     },
     {
       type: "event",
-      title: "Manawatū Turbo Immunisaiton Baby",
+      title: "Manawatū Turbo Immunisation Baby",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/Fqz13YCoQtw?si=GP6TC_xUGkoY1DNM",
     },
     {
       type: "event",
-      title: "Manawatū Turbo Immunisaiton 45+",
+      title: "Manawatū Turbo Immunisation 45+",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/D0e8oRJnwx0?si=-S7VygSg1BkrFbjw",
     },
