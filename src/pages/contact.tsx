@@ -28,7 +28,7 @@ const Contact = () => {
         <Navbar />
 
         <section className="mt-40">
-          <div className="mx-auto p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/hero_images/contact.webp"
               alt="hero"
@@ -38,17 +38,17 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="mx-auto mb-32 space-y-8">
+        <section className="container mx-auto mb-32 space-y-8">
           <div className="relative my-8 h-12 overflow-hidden text-2xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
             <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4">
-              <span>Contact</span>
+              <span>Contact Us</span>
               <span className="text-coffee-400">Faafesootai matou</span>
               <span className="text-[#3390B3]">Fetu&#699;utaki ki ai</span>
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 justify-items-center gap-8 md:p-8 lg:grid-cols-2">
-            <div className="col-span-1 space-y-8 md:p-8">
+          <div className="grid grid-cols-1 justify-items-center gap-8 md:pt-8 lg:grid-cols-2">
+            <div className="col-span-1 space-y-8">
               <TooltipProvider delayDuration={0}>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -145,7 +145,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-span-1 space-y-8 p-4 md:p-8">
+            <div className="col-span-1 space-y-8 p-4">
               <p className="text-center text-xl font-bold">
                 If you have any questions, feedback, or just want to know more
                 about us, use the form below. We&apos;re here to help.

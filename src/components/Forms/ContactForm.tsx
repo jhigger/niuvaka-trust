@@ -62,7 +62,7 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  const onSubmit = () => {
     formRef.current?.submit();
   };
 
@@ -73,7 +73,7 @@ const ContactForm = () => {
         method="post"
         ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}
-        className="grid w-full grid-cols-1 gap-8 md:grid-cols-2"
+        className="grid w-full grid-cols-1 gap-4 md:grid-cols-2"
       >
         <FormField
           control={form.control}
