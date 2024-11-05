@@ -16,28 +16,28 @@ export const services: {
       image: "/services/navigation.svg",
       name: "Navigation Service",
       description:
-        "The Niuvaka Trust Pasifika Navigation Team provide support to Pacific peoples to improve equity of access and health outcomes and support the increase of Primary Care enrolment numbers.",
+        "The Pasifika Navigation Team provide support to Pacific peoples to improve equity of access, health outcomes and support the increase of Primary Care enrolment for Pacific communities.",
       id: "navigation-services",
     },
     {
       image: "/services/ola.svg",
       name: "Ola Lelei Service",
       description:
-        "Ola Lelei is our new Job & Skills Hub that has been set up to support Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
+        "Ola Lelei is our new training and employment Hub supporting Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
       id: "ola-lelei-and-kai-services",
     },
     {
       image: "/services/outreach.svg",
       name: "Outreach Service",
       description:
-        "Immunisations Protecting the health of you and your vuvale (family) with necessary vaccinations and immunisations is important.",
+        "Our Pacific Outreach service is a mobile service supporting Pacific communities with immunisations, screening, health and wellbeing checks along with health promotion.",
       id: "outreach-services",
     },
     {
       image: "/services/social.svg",
       name: "Social Service",
       description:
-        "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
+        "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
       id: "social-services",
     },
   ];

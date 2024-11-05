@@ -26,7 +26,7 @@ export const gallery = [
 
 const Carousel = () => {
   return (
-    <div className="mx-auto w-full max-w-screen-lg md:max-w-screen-2xl">
+    <div className="mx-auto w-full max-w-[964px]">
       <Swiper
         centeredSlides={true}
         coverflowEffect={{ depth: 100, modifier: 2.5, rotate: 0, stretch: 0 }}
@@ -61,7 +61,7 @@ const Carousel = () => {
             key={image}
             className="relative !h-full !w-full p-6 lg:p-8"
           >
-            <AspectRatio ratio={16 / 9}>
+            <AspectRatio ratio={2.25 / 1}>
               <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-xl">
                 <img
                   src={image}

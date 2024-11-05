@@ -26,7 +26,7 @@ export default function Home() {
             <img
               src="/hero_images/home.webp"
               alt="hero"
-              className="h-[600px] w-full object-cover xl:h-[900px]"
+              className="h-[500px] w-full object-cover xl:h-[800px]"
               loading="eager"
             />
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
+        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
@@ -129,14 +129,14 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full lg:p-6"
                   loading="lazy"
                 />
-                <h3 className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
-                  {name.slice(0, -7)}
+                <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700">
+                  {name}
                   <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
                 </h3>
-                <p className="line-clamp-4 text-center">{description}</p>
+                <p className="line-clamp-5 text-center">{description}</p>
                 <Button
                   asChild
                   className="mt-auto w-max rounded-full px-8 py-6"
@@ -164,7 +164,7 @@ export default function Home() {
                   className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
-                <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
+                <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700">
                   {name}
                   <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
                 </h3>
@@ -175,7 +175,7 @@ export default function Home() {
 
         <section className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
           <h2 className="text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
-            Our Programmes and Initiatives
+            Our Programmes & Initiatives
           </h2>
 
           <Carousel />
