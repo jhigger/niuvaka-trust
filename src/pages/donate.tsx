@@ -28,7 +28,7 @@ const Donate = () => {
           </div>
         </section>
 
-        <section className="mx-auto my-16 flex max-w-screen-xl flex-col items-center gap-8 p-4 md:p-8">
+        <section className="mx-auto my-16 flex max-w-screen-md flex-col items-center gap-8 p-4 md:p-8">
           <h1 className="text-center text-2xl font-black text-mint-500 lg:text-4xl">
             Thank you for your contribution
           </h1>
