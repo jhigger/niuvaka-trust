@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
+        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
@@ -116,7 +116,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
+        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Work
           </h2>
@@ -148,7 +148,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
+        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
           <h2 className="col-span-full text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Key Strategic Focus Areas
           </h2>

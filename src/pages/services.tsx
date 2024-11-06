@@ -296,7 +296,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section className="mx-auto p-8">
+        <section className="container mx-auto p-8">
           <h1 className="border-b border-primary pb-8 text-2xl font-black lg:p-8 lg:text-4xl">
             Our Work
           </h1>
@@ -659,7 +659,7 @@ const Services = () => {
         </section>
 
         <section className="bg-gradient-to-b from-mint-500 to-mint-400">
-          <div className="mx-4 px-0 py-8 lg:mx-auto lg:p-8">
+          <div className="container mx-auto px-0 py-8 lg:mx-auto lg:p-8">
             <h2
               id="our-projects-and-initiatives"
               className="p-4 text-2xl font-black text-white lg:p-8 lg:text-4xl"
