@@ -32,7 +32,7 @@ const Contact = () => {
             <img
               src="/hero_images/contact.webp"
               alt="hero"
-              className="h-[500px] w-full object-cover object-top xl:h-[800px]"
+              className="w-full object-contain lg:object-cover xl:h-[800px]"
               loading="eager"
             />
           </div>

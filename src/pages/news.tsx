@@ -105,7 +105,7 @@ const News = () => {
           <img
             src="/hero_images/news.webp"
             alt="hero"
-            className="h-[500px] w-full object-cover xl:h-[800px]"
+            className="w-full object-contain lg:object-cover xl:h-[800px]"
             loading="eager"
           />
         </section>
