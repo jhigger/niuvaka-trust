@@ -375,6 +375,7 @@ const Services = () => {
                         you are eligible for the free services.
                       </p>
                       <br />
+                      <hr />
                       <br />
                       <h3
                         id="breast-screening"
@@ -428,6 +429,7 @@ const Services = () => {
                         </a>
                       </p>
                       <br />
+                      <hr />
                       <br />
                       <h3
                         id="cervical-screening"
@@ -512,6 +514,7 @@ const Services = () => {
                         </div>
                       </div>
                       <br />
+                      <hr />
                       <br />
                       <h3
                         id="bowel-screening"
@@ -609,6 +612,7 @@ const Services = () => {
                         </div>
                       </div>
                       <br />
+                      <hr />
                       <br />
                       <h3
                         id="health-assessment-and-wellbeing-checks"
