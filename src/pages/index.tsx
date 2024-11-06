@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-80 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
+                  className="w-2/3 max-w-60 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out lg:not-sr-only lg:group-hover:opacity-0">
@@ -116,7 +116,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Work
           </h2>
@@ -129,7 +129,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full lg:p-6"
+                  className="w-2/3 max-w-60 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700">
@@ -148,7 +148,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto my-8 grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
           <h2 className="col-span-full text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Key Strategic Focus Areas
           </h2>
@@ -161,7 +161,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-80 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-60 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700">
@@ -173,7 +173,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto my-8 flex flex-col items-center justify-center gap-8 p-8">
+        <section className="mx-auto flex flex-col items-center justify-center gap-8 p-8">
           <h2 className="text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Programmes & Initiatives
           </h2>
