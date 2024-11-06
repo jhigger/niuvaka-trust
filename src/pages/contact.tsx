@@ -39,7 +39,7 @@ const Contact = () => {
         </section>
 
         <section className="container mx-auto mb-32 space-y-8">
-          <div className="relative my-8 h-12 overflow-hidden text-2xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
+          <div className="relative my-8 h-12 overflow-hidden text-3xl font-bold text-black md:h-20 md:text-6xl lg:h-24 lg:text-8xl">
             <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4">
               <span>Contact Us</span>
               <span className="text-coffee-400">Faafesootai matou</span>
