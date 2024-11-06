@@ -6,7 +6,7 @@ export const services: {
   image: string;
   name:
   | "Navigation Services"
-  | "Ola Lelei"
+  | "Ola Lelei Services"
   | "Outreach Services"
   | "Social Services";
   description: string;
@@ -21,7 +21,7 @@ export const services: {
     },
     {
       image: "/services/ola.svg",
-      name: "Ola Lelei",
+      name: "Ola Lelei Services",
       description:
         "Ola Lelei is our new training and employment Hub supporting Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
       id: "ola-lelei-and-kai-services",
