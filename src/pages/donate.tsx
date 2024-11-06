@@ -18,7 +18,7 @@ const Donate = () => {
         <Navbar />
 
         <section className="mt-40">
-          <div className="mx-auto p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/hero_images/services.webp"
               alt="hero"
