@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-60 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
+                  className="w-2/3 max-w-48 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out lg:not-sr-only lg:group-hover:opacity-0">
@@ -129,7 +129,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-60 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-48 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700">
@@ -161,7 +161,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-60 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-48 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700">
