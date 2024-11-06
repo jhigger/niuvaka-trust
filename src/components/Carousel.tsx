@@ -67,6 +67,7 @@ const Carousel = () => {
                   src={image}
                   alt="gallery image"
                   className="h-full w-full object-cover object-[50%_25%]"
+                  loading="lazy"
                 />
               </div>
             </AspectRatio>
