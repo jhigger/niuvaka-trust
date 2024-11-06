@@ -408,8 +408,7 @@ export default function About() {
               id="our-team"
               className="mt-4 space-y-4 text-center font-black text-white lg:mt-0 lg:space-y-8 lg:p-8"
             >
-              <h2 className="text-2xl lg:text-4xl">Meet Our Team</h2>
-              <h3 className="text-2xl lg:text-4xl">Governance Board</h3>
+              <h2 className="text-2xl lg:text-4xl">Meet the Niuvaka Board</h2>
             </div>
 
             <div className="flex flex-col items-center justify-center gap-16">
