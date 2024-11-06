@@ -22,7 +22,7 @@ export default function Home() {
         <Navbar />
 
         <section className="mt-40">
-          <div className="mx-auto p-0">
+          <div className="container mx-auto p-0">
             <img
               src="/hero_images/home.webp"
               alt="hero"
@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mx-auto overflow-hidden p-0">
+          <div className="container mx-auto overflow-hidden p-0">
             <img
               src="/texts.webp"
               alt="texts"
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
+          <div className="container mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
             <img
               src="/sitting.webp"
               alt="sitting woman"

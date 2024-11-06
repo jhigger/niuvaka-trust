@@ -47,10 +47,10 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-background px-8 shadow-sm">
+    <header className="fixed top-0 z-50 w-full bg-background shadow-sm">
       <div
         className={cn(
-          "mx-auto flex items-center justify-between gap-2 transition-all duration-200 ease-in-out",
+          "container mx-auto flex items-center justify-between gap-2 transition-all duration-200 ease-in-out",
           size === "lg" && "pb-36",
           crossed && "pb-0",
         )}
@@ -123,7 +123,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
         </Sheet>
 
         <NavigationMenu className="hidden lg:block">
-          <NavigationMenuList className="flex w-full items-center gap-2 xl:gap-4">
+          <NavigationMenuList className="flex w-full items-center gap-2">
             {navigationLinks.map((link) => {
               if (link.subLinks) {
                 return (
