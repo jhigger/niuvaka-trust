@@ -57,7 +57,6 @@ const DonationForm = () => {
 
   const onSubmit = () => {
     formRef.current?.submit();
-    form.reset();
   };
 
   return (
