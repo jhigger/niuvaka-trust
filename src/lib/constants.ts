@@ -16,7 +16,7 @@ export const services: {
       image: "/services/navigation.svg",
       name: "Navigation Services",
       description:
-        "The Pasifika Navigation Team provide support to Pacific peoples to improve equity of access, health outcomes and support the increase of Primary Care enrolment for Pacific communities.",
+        "The Pasifika Navigation Team provide support to Pacific peoples to improve equity of access, health outcomes and support Pacific communities to connect to a health team.",
       id: "navigation-services",
     },
     {
