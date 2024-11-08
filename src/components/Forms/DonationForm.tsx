@@ -75,7 +75,7 @@ const DonationForm = () => {
             <FormItem>
               <FormLabel>First Name</FormLabel>
               <FormControl>
-                <Input {...field} className="h-14 bg-[#D9D9D9] text-xl" />
+                <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -88,7 +88,7 @@ const DonationForm = () => {
             <FormItem>
               <FormLabel>Last Name</FormLabel>
               <FormControl>
-                <Input {...field} className="h-14 bg-[#D9D9D9] text-xl" />
+                <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -101,7 +101,7 @@ const DonationForm = () => {
             <FormItem className="col-span-full">
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input {...field} className="h-14 bg-[#D9D9D9] text-xl" />
+                <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -116,7 +116,7 @@ const DonationForm = () => {
               <FormControl>
                 <Input
                   {...field}
-                  className="h-14 bg-[#D9D9D9] text-xl"
+                  className="h-10 bg-[#D9D9D9] text-xl"
                   maxLength={15}
                 />
               </FormControl>
