@@ -42,8 +42,15 @@ const Contact = () => {
           <div className="relative my-8 h-12 overflow-hidden text-3xl font-bold text-black md:h-20 md:text-6xl">
             <h1 className="absolute flex w-full animate-scrolling-header flex-col items-center gap-2 whitespace-nowrap md:gap-4">
               <span>Contact Us</span>
-              <span className="text-coffee-400">Faafesootai matou</span>
-              <span className="text-[#3390B3]">Fetu&rsquo;utaki mai</span>
+              <span className="text-coffee-400">Fetu&rsquo;utaki mai</span>
+              <span className="text-[#3390B3]">
+                Ni veitaratara mai vei keitou
+              </span>
+              <span>Tuatua mai</span>
+              <span className="text-coffee-400">
+                Fa&rsquo;afeso&rsquo;otai mai matou
+              </span>
+              <span className="text-[#3390B3]">Matutaki mai</span>
             </h1>
           </div>
 
