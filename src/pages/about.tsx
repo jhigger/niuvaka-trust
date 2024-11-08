@@ -166,9 +166,9 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
   return (
     <div
       key={name}
-      className="grid grid-cols-1 place-items-start justify-items-center gap-8 px-8 lg:grid-cols-12"
+      className="grid grid-cols-1 place-items-start justify-items-center gap-8 px-8 lg:grid-cols-11"
     >
-      <div className="col-span-full h-max w-full overflow-hidden rounded-2xl lg:col-span-4">
+      <div className="col-span-full h-max w-full overflow-hidden rounded-2xl lg:col-span-3">
         <AspectRatio ratio={9 / 12}>
           <img
             src={image}
