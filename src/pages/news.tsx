@@ -95,7 +95,7 @@ const News = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <div className="container mx-auto mt-48 p-8 md:p-16">
+        <div className="container mx-auto mt-52 p-8">
           <h1 className="text-3xl font-black text-mint-500 lg:text-6xl">
             News
           </h1>
@@ -153,7 +153,7 @@ const News = () => {
           </div>
         </section>
 
-        <section className="mx-auto mb-16 space-y-8 p-8">
+        <section className="mx-auto my-8 space-y-4 p-8">
           <h2 className="text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Gallery
           </h2>

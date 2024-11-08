@@ -357,7 +357,7 @@ export const events: ArticleProps[][] = [
     },
     {
       type: "event",
-      title: "Poly Paddles July 2024 Promo",
+      title: "Poly Paddles Promo July 2024",
       date: new Date(2024, 7 - 1),
       video: "https://youtube.com/embed/hDcELzeFr4A?si=1spZdiH3863GR-S9",
     }
@@ -379,36 +379,28 @@ export const events: ArticleProps[][] = [
   [
     {
       type: "event",
-      title: "Manawatū Turbo Immunisation Promo",
+      title: "Manawatū Rugby Immunisation Promo",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/XnJvf8gIXnU?si=oVaYaK6IAmCZ8FPi",
     },
     {
       type: "event",
-      title: "Manawatū Turbo Immunisation 65+",
+      title: "Manawatū Rugby Immunisation 65+",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/2Ctfu7TE2sE?si=NNrn3r7D3VRdQSl0",
     },
     {
       type: "event",
-      title: "Manawatū Turbo Immunisation Baby",
+      title: "Manawatū Rugby Immunisation Baby",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/Fqz13YCoQtw?si=GP6TC_xUGkoY1DNM",
     },
     {
       type: "event",
-      title: "Manawatū Turbo Immunisation 45+",
+      title: "Manawatū Rugby Immunisation 45+",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/D0e8oRJnwx0?si=-S7VygSg1BkrFbjw",
     },
-  ],
-  [
-    {
-      type: "event",
-      title: "Pacific Health Clinics",
-      date: new Date(2024, 8 - 1, 8),
-      image: "/news/clinic.webp",
-    }
   ],
 ];
 
