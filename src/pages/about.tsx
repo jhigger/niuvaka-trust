@@ -257,7 +257,7 @@ export default function About() {
               <Logo className="!size-64" />
             </div>
             <div className="order-2 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">
                   Cyclic Border
                 </h2>
@@ -275,7 +275,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-4 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">Niu</h2>
                 <p className="max-w-screen-sm text-base">
                   The Niu (coconut) is one of the most valuable commodities of
@@ -316,7 +316,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-6 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">Vaka</h2>
                 <p className="max-w-screen-sm text-base">
                   The vaka sails pictured in our logo depict the journey ahead,
@@ -331,7 +331,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-8 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
                   className="text-xl font-black lg:text-2xl"
@@ -376,7 +376,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-10 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
                 <h2
                   id="pasifika-diversity"
                   className="text-xl font-black lg:text-2xl"
