@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mx-auto flex flex-col items-center justify-center gap-4">
         <div className="space-y-4">
           <div className="flex items-end gap-4">
-            <Logo className="-mb-2 h-max w-20" />
+            <Logo className="-mb-2 !size-20 h-max" />
             <div className="text-xl font-black uppercase lg:text-2xl">
               NIUVAKA TRUST
             </div>
