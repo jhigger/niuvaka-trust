@@ -3,8 +3,8 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-coffee-200 py-8 md:p-16">
-      <div className="mx-auto flex flex-col items-center justify-center gap-4">
+    <footer className="bg-coffee-200 py-8">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-4">
         <div className="space-y-4">
           <div className="flex items-end gap-4">
             <Logo className="-mb-2 !size-20 h-max" />
