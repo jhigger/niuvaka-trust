@@ -37,14 +37,14 @@ export default function Home() {
             <img
               src="/texts.webp"
               alt="texts"
-              className="-my-[15%] h-full w-full scale-125 object-center"
+              className="h-full w-full scale-125 object-center"
               loading="lazy"
             />
           </div>
         </section>
 
         <section>
-          <div className="container mx-auto flex flex-col p-0 lg:flex-row lg:px-8">
+          <div className="container mx-auto flex flex-col overflow-hidden p-0 lg:flex-row lg:px-8">
             <img
               src="/sitting.webp"
               alt="sitting woman"
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-4 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-8">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-6 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-6">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
@@ -95,7 +95,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-48 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
+                  className="w-2/3 max-w-40 transition-all duration-300 ease-in-out md:w-1/3 lg:w-full lg:group-hover:w-0"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700 transition-all duration-150 ease-in-out lg:not-sr-only lg:group-hover:opacity-0">
@@ -116,7 +116,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-4">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-6 p-8 lg:grid-cols-4">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Work
           </h2>
@@ -129,7 +129,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-48 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-40 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 text-[100%] font-black uppercase text-coffee-700">
@@ -148,7 +148,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-8 p-8 lg:grid-cols-6">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-6 p-8 lg:grid-cols-6">
           <h2 className="col-span-full text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Key Strategic Focus Areas
           </h2>
@@ -161,7 +161,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="service"
-                  className="w-2/3 max-w-48 md:w-1/3 lg:w-full"
+                  className="w-2/3 max-w-40 md:w-1/3 lg:w-full"
                   loading="lazy"
                 />
                 <h3 className="!relative mb-1 !whitespace-nowrap text-[100%] font-black uppercase text-coffee-700">
@@ -173,12 +173,18 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto flex flex-col items-center justify-center gap-8 p-8">
+        <section className="mx-auto flex flex-col items-center justify-center gap-6 p-8">
           <h2 className="text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Programmes & Initiatives
           </h2>
 
-          <Carousel />
+          <Carousel
+            images={[
+              "/projects/paddles.webp",
+              "/projects/gardening.webp",
+              "/projects/vaka.webp",
+            ]}
+          />
         </section>
 
         <Partners />

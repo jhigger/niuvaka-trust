@@ -24,7 +24,11 @@ export const gallery = [
   "/gallery/10.webp",
 ];
 
-const Carousel = () => {
+type CarouselProps = {
+  images?: string[];
+};
+
+const Carousel = ({ images = gallery }: CarouselProps) => {
   return (
     <div className="mx-auto w-full max-w-[964px]">
       <Swiper
@@ -56,7 +60,7 @@ const Carousel = () => {
           },
         }}
       >
-        {gallery.map((image) => (
+        {images.map((image) => (
           <SwiperSlide
             key={image}
             className="relative !h-full !w-full p-6 lg:p-8"
