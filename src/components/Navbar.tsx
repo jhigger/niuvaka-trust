@@ -133,7 +133,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                         className={cn(
                           cn(buttonVariants({ variant: "ghost" })),
                           path === link.href && "bg-coffee-50",
-                          "px-2 py-1 pr-2 text-base text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
+                          "px-2 py-1 pr-2 text-base text-neutral-foreground lg:px-4 lg:py-2 lg:pr-2 lg:text-lg",
                         )}
                       >
                         {link.name}
@@ -186,7 +186,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
                   <Button
                     variant="ghost"
                     className={cn(
-                      "px-2 py-1 text-base text-neutral-foreground xl:px-4 xl:py-2 xl:text-xl",
+                      "px-2 py-1 text-base text-neutral-foreground lg:px-4 lg:py-2 lg:text-lg",
                       path === link.href && "bg-coffee-50",
                     )}
                     asChild
