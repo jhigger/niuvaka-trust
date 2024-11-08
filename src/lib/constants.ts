@@ -385,19 +385,19 @@ export const events: ArticleProps[][] = [
     },
     {
       type: "event",
-      title: "Manawatū Rugby Immunisation 65+",
+      title: "Manawatū Rugby Immunisation Promo for 65+",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/2Ctfu7TE2sE?si=NNrn3r7D3VRdQSl0",
     },
     {
       type: "event",
-      title: "Manawatū Rugby Immunisation Baby",
+      title: "Manawatū Rugby Immunisation Promo for Baby",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/Fqz13YCoQtw?si=GP6TC_xUGkoY1DNM",
     },
     {
       type: "event",
-      title: "Manawatū Rugby Immunisation 45+",
+      title: "Manawatū Rugby Immunisation Promo for 45+",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/D0e8oRJnwx0?si=-S7VygSg1BkrFbjw",
     },
