@@ -110,7 +110,7 @@ const News = () => {
           />
         </section>
 
-        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 md:p-16">
+        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 !pb-0">
           <h2
             id="latest-news"
             className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-3xl"
@@ -153,7 +153,7 @@ const News = () => {
           </div>
         </section>
 
-        <section className="mx-auto my-8 space-y-4 p-8">
+        <section className="mx-auto mb-8 p-8">
           <h2 className="text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Gallery
           </h2>
