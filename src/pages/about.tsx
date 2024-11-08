@@ -37,6 +37,11 @@ const governanceBoard: GovernanceBoardType[] = [
           decades and feels very privileged to be part of the Niuvaka journey in
           supporting our Pasifika communities to achieve their aspirations.
         </p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </>
     ),
   },
@@ -59,26 +64,17 @@ const governanceBoard: GovernanceBoardType[] = [
           Niuvaka can offer to our beautiful communities.
         </p>
         <p>
-          E toru oire roto toku iwi
+          E toru oire o toku iwi — Titikaveka, Ngatangiia, e Matavera.
           <br />
-          Ko Titikaveka, Ngatangiia, e Matavera
+          Te oire e kapiti ana ko Takitumu, ko Irirangi te Maunga, ko Avana te
+          Ava.
           <br />
-          Te ingoa kapiti no te oire ko Takitumu
-          <br />
-          Ko Irirangi te Maunga
-          <br />
-          E ko Avana te Ava
-          <br />
-          Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani)
+          Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani).
           <br />
           Te maata i taau ka Oranga ko te Maata rai ia i taau ka rauka.
-          <br />
-          <br />
-          &quot;The more you give the more you receive.&quot;
-          <br />
-          <br />
-          Meitaki Ma&apos;ata
         </p>
+        <p>&quot;The more you give the more you receive.&quot;</p>
+        <p>Meitaki Ma&apos;ata</p>
       </>
     ),
   },
@@ -170,9 +166,9 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
   return (
     <div
       key={name}
-      className="grid grid-cols-1 place-items-start justify-items-center gap-16 px-8 lg:grid-cols-12"
+      className="grid grid-cols-1 place-items-start justify-items-center gap-8 px-8 lg:grid-cols-12"
     >
-      <div className="col-span-full h-max w-full overflow-hidden rounded-3xl lg:col-span-3">
+      <div className="col-span-full h-max w-full overflow-hidden rounded-2xl lg:col-span-4">
         <AspectRatio ratio={9 / 12}>
           <img
             src={image}
@@ -183,8 +179,8 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
         </AspectRatio>
       </div>
 
-      <div className="col-span-full flex flex-col gap-6 text-center lg:col-span-9 lg:text-start">
-        <h3 className="flex flex-col gap-4">
+      <div className="col-span-full flex flex-col gap-4 text-center lg:col-span-8 lg:text-start">
+        <h3 className="flex flex-col">
           <span className="text-2xl font-black lg:text-3xl">{name}</span>
           <span className="text-xl font-bold text-white lg:text-2xl">
             {role}
@@ -258,10 +254,10 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-1 border-black md:grid-cols-2 md:border [&>div]:border-black md:[&>div]:border">
             <div className="order-1 col-span-1 flex items-center justify-center p-8 md:order-none">
-              <Logo className="h-auto w-64" />
+              <Logo className="!size-64" />
             </div>
             <div className="order-2 col-span-1 md:order-none">
-              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">
                   Cyclic Border
                 </h2>
@@ -279,7 +275,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-4 col-span-1 md:order-none">
-              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">Niu</h2>
                 <p className="max-w-screen-sm text-base">
                   The Niu (coconut) is one of the most valuable commodities of
@@ -300,7 +296,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-3 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
+              <div className="h-full w-full pt-4 md:p-0">
                 <img
                   src="/niu.webp"
                   alt="niu"
@@ -310,7 +306,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-5 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
+              <div className="h-full w-full pt-4 md:p-0">
                 <img
                   src="/vaka.webp"
                   alt="vaka"
@@ -320,7 +316,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-6 col-span-1 md:order-none">
-              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2 className="text-xl font-black lg:text-2xl">Vaka</h2>
                 <p className="max-w-screen-sm text-base">
                   The vaka sails pictured in our logo depict the journey ahead,
@@ -335,7 +331,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-8 col-span-1 md:order-none">
-              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
                   className="text-xl font-black lg:text-2xl"
@@ -360,7 +356,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-7 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
+              <div className="h-full w-full pt-4 md:p-0">
                 <img
                   src="/ngatangiia_rarotonga.webp"
                   alt="ngatangiia rarotonga"
@@ -370,7 +366,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-9 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0 lg:h-[500px]">
+              <div className="h-full w-full pt-4 md:p-0">
                 <img
                   src="/tapa.webp"
                   alt="tapa"
@@ -380,7 +376,7 @@ export default function About() {
               </div>
             </div>
             <div className="order-10 col-span-1 md:order-none">
-              <div className="flex min-h-[500px] flex-col items-center justify-center gap-8 p-8 text-center">
+              <div className="flex h-full flex-col items-center justify-center gap-8 p-8 text-center">
                 <h2
                   id="pasifika-diversity"
                   className="text-xl font-black lg:text-2xl"
@@ -406,7 +402,7 @@ export default function About() {
           <div className="container mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
-              className="mt-4 space-y-4 text-center font-black text-white lg:mt-0 lg:space-y-8 lg:p-8"
+              className="p-4 text-center font-black text-white"
             >
               <h2 className="text-2xl lg:text-4xl">Meet the Niuvaka Board</h2>
             </div>
@@ -415,11 +411,11 @@ export default function About() {
               {governanceBoard.map(BoardItem)}
             </div>
 
-            <hr className="mx-4 border-black lg:hidden" />
+            <hr className="mx-4 border-black" />
 
-            <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 lg:grid-cols-4">
-              <h3 className="col-span-full pb-8 text-center text-2xl font-black text-white lg:text-4xl">
-                Our Team
+            <div className="grid grid-cols-1 gap-8 p-8 pt-0 md:grid-cols-2 lg:grid-cols-4">
+              <h3 className="col-span-full text-center text-2xl font-black text-white lg:text-4xl">
+                Meet Our Team
               </h3>
 
               {staff.map(({ image, name, role, description }, index) => (
@@ -465,7 +461,7 @@ export default function About() {
           id="work-with-us"
           className="bg-gradient-to-b from-mint-500 to-mint-400"
         >
-          <div className="mx-auto my-8 mb-0 flex flex-col items-center justify-center gap-8 p-8">
+          <div className="mx-auto flex flex-col items-center justify-center gap-8 p-8">
             <h2 className="pt-4 text-center text-2xl font-bold text-white lg:text-4xl">
               Work With Us
             </h2>
