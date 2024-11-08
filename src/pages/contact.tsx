@@ -58,7 +58,7 @@ const Contact = () => {
             <div className="col-span-full space-y-4 p-4 lg:col-span-5">
               <div className="flex flex-col flex-wrap items-center gap-6 md:flex-row">
                 <img src="/phone.svg" alt="phone" />
-                <div className="text-center">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                   <a
                     href="tel:+08006488252"
                     className="whitespace-nowrap text-3xl font-black"
