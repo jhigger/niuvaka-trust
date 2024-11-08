@@ -37,7 +37,7 @@ export default function Home() {
             <img
               src="/texts.webp"
               alt="texts"
-              className="h-full w-full scale-125 object-center"
+              className="-mt-[1.5%] mb-2 h-full w-full scale-[1.15] object-center"
               loading="lazy"
             />
           </div>
@@ -48,11 +48,11 @@ export default function Home() {
             <img
               src="/sitting.webp"
               alt="sitting woman"
-              className="-mt-12 hidden object-cover lg:block lg:w-1/2"
+              className="-mt-8 hidden object-cover lg:block lg:w-1/2"
               loading="lazy"
             />
             <div className="flex flex-col lg:w-1/2">
-              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
+              <div className="flex min-h-[200px] flex-1 flex-col items-center justify-center space-y-6 bg-mint-500 p-8 text-center">
                 <h2 className="text-2xl font-bold text-white lg:text-4xl">
                   Our Vision
                 </h2>
@@ -60,7 +60,7 @@ export default function Home() {
                   Tagata Pasifika: Thriving, Flourishing, Resilient
                 </p>
               </div>
-              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-white p-8 text-center">
+              <div className="flex min-h-[200px] flex-1 flex-col items-center justify-center space-y-6 bg-white p-8 text-center">
                 <h2 className="text-2xl font-bold text-mint-500 lg:text-4xl">
                   Our Purpose
                 </h2>
@@ -69,7 +69,7 @@ export default function Home() {
                   families for the realisation of their aspirations
                 </p>
               </div>
-              <div className="flex flex-1 flex-col items-center justify-center space-y-8 bg-mint-500 p-8 text-center">
+              <div className="flex min-h-[200px] flex-1 flex-col items-center justify-center space-y-6 bg-mint-500 p-8 text-center">
                 <h2 className="text-2xl font-bold text-white lg:text-4xl">
                   Our Mission
                 </h2>
