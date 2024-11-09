@@ -295,7 +295,7 @@ const Services = () => {
           </div>
         </section>
 
-        <section className="container mx-auto p-8">
+        <section className="container mx-auto p-8 pt-0">
           <h1 className="border-b border-primary p-4 px-0 text-2xl font-black lg:py-6 lg:text-4xl">
             Our Work
           </h1>
@@ -306,7 +306,7 @@ const Services = () => {
                 <div
                   key={id}
                   id={id}
-                  className="grid grid-cols-1 place-items-center gap-8 p-8 !pb-0 lg:grid-cols-12"
+                  className="grid grid-cols-1 place-items-center gap-8 gap-y-0 p-8 !pb-0 lg:grid-cols-12"
                 >
                   <div
                     key={name}
@@ -342,9 +342,9 @@ const Services = () => {
                       <img
                         src="/services/service3.webp"
                         alt="immunisation"
-                        className="mx-auto h-[375px] w-[300px] rounded object-cover lg:float-right lg:m-8 xl:-mt-32"
+                        className="mx-auto h-[375px] w-[300px] rounded object-cover lg:float-right lg:m-8 xl:-mt-24"
                       />
-                      <p className="!mt-0 text-base lg:text-lg">
+                      <p className="text-base lg:text-lg">
                         The{" "}
                         <a
                           href="https://www.immune.org.nz/"
@@ -635,7 +635,7 @@ const Services = () => {
                   )}
                   {id === "outreach-services" && show && (
                     <Button
-                      className="col-span-full my-8 justify-self-end rounded-full bg-mint-500 p-6 text-xl text-white"
+                      className="col-span-full justify-self-end rounded-full bg-mint-500 p-6 text-xl text-white"
                       onClick={handleToggle}
                       asChild
                     >
