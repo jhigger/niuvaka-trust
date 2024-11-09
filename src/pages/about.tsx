@@ -23,25 +23,37 @@ const governanceBoard: GovernanceBoardType[] = [
     description: (
       <>
         <p>
-          Daniel joined Niuvaka as a board member in 2022 and currently holds
-          the elected position of Chairperson.
+          Daniel Iose is the Chairperson of the Board for Niuvaka Trust, an
+          organization dedicated to providing social services to Pasifika
+          communities. With over 25 years of experience in Information
+          Technology, Daniel brings valuable expertise to the board&apos;s
+          governance and executive leadership. He also serves as a director on
+          the board of the Manawatu Rugby Union. Driven by a focus on long-term
+          growth and business value, Daniel is committed to maintaining the
+          highest standards of transparency and accountability in all his roles.
         </p>
         <p>
-          Daniel is of Samoan descent and was born in Porirua. Daniel&apos;s
-          late Father Semaoa Telu was from Fasito&apos;outa, Samoa, and his late
-          Mother Tiana, from Pata Faleatai, Samoa. Daniel is married to Sandra,
-          and has two adult sons, Jackson and Brayden.
+          As Chairperson of Niuvaka Trust, Daniel plays a pivotal role in
+          guiding the Trust&apos;s strategic vision, overseeing key governance
+          initiatives, and collaborating closely with the executive team to
+          ensure the Trust&apos;s continued success in a dynamic environment.
+          His leadership philosophy is rooted in collaboration, ethical
+          decision-making, and a commitment to long-term sustainability.
         </p>
         <p>
-          Daniel is a proud Samoan who has built his career in ICT over three
-          decades and feels very privileged to be part of the Niuvaka journey in
-          supporting our Pasifika communities to achieve their aspirations.
+          Daniel is passionate about fostering diversity and inclusion within
+          cultural contexts and believes in creating environments where all
+          individuals are valued. He joined Niuvaka Trust in 2022, bringing with
+          him a deep sense of responsibility to support Pasifika communities.
         </p>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <p>
+          Born in Porirua and of Samoan descent, Daniel&apos;s late father,
+          Semaoa Telu, was from Fasito&apos;o uta, Samoa, while his late mother,
+          Tiana, hailed from Pata Faleatai, Samoa. He is married to Sandra, and
+          together they have two adult sons, Jackson and Brayden. Daniel feels
+          privileged to be part of Niuvaka Trust&apos;s mission to empower
+          Pasifika communities and help them achieve their aspirations.
+        </p>
       </>
     ),
   },
