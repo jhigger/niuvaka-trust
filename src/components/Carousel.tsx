@@ -30,7 +30,7 @@ type CarouselProps = {
 
 const Carousel = ({ images = gallery }: CarouselProps) => {
   return (
-    <div className="mx-auto w-full max-w-[964px]">
+    <div className="container mx-auto w-full">
       <Swiper
         centeredSlides={true}
         coverflowEffect={{ depth: 100, modifier: 2.5, rotate: 0, stretch: 0 }}
