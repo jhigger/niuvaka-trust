@@ -17,12 +17,12 @@ const Donate = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-40">
-          <div className="container mx-auto p-0">
+        <section className="mt-[154px]">
+          <div className="container mx-auto overflow-hidden p-0">
             <img
               src="/hero_images/services.webp"
               alt="hero"
-              className="w-full object-contain object-top lg:object-cover xl:h-[600px]"
+              className="-ml-[2%] w-full scale-[1.1] object-contain object-top lg:object-cover xl:h-[600px]"
               loading="eager"
             />
           </div>
