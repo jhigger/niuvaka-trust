@@ -391,7 +391,7 @@ export const events: ArticleProps[][] = [
     },
     {
       type: "event",
-      title: "Manawatū Rugby Immunisation Promo for Baby",
+      title: "Manawatū Rugby Immunisation Promo for Infants",
       date: new Date(2024, 9 - 1, 19),
       video: "https://youtube.com/embed/Fqz13YCoQtw?si=GP6TC_xUGkoY1DNM",
     },
