@@ -37,7 +37,13 @@ export default function Home() {
             <img
               src="/texts.webp"
               alt="texts"
-              className="-mt-[1.5%] mb-2 h-full w-full scale-[1.15] object-center"
+              className="-mt-[1.5%] mb-2 hidden h-full w-full scale-[1.15] object-center lg:block"
+              loading="lazy"
+            />
+            <img
+              src="/texts-mobile.webp"
+              alt="texts"
+              className="-mb-[19%] -mt-[21%] h-full w-full scale-[1.25] object-center lg:hidden"
               loading="lazy"
             />
           </div>
