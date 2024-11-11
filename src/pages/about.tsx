@@ -194,7 +194,7 @@ const BoardItem = ({ image, name, role, description }: GovernanceBoardType) => {
       <div className="col-span-full flex flex-col gap-4 text-center lg:col-span-8 lg:text-start">
         <h3 className="flex flex-col">
           <span className="text-2xl font-black lg:text-3xl">{name}</span>
-          <span className="text-xl font-bold text-white lg:text-2xl">
+          <span className="text-lg font-bold text-white lg:text-xl">
             {role}
           </span>
         </h3>
