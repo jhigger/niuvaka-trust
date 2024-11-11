@@ -443,7 +443,7 @@ export default function About() {
                       "group relative col-span-1 flex flex-col items-center gap-4 text-center"
                     }
                   >
-                    <div className="flex w-full max-w-72 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
+                    <div className="flex w-full max-w-60 shrink-0 items-center justify-center overflow-hidden rounded-full group-odd:bg-coffee-50 group-even:bg-mint-500">
                       <AspectRatio ratio={1 / 1}>
                         <img
                           src={image}
