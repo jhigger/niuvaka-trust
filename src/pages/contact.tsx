@@ -55,8 +55,8 @@ const Contact = () => {
           </div>
 
           <div className="grid grid-cols-1 justify-items-center gap-6 md:pt-8 lg:grid-cols-12">
-            <div className="col-span-full space-y-4 p-4 lg:col-span-5">
-              <div className="flex flex-col flex-wrap items-center gap-6 md:flex-row">
+            <div className="col-span-full w-full space-y-4 p-4 lg:col-span-5">
+              <div className="flex w-full flex-col flex-wrap items-center gap-6 md:flex-row">
                 <img src="/phone.svg" alt="phone" />
                 <div className="flex flex-wrap items-center justify-center gap-2">
                   <a
@@ -130,10 +130,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-span-full space-y-8 p-4 lg:col-span-7">
+            <div className="col-span-full w-full space-y-8 p-4 lg:col-span-7">
               <p className="text-center text-xl font-bold">
-                If you have any questions, feedback, or just want to know more
-                about us, use the form below. We&apos;re here to help.
+                To get in touch, use the form below!
               </p>
 
               <ContactForm />

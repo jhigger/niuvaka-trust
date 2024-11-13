@@ -105,7 +105,7 @@ const ContactForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="col-span-full">
+            <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
@@ -135,7 +135,7 @@ const ContactForm = () => {
           control={form.control}
           name="subject"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="col-span-full">
               <FormLabel>Subject</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl className="capitalize">
@@ -174,7 +174,7 @@ const ContactForm = () => {
               <FormControl>
                 <Textarea
                   {...field}
-                  className="h-40 resize-none bg-[#D9D9D9] text-xl"
+                  className="resize-none bg-[#D9D9D9] text-xl"
                 />
               </FormControl>
               <FormMessage />

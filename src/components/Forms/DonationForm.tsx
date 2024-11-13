@@ -98,7 +98,7 @@ const DonationForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="col-span-full">
+            <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
@@ -111,7 +111,7 @@ const DonationForm = () => {
           control={form.control}
           name="phone"
           render={({ field }) => (
-            <FormItem className="col-span-full">
+            <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
                 <Input

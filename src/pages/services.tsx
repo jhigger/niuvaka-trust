@@ -575,14 +575,13 @@ const Services = () => {
                                 >
                                   bowelscreening@midcentraldhb.govt.nz
                                 </a>
-                                .
                               </li>
                             </ul>
                             <br />
                             <p>
                               If you need help, we can assist with connecting
                               you for the appropriate support, contact our
-                              Mobile Outreach team on <b>0800-924-432</b> or
+                              Mobile Outreach team on <b>0800-648-8252</b> or
                               email{" "}
                               <a
                                 href="mailto:info@niuvaka.org.nz"
@@ -621,7 +620,8 @@ const Services = () => {
                         journey and access other support services as well as
                         refer you if additional support is required.
                         <br />
-                        <br />o book an appointment, contact our Health team on
+                        <br />
+                        To book an appointment, contact our Health team on{" "}
                         <b className="whitespace-nowrap">0800-648-8252</b> or
                         email{" "}
                         <a

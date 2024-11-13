@@ -53,7 +53,7 @@ const CareerForm = () => {
         method="post"
         ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}
-        className="grid w-full max-w-screen-md grid-cols-1 gap-4 md:grid-cols-2"
+        className="grid w-full max-w-screen-md grid-cols-1 gap-6 gap-y-2 md:grid-cols-2"
       >
         <FormField
           control={form.control}
@@ -85,7 +85,7 @@ const CareerForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="col-span-full">
+            <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input {...field} className="h-10 bg-[#D9D9D9] text-xl" />
@@ -98,7 +98,7 @@ const CareerForm = () => {
           control={form.control}
           name="phone"
           render={({ field }) => (
-            <FormItem className="col-span-full">
+            <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
                 <Input

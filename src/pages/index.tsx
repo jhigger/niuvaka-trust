@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-6 gap-y-4 p-8 lg:grid-cols-5 lg:gap-y-6">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-6 gap-y-4 pb-4 pt-8 lg:grid-cols-5">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Values
           </h2>
@@ -96,7 +96,7 @@ export default function Home() {
             return (
               <div
                 key={name}
-                className="group relative col-span-1 flex h-full flex-col items-center justify-center gap-2 overflow-hidden rounded-xl p-4 lg:hover:scale-105 lg:hover:bg-coffee-50 xl:p-8"
+                className="group relative col-span-1 flex h-full flex-col items-center justify-center gap-2 overflow-hidden rounded-xl p-4 lg:hover:scale-105 lg:hover:bg-coffee-50 xl:p-8 xl:pb-1 xl:pt-0"
               >
                 <img
                   src={image}
@@ -108,7 +108,7 @@ export default function Home() {
                   {name}
                   <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
                 </h3>
-                <div className="-bottom-full w-full space-y-4 transition-all duration-150 ease-in-out lg:absolute lg:p-4 lg:group-hover:bottom-0 xl:p-8">
+                <div className="-bottom-full w-full space-y-4 transition-all duration-150 ease-in-out lg:absolute lg:p-4 lg:group-hover:-top-1/2 lg:group-hover:translate-y-1/4 xl:p-8">
                   <div className="sr-only !relative mb-1 text-[100%] font-black uppercase text-coffee-700 lg:not-sr-only">
                     {name}
                     <span className="absolute -bottom-0.5 left-0 h-[3px] w-6 bg-coffee-600/90"></span>
@@ -122,7 +122,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-6 p-8 lg:grid-cols-4">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-4 py-6 lg:grid-cols-4">
           <h2 className="col-span-full text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Work
           </h2>
@@ -154,7 +154,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-6 p-8 lg:grid-cols-6">
+        <section className="container mx-auto grid grid-cols-1 items-center justify-center gap-x-8 gap-y-4 py-4 lg:grid-cols-6">
           <h2 className="col-span-full text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Key Strategic Focus Areas
           </h2>
@@ -179,7 +179,7 @@ export default function Home() {
           })}
         </section>
 
-        <section className="mx-auto flex flex-col items-center justify-center gap-6 p-8">
+        <section className="mx-auto flex flex-col items-center justify-center py-8 lg:pb-0">
           <h2 className="text-balance text-center text-2xl font-bold text-mint-500 lg:text-4xl">
             Our Programmes & Initiatives
           </h2>

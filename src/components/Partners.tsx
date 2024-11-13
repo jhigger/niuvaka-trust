@@ -7,7 +7,7 @@ const Partners = ({ showDescription = false }: PartnersProps) => {
   return (
     <section
       id="our-partners"
-      className="container mx-auto flex flex-col items-center justify-center gap-y-4 overflow-hidden p-8"
+      className="container mx-auto flex flex-col items-center justify-center gap-y-2 overflow-hidden p-6"
     >
       <h2 className="text-center text-2xl font-bold text-mint-500 lg:text-4xl">
         Our Partners

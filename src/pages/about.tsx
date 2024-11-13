@@ -264,16 +264,16 @@ export default function About() {
           >
             Our Logo
           </h2>
-          <div className="grid grid-cols-1 border-black md:grid-cols-2 md:border [&>div]:border-black md:[&>div]:border">
-            <div className="order-1 col-span-1 flex items-center justify-center p-8 md:order-none">
-              <Logo className="!size-64" />
+          <div className="grid grid-cols-1 border-black lg:grid-cols-2 lg:border [&>div]:border-black lg:[&>div]:border">
+            <div className="order-1 col-span-1 flex items-center justify-center p-8 lg:order-none">
+              <Logo className="!size-72" />
             </div>
-            <div className="order-2 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+            <div className="order-2 col-span-1 lg:order-none">
+              <div className="flex flex-col items-center justify-center gap-4 p-8 text-center lg:h-[377px]">
                 <h2 className="text-xl font-black lg:text-2xl">
                   Cyclic Border
                 </h2>
-                <p className="max-w-screen-sm text-base">
+                <p className="text-base lg:max-w-[518px]">
                   The cyclic border has a chevron design around the outside of
                   the circle that is a universal design across the pacific that
                   represents the uniqueness of each Pasifika culture and our
@@ -286,10 +286,10 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-4 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+            <div className="order-4 col-span-1 lg:order-none">
+              <div className="flex flex-col items-center justify-center gap-4 p-8 text-center lg:h-[377px]">
                 <h2 className="text-xl font-black lg:text-2xl">Niu</h2>
-                <p className="max-w-screen-sm text-base">
+                <p className="text-base lg:max-w-[583px]">
                   The Niu (coconut) is one of the most valuable commodities of
                   the pacific, the background behind the sails inside of the
                   coconut can also be looked at as the horizon coming off the
@@ -307,30 +307,30 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-3 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0">
+            <div className="order-3 col-span-1 mx-4 border-t lg:order-none lg:mx-0">
+              <div className="w-full pt-4 lg:h-[377px] lg:p-0">
                 <img
                   src="/niu.webp"
                   alt="niu"
-                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover md:object-bottom"
+                  className="h-full w-full rounded object-fill object-center lg:rounded-none lg:object-cover lg:object-bottom"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-5 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0">
+            <div className="order-5 col-span-1 mx-4 border-t lg:order-none lg:mx-0">
+              <div className="flex w-full pt-4 lg:h-[427px] lg:p-0">
                 <img
                   src="/vaka.webp"
                   alt="vaka"
-                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
+                  className="h-full w-full rounded object-fill object-center lg:rounded-none lg:object-cover"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-6 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+            <div className="order-6 col-span-1 lg:order-none">
+              <div className="flex flex-col items-center justify-center gap-4 p-8 text-center lg:h-[427px]">
                 <h2 className="text-xl font-black lg:text-2xl">Vaka</h2>
-                <p className="max-w-screen-sm text-base">
+                <p className="max-w-[541px] text-base">
                   The vaka sails pictured in our logo depict the journey ahead,
                   the future direction of Niuvaka and the aspirational futures
                   for our Pasifika communities. They also represent the Pacific
@@ -342,15 +342,15 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-8 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+            <div className="order-8 col-span-1 lg:order-none">
+              <div className="flex flex-col items-center justify-center gap-4 p-8 text-center lg:h-[444px]">
                 <h2
                   id="tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi"
                   className="text-xl font-black lg:text-2xl"
                 >
                   Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi
                 </h2>
-                <p className="max-w-screen-sm text-base">
+                <p className="max-w-[580px] text-base">
                   Iwi-Māori and Pacific Peoples have many historical bonds and
                   connections including genealogy, kinship, traditions, and
                   beliefs, as well as navigating and traversing Te Moana nui o
@@ -367,35 +367,35 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="order-7 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0">
+            <div className="order-7 col-span-1 mx-4 border-t lg:order-none lg:mx-0">
+              <div className="w-full pt-4 lg:h-[444px] lg:p-0">
                 <img
                   src="/ngatangiia_rarotonga.webp"
                   alt="ngatangiia rarotonga"
-                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
+                  className="h-full w-full rounded object-fill object-center lg:rounded-none lg:object-cover"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-9 col-span-1 mx-4 border-t md:order-none md:mx-0">
-              <div className="h-full w-full pt-4 md:p-0">
+            <div className="order-9 col-span-1 mx-4 border-t lg:order-none lg:mx-0">
+              <div className="w-full pt-4 lg:h-[382px] lg:p-0">
                 <img
                   src="/tapa.webp"
                   alt="tapa"
-                  className="h-full w-full rounded object-fill object-center md:rounded-none md:object-cover"
+                  className="h-full w-full rounded object-fill object-center lg:rounded-none lg:object-cover"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="order-10 col-span-1 md:order-none">
-              <div className="flex h-full flex-col items-center justify-center gap-4 p-8 text-center">
+            <div className="order-10 col-span-1 lg:order-none">
+              <div className="flex flex-col items-center justify-center gap-4 p-8 text-center lg:h-[382px]">
                 <h2
                   id="pasifika-diversity"
                   className="text-xl font-black lg:text-2xl"
                 >
                   Pasifika Diversity
                 </h2>
-                <p className="max-w-screen-sm text-base">
+                <p className="max-w-[538px] text-base">
                   Pacific Peoples or Tagata Pasifika are umbrella terms, among
                   others, used to describe the multitude of island territories
                   and nations across the South Pacific Ocean, yet each nation
@@ -414,7 +414,7 @@ export default function About() {
           <div className="container mx-auto space-y-8 px-0 py-8">
             <div
               id="our-team"
-              className="p-4 text-center font-black text-white"
+              className="-mb-4 p-4 pb-2 text-center font-black text-white"
             >
               <h2 className="text-2xl lg:text-4xl">Meet the Niuvaka Board</h2>
             </div>
@@ -425,7 +425,7 @@ export default function About() {
 
             <hr className="mx-4 border-black" />
 
-            <div className="grid grid-cols-1 gap-8 p-8 pt-0 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-6 p-8 pb-0 pt-0 md:grid-cols-2 lg:grid-cols-4">
               <h3 className="col-span-full text-center text-2xl font-black text-white lg:text-4xl">
                 Meet Our Team
               </h3>
