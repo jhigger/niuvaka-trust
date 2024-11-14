@@ -23,21 +23,22 @@ const governanceBoard: GovernanceBoardType[] = [
     description: (
       <>
         <p>
-          Daniel Iose is the Chairperson of the Board for Niuvaka Trust, an
-          organization dedicated to providing social services to Pasifika
-          communities. With over 25 years of experience in Information
-          Technology, Daniel brings valuable expertise to the board&apos;s
-          governance and executive leadership. He also serves as a director on
-          the board of the Manawatu Rugby Union. Driven by a focus on long-term
-          growth and business value, Daniel is committed to maintaining the
-          highest standards of transparency and accountability in all his roles.
+          Daniel Iose is the Chair of the Niuvaka Trust Board, an organisation
+          dedicated to providing health, social service, education, training and
+          employment support to Pasifika communities. With over 25 years of
+          experience in Information Technology, Daniel brings valuable expertise
+          to the Board&apos;s governance and executive leadership. He also
+          serves as a Director on the Board of Manawatū Rugby Union. Driven by a
+          focus on long-term growth and business value, Daniel is committed to
+          maintaining the highest standards of transparency and accountability
+          in all his roles.
         </p>
         <p>
-          As Chairperson of Niuvaka Trust, Daniel plays a pivotal role in
-          guiding the Trust&apos;s strategic vision, overseeing key governance
-          initiatives, and collaborating closely with the executive team to
-          ensure the Trust&apos;s continued success in a dynamic environment.
-          His leadership philosophy is rooted in collaboration, ethical
+          As Chair of Niuvaka Trust, Daniel plays a pivotal role in guiding the
+          Trust&apos;s strategic vision, overseeing key governance initiatives,
+          and collaborating closely with the executive leadership team to ensure
+          the Trust&apos;s continued success in a dynamic environment. His
+          leadership philosophy is rooted in collaboration, ethical
           decision-making, and a commitment to long-term sustainability.
         </p>
         <p>
@@ -114,19 +115,21 @@ const governanceBoard: GovernanceBoardType[] = [
           </a>
           . Suli&apos;s research interests broadly lie in the interdisciplinary
           areas of development studies, human geography, ethnography,
-          ethno-ecology, climate crisis, and community production. The core of
-          some of his research is around indigenous knowledge systems, community
-          indigenous innovation, alternative and pluriverse development,
-          community-driven development, and social transformation in the
-          Pacific.
+          ethno-ecology, climate crisis, and community production.
         </p>
         <p>
-          Suli&apos;s doctoral research explored indigenous alternative economic
-          development on customary land in the Pacific through decolonised
-          indigenous methodologies. His interests also include developing
-          cohesion between Pasifika community providers and research, and he
-          also co-developed the new Pacific Studies courses at the University of
-          Canterbury, New Zealand, in 2024.
+          The core of some of his research is around indigenous knowledge
+          systems, community indigenous innovation, alternative and pluriverse
+          development, community-driven development, and social transformation
+          in the Pacific. Suli&apos;s doctoral research explored indigenous
+          alternative economic development on customary land in the Pacific
+          through decolonised indigenous methodologies.
+        </p>
+        <p>
+          His interests also include developing cohesion between Pasifika
+          community providers and research, and he also co-developed the new
+          Pacific Studies courses at the University of Canterbury, New Zealand,
+          in 2024.
         </p>
       </>
     ),
@@ -149,16 +152,15 @@ const governanceBoard: GovernanceBoardType[] = [
           Te Papa Tongarewa, the Museum of Aotearoa-New Zealand. Tawhiti was an
           appointed member of the Manawhenua Iwi Relationship Board to the
           MidCentral District Health Board (MDHB) Healthy Communities Advisory
-          Committee & MDHB Disability Support Advisory Committee.
-          <br />
-          Tawhiti is a Registered Graduate in Frontline Management, New Zealand
-          Institute of Management, a Bursar Recipient of Te Rau Puawai Māori
-          Mental Health Development studying Psychology through Te Kunenga ki
-          Pūrehuroa and has a background in the education sector, specifically
-          within total immersion Māori language settings. Tawhiti has given
-          extensive contributions to the health sector and the Whānau Ora
-          movement including as Co-Project Lead for the establishment of Te
-          Awahou Community Health Service in Foxton.
+          Committee & MDHB Disability Support Advisory Committee. Tawhiti is a
+          Registered Graduate in Frontline Management, New Zealand Institute of
+          Management, a Bursar Recipient of Te Rau Puawai Māori Mental Health
+          Development studying Psychology through Te Kunenga ki Pūrehuroa and
+          has a background in the education sector, specifically within total
+          immersion Māori language settings. Tawhiti has given extensive
+          contributions to the health sector and the Whānau Ora movement
+          including as Co-Project Lead for the establishment of Te Awahou
+          Community Health Service in Foxton.
         </p>
         <p>
           He was a key Leader for the Ngāti Whakatere and Te Awahou Waitangi
