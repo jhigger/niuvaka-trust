@@ -284,7 +284,7 @@ const Services = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <section className="mt-[154px]">
+        <section className="mt-[160px]">
           <div className="container mx-auto overflow-hidden p-0">
             <img
               src="/hero_images/services.webp"
@@ -342,7 +342,7 @@ const Services = () => {
                       <img
                         src="/services/service3.webp"
                         alt="immunisation"
-                        className="mx-auto h-[375px] w-[300px] rounded object-cover lg:float-right lg:m-8 xl:-mt-24"
+                        className="mx-auto h-[540px] w-[380px] rounded object-cover lg:float-right lg:m-8 xl:-mt-20"
                       />
                       <p className="text-base lg:text-lg">
                         The{" "}

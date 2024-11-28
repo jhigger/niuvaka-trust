@@ -77,16 +77,19 @@ const governanceBoard: GovernanceBoardType[] = [
           Niuvaka can offer to our beautiful communities.
         </p>
         <p>
-          E toru oire o toku iwi — Titikaveka, Ngatangiia, e Matavera.
+          E toru oire roto toku iwi — Ko Titikaveka, Ngatangiia, e Matavera
           <br />
-          Te oire e kapiti ana ko Takitumu, ko Irirangi te Maunga, ko Avana te
-          Ava.
+          Te ingoa kapiti no te oire ko Takitumu, ko Irirangi te Maunga, e ko
+          Avana te Ava
           <br />
-          Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani).
-          <br />
-          Te maata i taau ka Oranga ko te Maata rai ia i taau ka rauka.
+          Toku pirianga ia Aitutaki e Mangaia, Te Ipukarea (Kuki Airani)
         </p>
-        <p>&quot;The more you give the more you receive.&quot;</p>
+        <p>
+          &quot;Te maata i taau ka Oranga ko te Maata rai ia i taau ka
+          rauka&quot;
+          <br />
+          &quot;The more you give the more you receive.&quot;
+        </p>
         <p>Meitaki Ma&apos;ata</p>
       </>
     ),
@@ -164,12 +167,11 @@ const governanceBoard: GovernanceBoardType[] = [
         </p>
         <p>
           He was a key Leader for the Ngāti Whakatere and Te Awahou Waitangi
-          Claims Hearings from and is the current Chair of Ngāti Whakatere Māori
-          Land Trust, as well as a member of Te Whare Makatea, Ngāti Raukawa
-          School of Traditional Māori Lore from 2018-2023. Tawhiti is passionate
-          about supporting the advancement of Whānau Ora and extends this
-          support to Pacific communities through his role on the Niuvaka Trust
-          Board.
+          Claims Hearings and is the current Chair of Ngāti Whakatere Māori Land
+          Trust, as well as a member of Te Whare Makatea, Ngāti Raukawa School
+          of Traditional Māori Lore from 2018-2023. Tawhiti is passionate about
+          supporting the advancement of Whānau Ora and extends this support to
+          Pacific communities through his role on the Niuvaka Trust Board.
         </p>
       </>
     ),
@@ -233,7 +235,7 @@ export default function About() {
 
         <section
           id="our-journey"
-          className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-8"
+          className="mx-auto flex flex-col items-center justify-center gap-4 px-8 pt-6"
         >
           <h2 className="text-center text-2xl font-black text-mint-500 lg:text-4xl">
             About Us
@@ -280,11 +282,14 @@ export default function About() {
                   the circle that is a universal design across the pacific that
                   represents the uniqueness of each Pasifika culture and our
                   ability to come together in a space to be one but maintain our
-                  own uniqueness. The board is representative of the migratory
-                  birds in an unending cycle depicting how our ancestors from
-                  the Pacific had been migrating and sailing. The space between
-                  the brown border and the inner circle reflects the space of
-                  respect and relationship.
+                  own uniqueness.
+                  <br />
+                  <br />
+                  The boarder is representative of the migratory birds in an
+                  unending cycle depicting how our ancestors from the Pacific
+                  had been migrating and sailing. The space between the brown
+                  border and the inner circle reflects the space of respect and
+                  relationships.
                 </p>
               </div>
             </div>
@@ -337,10 +342,12 @@ export default function About() {
                   the future direction of Niuvaka and the aspirational futures
                   for our Pasifika communities. They also represent the Pacific
                   Ocean and the journey between the Pacific Islands and the
-                  voyage to Aotearoa. One sail is darker than the other - it
-                  reflects the same purpose but also reflects diversity. We are
-                  from diverse cultures in the Pacific, but we share common
-                  values.
+                  voyage to Aotearoa.
+                  <br />
+                  <br />
+                  One sail is darker than the other - it reflects the same
+                  purpose but also reflects diversity. We are from diverse
+                  cultures in the Pacific, but we share common values.
                 </p>
               </div>
             </div>
@@ -357,13 +364,18 @@ export default function About() {
                   connections including genealogy, kinship, traditions, and
                   beliefs, as well as navigating and traversing Te Moana nui o
                   Kiva, the Pacific Ocean, upon vaka, all of which precedes Te
-                  Tiriti o Waitangi. As a Pasifika organisation, Niuvaka affirms
-                  and celebrates the multitude of historic and current
-                  relationships it has with Iwi-Māori further to recognising
-                  Iwi-Māori as Tangata Whenua, the indigenous people of
-                  Aotearoa. Niuvaka also acknowledges Te Tiriti o Waitangi as
-                  the founding document that sets the contemporary context for
-                  Tagata Pasifika in present day Aotearoa-New Zealand, which
+                  Tiriti o Waitangi.
+                  <br />
+                  <br />
+                  As a Pasifika organisation, Niuvaka affirms and celebrates the
+                  multitude of historic and current relationships it has with
+                  Iwi-Māori further to recognising Iwi-Māori as Tangata Whenua,
+                  the indigenous people of Aotearoa.
+                  <br />
+                  <br />
+                  Niuvaka also acknowledges Te Tiriti o Waitangi as the founding
+                  document that sets the contemporary context for Tagata
+                  Pasifika in present day Aotearoa-New Zealand, which
                   correspondingly reflects a large percentage of Tagata Pasifika
                   young people being of Tangata Whenua descent also.
                 </p>
@@ -402,10 +414,12 @@ export default function About() {
                   others, used to describe the multitude of island territories
                   and nations across the South Pacific Ocean, yet each nation
                   has its own uniqueness and distinctiveness, each with its own
-                  intricate and elaborate micro-culture. As a Pasifika
-                  organisation, Niuvaka acknowledges the special nature of
-                  diverse Pasifika identities and recognises the multifaceted
-                  characteristics of Tagata Pasifika.
+                  intricate and elaborate micro-culture.
+                  <br />
+                  <br />
+                  As a Pasifika organisation, Niuvaka acknowledges the special
+                  nature of diverse Pasifika identities and recognises the
+                  multifaceted characteristics of Tagata Pasifika.
                 </p>
               </div>
             </div>
@@ -491,7 +505,7 @@ export default function About() {
               <br />
               Join the Niuvaka Trust team to be an important part of making a
               real difference for Pasifika communities that we serve. We are a
-              small team of 14 dedicated and friendly staff, in an organisation
+              small team of 13 dedicated and friendly staff, in an organisation
               that is growing and developing. The environment is lively and
               perfect for someone who is passionate about advancing aspirations
               for Tagata Pasifika. Niuvaka Trust is a Not-for-Profit Pasifika

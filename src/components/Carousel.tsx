@@ -93,7 +93,7 @@ const Carousel = ({ images = gallery }: CarouselProps) => {
         spaceBetween={400}
         className="relative w-full"
         autoplay={{
-          delay: 5000,
+          delay: 1000 * 10, // 10 seconds
           pauseOnMouseEnter: true,
         }}
         pagination={{
@@ -119,7 +119,7 @@ const Carousel = ({ images = gallery }: CarouselProps) => {
                 <img
                   src={image}
                   alt="gallery image"
-                  className="h-full w-full object-cover object-[50%_25%]"
+                  className="h-full w-full object-contain object-center"
                   loading="lazy"
                 />
               </div>

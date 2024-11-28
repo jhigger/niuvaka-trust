@@ -92,12 +92,12 @@ const config = {
         },
         "scrolling-header": {
           "0%": { top: "0em" },
-          "15%": { top: "-1.3em" },
-          "30%": { top: "-2.5em" },
-          "45%": { top: "-3.7em" },
-          "60%": { top: "-4.9em" },
-          "75%": { top: "-6.1em" },
-          "100%": { top: "0em" },
+          "16%": { top: "-1.3em" },
+          "32%": { top: "-2.5em" },
+          "48%": { top: "-3.7em" },
+          "64%": { top: "-4.9em" },
+          "80%": { top: "-6.1em" },
+          "96%": { top: "-7.6em" },
         },
       },
       animation: {
@@ -105,7 +105,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        "scrolling-header": "scrolling-header 6s forwards infinite",
+        "scrolling-header": "scrolling-header 12s forwards infinite",
       },
     },
   },

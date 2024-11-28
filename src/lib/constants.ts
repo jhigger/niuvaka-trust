@@ -176,13 +176,6 @@ export const staff = [
     description: "Mangaia i te Kuki Airani, Tahiti",
   },
   {
-    image: "/team/Leana Hamlin.webp",
-    name: "Leana Hamlin",
-    role: "Community Kai Support",
-    description:
-      "Rarotonga me Aitutaki i te Kuki Airani, Ngāti Kahungunu, Rongomaiwāhine",
-  },
-  {
     image: "/team/Patricia Hadley.webp",
     name: "Patricia Hadley",
     role: "Pasifika Community Clinical Nurse",

@@ -51,6 +51,7 @@ const Contact = () => {
                 Fa&rsquo;afeso&rsquo;otai mai matou
               </span>
               <span className="text-[#3390B3]">Matutaki mai</span>
+              <span>Contact Us</span>
             </h1>
           </div>
 

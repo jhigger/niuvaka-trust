@@ -95,13 +95,7 @@ const News = () => {
       <div className="relative min-h-screen bg-background">
         <Navbar />
 
-        <div className="container mx-auto mt-52 p-8">
-          <h1 className="text-3xl font-black text-mint-500 lg:text-6xl">
-            News
-          </h1>
-        </div>
-
-        <section className="container mx-auto p-0">
+        <section className="container mx-auto mt-40 p-0">
           <img
             src="/hero_images/news.webp"
             alt="hero"
@@ -110,7 +104,13 @@ const News = () => {
           />
         </section>
 
-        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 !pb-0">
+        <div className="container mx-auto pt-8">
+          <h1 className="text-3xl font-black text-mint-500 lg:text-5xl">
+            News
+          </h1>
+        </div>
+
+        <section className="container mx-auto space-y-8 divide-y divide-primary p-8 !pb-0 pt-4">
           <h2
             id="latest-news"
             className="mb-8 text-center text-2xl font-bold text-coffee-400 lg:text-left lg:text-3xl"
