@@ -158,7 +158,7 @@ const News = () => {
             Gallery
           </h2>
 
-          <Carousel />
+          <Carousel fullWidth={false} />
         </section>
 
         <Footer />

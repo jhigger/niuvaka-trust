@@ -13,6 +13,7 @@ import {
 import { Swiper as SwiperReact, SwiperSlide } from "swiper/react";
 import { type Swiper } from "swiper/types";
 import { AspectRatio } from "./ui/aspect-ratio";
+import { cn } from "~/lib/utils";
 
 export const gallery = [
   "/gallery/1.webp",
@@ -39,9 +40,10 @@ export const gallery = [
 
 type CarouselProps = {
   images?: string[];
+  fullWidth?: boolean;
 };
 
-const Carousel = ({ images = gallery }: CarouselProps) => {
+const Carousel = ({ images = gallery, fullWidth = true }: CarouselProps) => {
   const [swiper, setSwiperRef] = useState<Swiper | null>(null);
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -119,7 +121,10 @@ const Carousel = ({ images = gallery }: CarouselProps) => {
                 <img
                   src={image}
                   alt="gallery image"
-                  className="h-full w-full object-contain object-center"
+                  className={cn(
+                    "h-full w-full object-cover object-center",
+                    !fullWidth && "object-contain",
+                  )}
                   loading="lazy"
                 />
               </div>
