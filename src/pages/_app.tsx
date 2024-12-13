@@ -15,7 +15,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <>
       <Head>
         <meta property="og:title" content="Niuvaka Trust" />
-        <meta property="og:image" content="/public/logo.webp" />
+        <meta property="og:image" content="/public/og.png" />
       </Head>
       <main className={`${lato.className}`}>
         <Component {...pageProps} />
