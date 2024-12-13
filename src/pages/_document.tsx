@@ -19,7 +19,7 @@ class MyDocument extends Document {
 
           <meta
             property="og:logo"
-            content="https://www.niuvaka.org.nz//logo.webp"
+            content="https://www.niuvaka.org.nz/logo.webp"
           />
 
           {/* <!-- Facebook Meta Tags --> */}
