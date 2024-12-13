@@ -24,6 +24,7 @@ class MyDocument extends Document {
           />
           <meta property="og:image" content="/opengraph-image.png" />
           <link rel="canonical" href="https://www.niuvaka.org.nz/" />
+          <meta property="og:logo" content="/logo.webp" />
         </Head>
         <body>
           <Main />
