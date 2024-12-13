@@ -14,8 +14,14 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
+        <meta property="og:url" content="https://www.niuvaka.org.nz" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Niuvaka Trust" />
-        <meta property="og:image" content="/public/og.png" />
+        <meta
+          property="og:description"
+          content="Tagata Pasifika: Thriving, Flourishing, Resilient"
+        />
+        <meta property="og:image" content="/og.png" />
       </Head>
       <main className={`${lato.className}`}>
         <Component {...pageProps} />
