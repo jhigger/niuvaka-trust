@@ -21,7 +21,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           property="og:description"
           content="Tagata Pasifika: Thriving, Flourishing, Resilient"
         />
-        <meta property="og:image" content="/og.png" />
+        <meta
+          property="og:image"
+          content="https://www.niuvaka.org.nz/logo.webp"
+        />
       </Head>
       <main className={`${lato.className}`}>
         <Component {...pageProps} />
