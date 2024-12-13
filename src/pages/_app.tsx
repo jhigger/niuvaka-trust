@@ -1,5 +1,6 @@
 import { type AppType } from "next/app";
 import { Lato } from "next/font/google";
+import Head from "next/head";
 
 import "~/styles/globals.css";
 
@@ -11,9 +12,15 @@ const lato = Lato({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${lato.className}`}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Head>
+        <meta property="og:title" content="Niuvaka Trust" />
+        <meta property="og:image" content="/public/logo.webp" />
+      </Head>
+      <main className={`${lato.className}`}>
+        <Component {...pageProps} />
+      </main>
+    </>
   );
 };
 
