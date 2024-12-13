@@ -17,7 +17,10 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.niuvaka.org.nz/" />
 
-          <meta property="og:logo" content="/logo.webp" />
+          <meta
+            property="og:logo"
+            content="https://www.niuvaka.org.nz//logo.webp"
+          />
 
           {/* <!-- Facebook Meta Tags --> */}
           <meta property="og:title" content="Niuvaka Trust" />
@@ -25,7 +28,10 @@ class MyDocument extends Document {
             property="og:description"
             content="Tagata Pasifika: Thriving, Flourishing, Resilient"
           />
-          <meta property="og:image" content="/opengraph-image.png" />
+          <meta
+            property="og:image"
+            content="https://www.niuvaka.org.nz/opengraph-image.png"
+          />
           <meta property="og:url" content="https://www.niuvaka.org.nz/" />
           <meta property="og:site_name" content="Niuvaka Trust" />
           <meta property="og:type" content="website" />
@@ -37,7 +43,10 @@ class MyDocument extends Document {
             name="twitter:description"
             content="Tagata Pasifika: Thriving, Flourishing, Resilient"
           />
-          <meta name="twitter:image" content="/opengraph-image.png" />
+          <meta
+            name="twitter:image"
+            content="https://www.niuvaka.org.nz/opengraph-image.png"
+          />
         </Head>
         <body>
           <Main />
