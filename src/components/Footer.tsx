@@ -36,7 +36,17 @@ const Footer = () => {
         </div>
         <p className="inline-flex flex-wrap items-center justify-center text-center text-sm lg:text-base">
           &copy; 2024 Niuvaka Trust. All Rights Reserved.{" "}
-          <span>Website Design by SGDesign</span>
+          <span>
+            Website Design by{" "}
+            <a
+              href="http://shaygaliste.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2"
+            >
+              SGDesign
+            </a>
+          </span>
         </p>
       </div>
     </footer>
