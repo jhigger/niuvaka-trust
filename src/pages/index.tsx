@@ -41,7 +41,7 @@ export default function Home() {
               loading="lazy"
             />
             <img
-              src="/texts-mobile.webp"
+              src="/texts-mobile.jpg"
               alt="texts"
               className="-mb-[19%] -mt-[21%] h-full w-full scale-[1.25] object-center lg:hidden"
               loading="lazy"
