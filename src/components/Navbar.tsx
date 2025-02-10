@@ -128,7 +128,7 @@ const Navbar = ({ size = "default" }: NavbarProps) => {
               if (link.subLinks) {
                 return (
                   <NavigationMenuItem key={`desktop-${link.href}`}>
-                    <Link href={link.href} legacyBehavior passHref>
+                    <Link href={link.href} passHref>
                       <NavigationMenuTrigger
                         className={cn(
                           cn(buttonVariants({ variant: "ghost" })),
