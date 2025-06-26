@@ -39,7 +39,7 @@ const Article = ({
         </AspectRatio>
       )}
       <h3 className="text-xl font-black">{title}</h3>
-      <span className="mt-auto text-sm">Published: {formatDate(date)}</span>
+      <span className="text-sm">Published: {formatDate(date)}</span>
       {type === "news" && excerpt && (
         <p className="line-clamp-5 whitespace-pre-wrap">{excerpt}</p>
       )}

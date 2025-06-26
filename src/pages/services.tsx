@@ -17,8 +17,8 @@ export const projects = [
         and Rangatahi 5-18 years.
         <br />
         <br />
-        Contact our Project Coordinator on{" "}
-        <b className="whitespace-nowrap">0800-648-8252</b> or email:{" "}
+        Contact us on <b className="whitespace-nowrap">0800-648-8252</b> or
+        email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -38,8 +38,8 @@ export const projects = [
         achievement of kai sovereignty.
         <br />
         <br />
-        Contact our Project Coordinator on{" "}
-        <b className="whitespace-nowrap">0800-648-8252</b> or email:{" "}
+        Contact us on <b className="whitespace-nowrap">0800-648-8252</b> or
+        email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -58,8 +58,8 @@ export const projects = [
         connectedness and belonging.
         <br />
         <br />
-        Contact our Project Coordinator on{" "}
-        <b className="whitespace-nowrap">0800-648-8252</b> or email:{" "}
+        Contact us on <b className="whitespace-nowrap">0800-648-8252</b> or
+        email:{" "}
         <a
           href="mailto:info@niuvaka.org.nz"
           className="font-bold underline underline-offset-4"
@@ -83,15 +83,19 @@ const serviceDescriptions = [
     id: "navigation-services",
     description: (
       <p className="text-base lg:text-lg">
-        The Pasifika Navigation Team provide support to Pacific peoples to
-        improve equity of access, health outcomes and support Pacific
-        communities to connect to a health team.
+        The Tātou Pasifika Whānau Ora Navigation Services is about empowering
+        Tagata Pasifika to be self-managing, to build confidence, skills and
+        resilience to take charge of their own wellbeing, and extend that
+        strength to help others in their aiga / famili / vuvale / kōpū tangata
+        and community. This reflects a shift and focus on Tagata Pasifika
+        transformation and self-determination.
         <br />
         <br />
-        The support provided ranges from navigation support, early intervention
-        and prevention focus, advocacy, navigation of care pathways, cultural
-        needs assessment, supporting health management plans, supporting
-        enrolment, appointment attendance, and culturally appropriate support.
+        Our Pasifika Whānau Ora Navigators will work with eligible families to
+        co-design a Whānau Plan and help families access services and supports
+        to achieve their goals, as well as advocate with and for aiga / famili /
+        vuvale / kōpū tangata across sectors and systems and ensure whānau voice
+        is central to all engagements.
         <br />
         <br />
         Our Pasifika Navigators can connect you to access services and supports

@@ -5,42 +5,42 @@ export const email = "info@niuvaka.org.nz";
 export const services: {
   image: string;
   name:
-  | "Navigation Services"
-  | "Ola Lelei Services"
-  | "Outreach Services"
-  | "Social Services";
+    | "Navigation Services"
+    | "Ola Lelei Services"
+    | "Outreach Services"
+    | "Social Services";
   description: string;
   id: string;
 }[] = [
-    {
-      image: "/services/navigation.svg",
-      name: "Navigation Services",
-      description:
-        "The Pasifika Navigation Team provide support to Pacific peoples to improve equity of access, health outcomes and support Pacific communities to connect to a health team.",
-      id: "navigation-services",
-    },
-    {
-      image: "/services/ola.svg",
-      name: "Ola Lelei Services",
-      description:
-        "Ola Lelei is our new training and employment Hub supporting Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
-      id: "ola-lelei-and-kai-services",
-    },
-    {
-      image: "/services/outreach.svg",
-      name: "Outreach Services",
-      description:
-        "Our Pacific Outreach service is a mobile service supporting Pacific communities with immunisations, screening, health and wellbeing checks along with health promotion.",
-      id: "outreach-services",
-    },
-    {
-      image: "/services/social.svg",
-      name: "Social Services",
-      description:
-        "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
-      id: "social-services",
-    },
-  ];
+  {
+    image: "/services/navigation.svg",
+    name: "Navigation Services",
+    description:
+      "The Tātou Pasifika Whānau Ora Navigation Services is about empowering Tagata Pasifika to be self-managing, to build confidence, skills and resilience to take charge of their own wellbeing, and extend that strength to help others in their aiga / famili / vuvale / kōpū tangata and community. This reflects a shift and focus on Tagata Pasifika transformation and self-determination.",
+    id: "navigation-services",
+  },
+  {
+    image: "/services/ola.svg",
+    name: "Ola Lelei Services",
+    description:
+      "Ola Lelei is our new training and employment Hub supporting Tagata Pasifika to undertake training and study pathways to achieve sustainable employment outcomes.",
+    id: "ola-lelei-and-kai-services",
+  },
+  {
+    image: "/services/outreach.svg",
+    name: "Outreach Services",
+    description:
+      "Our Pacific Outreach service is a mobile service supporting Pacific communities with immunisations, screening, health and wellbeing checks along with health promotion.",
+    id: "outreach-services",
+  },
+  {
+    image: "/services/social.svg",
+    name: "Social Services",
+    description:
+      "Niuvaka assist Tagata Pasifika to connect to and access welfare, housing, and financial support services.  We also provide free kai support through our food hub, Are Toa Kaikai.",
+    id: "social-services",
+  },
+];
 
 export const values = [
   {
@@ -158,18 +158,6 @@ export const staff = [
     description: "Vanuatu, Fiji",
   },
   {
-    image: "/team/Andrew Mulitalo.webp",
-    name: "Andrew Gu-Mulitalo",
-    role: "Pasifika Navigator",
-    description: "Letogo Apia, Iv’a Sava’i",
-  },
-  {
-    image: "/team/Mutsuo Hatakeyama.webp",
-    name: "Mutsuo Hatakeyama",
-    role: "Pasifika Navigator",
-    description: "Ou te Sau mai nu’u Tanugamanono",
-  },
-  {
     image: "/team/Aumetua Lackey.webp",
     name: "Aumetua Lackey",
     role: "Pasifika Coordinator",
@@ -206,61 +194,61 @@ export const navigationLinks: {
   href: string;
   subLinks?: SubLinkType[];
 }[] = [
-    {
-      name: "Home",
-      href: "/",
-    },
-    {
-      name: "About",
-      href: "/about",
-      subLinks: [
-        {
-          name: "Our Journey",
-          href: "/about#our-journey",
-          subLinks: [
-            {
-              name: "Our Name",
-              href: "/about#our-name",
-            },
-            {
-              name: "Our Logo",
-              href: "/about#our-logo",
-            },
-            {
-              name: "Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi",
-              href: "/about#tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi",
-            },
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+    subLinks: [
+      {
+        name: "Our Journey",
+        href: "/about#our-journey",
+        subLinks: [
+          {
+            name: "Our Name",
+            href: "/about#our-name",
+          },
+          {
+            name: "Our Logo",
+            href: "/about#our-logo",
+          },
+          {
+            name: "Tagata Pasifika, Tangata Whenua & Te Tiriti o Waitangi",
+            href: "/about#tagata-pasifika-tangata-whenua-te-tiriti-o-waitangi",
+          },
 
-            {
-              name: "Pasifika Diversity",
-              href: "/about#pasifika-diversity",
-            },
-          ],
-        },
-        {
-          name: "Our Team",
-          href: "/about#our-team",
-        },
-        {
-          name: "Our Partners",
-          href: "/about#our-partners",
-        },
-        {
-          name: "Work With Us",
-          href: "/about#work-with-us",
-        },
-      ],
-    },
-    {
-      name: "Our Work",
-      href: "/services",
-      subLinks: [
-        ...services.map(({ name, id: href }) => ({
-          name,
-          href: `/services#${href}`,
-          subLinks:
-            name === "Outreach Services"
-              ? [
+          {
+            name: "Pasifika Diversity",
+            href: "/about#pasifika-diversity",
+          },
+        ],
+      },
+      {
+        name: "Our Team",
+        href: "/about#our-team",
+      },
+      {
+        name: "Our Partners",
+        href: "/about#our-partners",
+      },
+      {
+        name: "Work With Us",
+        href: "/about#work-with-us",
+      },
+    ],
+  },
+  {
+    name: "Our Work",
+    href: "/services",
+    subLinks: [
+      ...services.map(({ name, id: href }) => ({
+        name,
+        href: `/services#${href}`,
+        subLinks:
+          name === "Outreach Services"
+            ? [
                 {
                   name: "Immunisation",
                   href: "/services#immunisation",
@@ -282,40 +270,40 @@ export const navigationLinks: {
                   href: "/services#health-assessment-and-wellbeing-checks",
                 },
               ]
-              : name === "Social Services"
-                ? [
+            : name === "Social Services"
+              ? [
                   {
                     name: "Are Toa Kaikai",
                     href: "/services#are-toa-kaikai",
                   },
                 ]
-                : undefined,
-        })),
-        {
-          name: "Our Projects and Initiatives",
-          href: "/services#our-projects-and-initiatives",
-        },
-      ],
-    },
-    {
-      name: "News",
-      href: "/news",
-      subLinks: [
-        {
-          name: "Latest News",
-          href: "/news#latest-news",
-        },
-        {
-          name: "Events",
-          href: "/news#events",
-        },
-      ],
-    },
-    {
-      name: "Contact",
-      href: "/contact",
-    },
-  ];
+              : undefined,
+      })),
+      {
+        name: "Our Projects and Initiatives",
+        href: "/services#our-projects-and-initiatives",
+      },
+    ],
+  },
+  {
+    name: "News",
+    href: "/news",
+    subLinks: [
+      {
+        name: "Latest News",
+        href: "/news#latest-news",
+      },
+      {
+        name: "Events",
+        href: "/news#events",
+      },
+    ],
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
 
 export const socials = [
   {
@@ -344,6 +332,26 @@ export const events: ArticleProps[][] = [
   [
     {
       type: "event",
+      title: "Pasifika Home Gardening Initiative",
+      date: new Date(2025, 2 - 1, 24),
+      video: "https://youtube.com/embed/hWClwbXok5o?si=Dg-_flYTxOCn9jAB",
+    },
+    {
+      type: "event",
+      title: "The Cause Collective",
+      date: new Date(2025, 2 - 1, 12),
+      video: "https://player.vimeo.com/video/1055858606",
+    },
+    {
+      type: "event",
+      title: "Mobile Outreach Workplace Initiative: Woodhaven Gardens",
+      date: new Date(2024, 9 - 1, 26),
+      video: "https://youtube.com/embed/eh_jcP7jEZ0?si=vxZxOogt0Zpf1QqR",
+    },
+  ],
+  [
+    {
+      type: "event",
       title: "Poly Paddles Promo October 2024",
       date: new Date(2024, 10 - 1),
       video: "https://youtube.com/embed/ybQTydfoNpM?si=PODjF-b1ehZSk4r8",
@@ -353,7 +361,7 @@ export const events: ArticleProps[][] = [
       title: "Poly Paddles Promo July 2024",
       date: new Date(2024, 7 - 1),
       video: "https://youtube.com/embed/hDcELzeFr4A?si=1spZdiH3863GR-S9",
-    }
+    },
   ],
   [
     {
@@ -367,7 +375,7 @@ export const events: ArticleProps[][] = [
       title: "Pasifika Fusion 2024 (Day 2)",
       date: new Date(2024, 9 - 1),
       video: "https://youtube.com/embed/_-KGZjZhq18?si=nK-opSBalYk985HY",
-    }
+    },
   ],
   [
     {
@@ -446,6 +454,42 @@ export const partners = [
 ];
 
 export const news: ArticleProps[] = [
+  {
+    type: "news",
+    image: "/logo.webp",
+    title: "J R McKenzie Trust",
+    date: new Date(2024, 4, 16),
+    excerpt:
+      "Based in Palmerston North, Niuvaka Trust’s purpose is to work cooperatively with Tagata Pasifika, Pasifika communities, and Pasifika families in the MidCentral region, to build their capacity and capability, and realise their aspirations. It has a vision is for Tagata Pasifika to be ‘Thriving, Flourishing and Resilient’.",
+    url: "https://www.jrmckenzie.org.nz/stories/niuvaka-trust-thriving-flourishing-and-resilient-tagata-pasifika",
+  },
+  {
+    type: "news",
+    image: "/logo.webp",
+    title: "Niuvaka Presentation to PNCC LTP",
+    date: new Date(2024, 4, 17),
+    excerpt:
+      "Rates rises of more than 30% over the next three years and the new cycleway on Featherston St have dominated submissions to the Palmerston North City Council.\n\nMore than 1400 people have made submissions on the draft long-term plan, and many of them are angry.",
+    url: "https://www.stuff.co.nz/nz-news/350280475/palmerston-north-swamped-criticism-council-spending",
+  },
+  {
+    type: "news",
+    image: "/logo.webp",
+    title: "Traditional Pacific Games",
+    date: new Date(2025, 0, 21),
+    excerpt:
+      "The Niuvaka Trust has been supported in continuing its traditional Pacific cultural games through a new community grant.\n\nNew Zealand Community Trust (NZCT) has awarded the trust a $40,000 grant to continue its games, providing opportunities for the wider Manawatū community to learn about Pacific languages and traditions while participating in physical activities that differed from typical sports.",
+    url: "https://www.thepost.co.nz/nz-news/360554320/support-niuvaka-trusts-traditional-pacific-cultural-games",
+  },
+  {
+    type: "news",
+    image: "/logo.webp",
+    title: "Kāinga Ora, MSD & Niuvaka Community Clinics",
+    date: new Date(2025, 3, 2),
+    excerpt:
+      "Kāinga Ora, Niuvaka Trust, and the Ministry for Social Development (MSD) are supporting the Pasifika community by providing access to employment opportunities, social housing, and financial assistance.",
+    url: "https://kaingaora.govt.nz/preview/a83803609e42a28d/7175588c4907ae3a/",
+  },
   {
     type: "news",
     image: "/news/pasifika-families.webp",
