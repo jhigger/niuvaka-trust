@@ -16,7 +16,7 @@ export const services: {
     image: "/services/navigation.svg",
     name: "Navigation Services",
     description:
-      "The Tātou Pasifika Whānau Ora Navigation Services is about empowering Tagata Pasifika to be self-managing, to build confidence, skills and resilience to take charge of their own wellbeing, and extend that strength to help others in their aiga / famili / vuvale / kōpū tangata and community. This reflects a shift and focus on Tagata Pasifika transformation and self-determination.",
+      "The Tātou Pasifika Whānau Ora Navigation Services is about empowering Tagata Pasifika to be self-managing, to build confidence, skills and resilience to take charge of their own wellbeing, and extend support to their families.",
     id: "navigation-services",
   },
   {
@@ -456,16 +456,7 @@ export const partners = [
 export const news: ArticleProps[] = [
   {
     type: "news",
-    image: "/logo.webp",
-    title: "J R McKenzie Trust",
-    date: new Date(2024, 4, 16),
-    excerpt:
-      "Based in Palmerston North, Niuvaka Trust’s purpose is to work cooperatively with Tagata Pasifika, Pasifika communities, and Pasifika families in the MidCentral region, to build their capacity and capability, and realise their aspirations. It has a vision is for Tagata Pasifika to be ‘Thriving, Flourishing and Resilient’.",
-    url: "https://www.jrmckenzie.org.nz/stories/niuvaka-trust-thriving-flourishing-and-resilient-tagata-pasifika",
-  },
-  {
-    type: "news",
-    image: "/logo.webp",
+    image: "/news/stuffnz.webp",
     title: "Niuvaka Presentation to PNCC LTP",
     date: new Date(2024, 4, 17),
     excerpt:
@@ -474,7 +465,7 @@ export const news: ArticleProps[] = [
   },
   {
     type: "news",
-    image: "/logo.webp",
+    image: "/news/traditionalgames.webp",
     title: "Traditional Pacific Games",
     date: new Date(2025, 0, 21),
     excerpt:

@@ -120,9 +120,11 @@ const News = () => {
           </h2>
 
           <div className="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
-            {news.map((article, i) => (
-              <Article key={i} {...article} />
-            ))}
+            {news
+              .sort((a, b) => b.date.getTime() - a.date.getTime())
+              .map((article, i) => (
+                <Article key={i} {...article} />
+              ))}
           </div>
 
           <h2 id="events" className="sr-only">
@@ -137,7 +139,7 @@ const News = () => {
                   className="grid grid-cols-1 gap-8 py-8 lg:grid-cols-2"
                 >
                   {event
-                    .sort((a, b) => a.date.getTime() - b.date.getTime())
+                    .sort((a, b) => b.date.getTime() - a.date.getTime())
                     .map((article, i) => (
                       <Article
                         key={i}
