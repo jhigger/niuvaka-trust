@@ -474,7 +474,7 @@ export const news: ArticleProps[] = [
   },
   {
     type: "news",
-    image: "/logo.webp",
+    image: "/news/kaingaora.webp",
     title: "Kāinga Ora, MSD & Niuvaka Community Clinics",
     date: new Date(2025, 3, 2),
     excerpt:
