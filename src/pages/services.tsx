@@ -98,8 +98,9 @@ const serviceDescriptions = [
         is central to all engagements.
         <br />
         <br />
-        Our Pasifika Navigators can connect you to access services and supports
-        with other providers, community organisations and government agencies.
+        Our Pasifika Whānau Ora Navigators can connect you to access services
+        and supports with other providers, community organisations and
+        government agencies.
         <br />
         <br />
         Contact our Navigation team on{" "}

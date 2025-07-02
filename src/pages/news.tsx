@@ -34,7 +34,7 @@ const Article = ({
           <img
             src={image}
             alt="thumbnail"
-            className="h-full w-full rounded-xl object-cover"
+            className="h-full w-full rounded-xl object-cover object-[50%_30%]"
           />
         </AspectRatio>
       )}
