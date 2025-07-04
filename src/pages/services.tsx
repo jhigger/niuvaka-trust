@@ -6,11 +6,13 @@ import Navbar from "~/components/Navbar";
 import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { Button } from "~/components/ui/button";
 import { services as serviceItems } from "~/lib/constants";
+import { cn } from "~/lib/utils";
 
 export const projects = [
   {
     image: "/projects/paddles.webp",
     name: "Poly Paddles",
+    titleImage: "/projects/poly-paddles-logo.webp",
     description: (
       <p className="lg:text-lg">
         Water safety and life skills programme for Pasifika and Māori Tamariki
@@ -663,7 +665,7 @@ const Services = () => {
             </h2>
 
             <div className="flex flex-col gap-8 divide-y divide-primary lg:gap-4">
-              {projects.map(({ image, name, description }) => {
+              {projects.map(({ image, name, description, titleImage }) => {
                 return (
                   <div
                     key={name}
@@ -679,8 +681,20 @@ const Services = () => {
                       </AspectRatio>
                     </div>
                     <div className="col-span-full flex flex-col gap-6 lg:col-span-7">
-                      <h3 className="text-2xl font-semibold capitalize text-white lg:text-3xl">
+                      <h3
+                        className={cn(
+                          "text-2xl font-semibold capitalize text-white lg:text-3xl",
+                          titleImage && "flex items-center gap-4",
+                        )}
+                      >
                         {name}
+                        {titleImage && (
+                          <img
+                            src={titleImage}
+                            alt="service"
+                            className="aspect-square w-16 object-cover"
+                          />
+                        )}
                       </h3>
                       <div className="whitespace-pre-wrap lg:text-lg">
                         {description}
