@@ -12,7 +12,7 @@ export const projects = [
   {
     image: "/projects/paddles.webp",
     name: "Poly Paddles",
-    titleImage: "/projects/poly-paddles-logo.webp",
+    brandImage: "/projects/poly-paddles-logo.webp",
     description: (
       <p className="lg:text-lg">
         Water safety and life skills programme for Pasifika and Māori Tamariki
@@ -665,7 +665,7 @@ const Services = () => {
             </h2>
 
             <div className="flex flex-col gap-8 divide-y divide-primary lg:gap-4">
-              {projects.map(({ image, name, description, titleImage }) => {
+              {projects.map(({ image, name, description, brandImage }) => {
                 return (
                   <div
                     key={name}
@@ -684,21 +684,28 @@ const Services = () => {
                       <h3
                         className={cn(
                           "text-2xl font-semibold capitalize text-white lg:text-3xl",
-                          titleImage && "flex items-center gap-4",
+                          brandImage && "flex items-center gap-4",
                         )}
                       >
                         {name}
-                        {titleImage && (
+                        {brandImage && (
                           <img
-                            src={titleImage}
+                            src={brandImage}
                             alt="service"
-                            className="aspect-square w-16 object-cover"
+                            className="aspect-square w-16 object-cover xl:hidden"
                           />
                         )}
                       </h3>
                       <div className="whitespace-pre-wrap lg:text-lg">
                         {description}
                       </div>
+                      {brandImage && (
+                        <img
+                          src={brandImage}
+                          alt="service"
+                          className="hidden aspect-square w-1/4 self-end object-cover xl:block"
+                        />
+                      )}
                     </div>
                   </div>
                 );
